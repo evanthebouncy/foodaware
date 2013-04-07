@@ -1,0 +1,48 @@
+﻿*
+{
+	border-radius:10px;
+	/* this is used to see boundaries can change to see actual values */
+	border:1px solid black;
+	margin:5px;
+	cursor: default;
+}
+#user_settings_button
+{
+	background-image:url('Menu_Resources/LeftArrow.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	height:auto;
+	width:auto;
+	text-align:center;
+	padding:20px;
+}
+#menu_display
+{
+	height:500px;
+	background-color:#99FFFF;
+	overflow:auto;
+}
+#restrictions_main
+{
+	height:200px;
+	background-color:#99FFFF;
+	overflow:auto;
+}
+#preferences_main
+{
+	height:200px;
+	background-color:#99FFFF;
+	overflow:auto;
+}
+.dish_item
+{
+	width:100px;
+	height:100px;
+	//display:inline;
+	padding:5px;
+}
+.dish_selection
+{
+	width:200px;
+	height:200px;
+}
