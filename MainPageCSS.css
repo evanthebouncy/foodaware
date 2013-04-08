@@ -7,10 +7,6 @@
 {
 	padding:10px;
 }
-#selection_summary_button
-{
-	text-align:center;
-}
 #menu_display
 {
 	height:400px;
@@ -50,8 +46,26 @@
 	border:1px solid black;
 	margin:10px;
 }
+#menu_description_label
+{
+	margin:10px;
+}
 #likert_ingredients_box
 {
 	border:1px solid black;
+	margin:10px;
+	overflow:auto;
+	height:300px;
+}
+#DishNameLabel
+{
+	margin:10px;
+}
+#close_selection_button
+{
+	margin:10px;
+}
+#order_button
+{
 	margin:10px;
 }
