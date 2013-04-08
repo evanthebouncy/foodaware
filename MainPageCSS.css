@@ -1,24 +1,19 @@
 ﻿*
 {
 	border-radius:10px;
-	/* this is used to see boundaries can change to see actual values */
-	border:1px solid black;
-	margin:5px;
 	cursor: default;
 }
 #user_settings_button
 {
-	background-image:url('Menu_Resources/LeftArrow.png');
-	background-repeat:no-repeat;
-	background-position:center;
-	height:auto;
-	width:auto;
+	padding:10px;
+}
+#selection_summary_button
+{
 	text-align:center;
-	padding:20px;
 }
 #menu_display
 {
-	height:500px;
+	height:400px;
 	background-color:#99FFFF;
 	overflow:auto;
 }
@@ -38,11 +33,25 @@
 {
 	width:100px;
 	height:100px;
-	//display:inline;
-	padding:5px;
+	border:1px solid black;
+	display:inline-block;
+	margin:10px;
 }
-.dish_selection
+#dish_selection
+{
+	margin:10px;
+	border:1px solid black;
+	display:none;
+}
+#dish_selection_image
 {
 	width:200px;
 	height:200px;
+	border:1px solid black;
+	margin:10px;
+}
+#likert_ingredients_box
+{
+	border:1px solid black;
+	margin:10px;
 }

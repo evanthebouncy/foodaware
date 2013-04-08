@@ -25,26 +25,84 @@
 
 </head>
 <body>
-	<div class="row">
-		<div id="user_settings_button">
-			<b style="font:bold">User Settings</b>
+	<div class="row-fluid">
+		<div id="selection_summary_button" class="offset9 span1">
+			<img src="Menu_Resources/list.png"></img>
+		</div>
+		<div id="user_settings_button" class="offset1 span1">
+			<img src="Menu_Resources/LeftArrow.png"></img>	
 		</div>
 	</div>
-	<div class="row">
-		<div id="menu_display" class="span12 offset1">
-			<h1>Menu</h1>
-			<div class="dish_item"></div>
-			<div class="dish_item"></div>
-			<div class="dish_item"></div>
-			<div class="dish_item"></div>
-		</div>
+	<div class="row-fluid">
+		<div class="offset9 span1"><strong>Selections Summary</strong></div>
+		<div class="offset1 span1"><strong>User Settings</strong></div>
 	</div>
-	<div class="row"> 
-		<div id="restrictions_main" class="span6 offset1">
-			<h1>Restrictions</h1>
+	<div class="row-fluid">
+		<h1 class="offset1">Menu</h1>
+		<div class="span12" id="menu_display">
+			<div id="dish_selection" class="span9">
+				<div class="row-fluid">
+					<h3 class="span6" id="DishNameLabel" style="margin:10px">Dish Item Name</h3>
+					<div id = "order_button" class="span1">
+						<img src="Menu_Resources/add-icon.png" style="margin:10px"></img>
+					</div>
+					<div id = "close_selection_button" class="span1">
+						<img src="Menu_Resources/close-button.png" style="margin:10px"></img>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span1 offset6"><strong>Add to Summary</strong></div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div id = "dish_selection_image"><img></img></div>
+						<p id = "menu_description_label" style="margin:10px">Menu Description: Chef's description of the item</p>
+					</div>
+					<div class="span6">
+						<h3>Ingredients</h3>
+						<div id="likert_ingredients_box"></div>
+					</div>
+				</div>
 			</div>
-		<div id="preferences_main" class="span6">
+			
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+			<div class="dish_item"></div>
+		</div>
+	</div>
+	<div class="row-fluid"> 
+		<div class="span6">
+			<h1>Restrictions</h1>
+			<div id="restrictions_main"></div>
+		</div>
+		<div class="span6">
 			<h1>Preferences</h1>
+			<div id="preferences_main"></div>
 		</div>
 	</div>
 </body>

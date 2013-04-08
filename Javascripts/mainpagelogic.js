@@ -1,29 +1,55 @@
 var center_display = $('menu_display');
-//var RestaurantList = new Menu(); 
+var selectedDiv;
+var selectionWindow;
+var SelectedDish;
+var RestrictedIngs;
+var PreferredIngs;
 
 $(document).ready(function()
 {
 	// Global Event Listeners
 	$('#user_settings_button').click(function(event)
 	{
-		alert("Changing to User Settings");
+		console.log("Changing to User Settings");
 	});
-	$('.dish_item').hover(function(event){
-		console.log("Enter Hover");
-		var width = $(this).attr("width");
-		var height = $(this).attr("height");
-		width *= 1.05;
-		height *= 1.05;
-		$(this).attr("width",width);
-		$(this).attr("width",height);
+	$('#selection_summary_button').click(function(event)
+	{
+		console.log("Changing to Selection Summary");
+	});
+	$('#close_selection_button').click(function(event)
+	{
+		selectionWindow.style.display = "none";
+		selectedDiv.style.border = "1px solid black";
+	});
+	$('#order_button').click(function(event)
+	{
+		selectionWindow.style.display = "none";
+		selectedDiv.style.border = "1px solid black";
+	});
+	$('.dish_item').hover(function(){
+		this.style.width = "105px";
+		this.style.height = "105px";
+		this.style.margin = "5px";
 	},
-	function(event){
-		console.log("Left Hover");
+	function(){
+		this.style.height = "100px";
+		this.style.width = "100px";
+		this.style.margin = "10px";
 	});
 	
+	$('.dish_item').click(function()
+	{
+		if(selectedDiv != null)
+		{
+			selectedDiv.style.border = "1px solid black";
+		}
+		selectedDiv = this;
+		this.style.border = "2px solid green";
+		selectionWindow.style.display = "block";
+	});
 	center_display.filter = function(event)
 	{
-		alert("testing dynamic filter");
+		console.log("testing dynamic filter");
 	};
-	center_display.filter();
+	selectionWindow = document.getElementById("dish_selection");
 });
