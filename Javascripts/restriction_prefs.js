@@ -52,8 +52,25 @@ var togglePreference = function(itemName, preferenceType) {
         preferences[itemName] = preferenceType;
 }
 
+var clearPreferenceType = function(preferenceType) {
+    getChooser(preferenceType).find(".picker").removeClass("checked");
+    $.each(preferences, function(key, value) {
+        if (value == preferenceType)
+            preferences[key] = undefined;
+    });
+}
+
+var clearAllPreferences = function() {
+    clearPreferences("preference");
+    clearPreferences("restriction");
+}
+
 
 // Get the picker for a given item name and preference type.
 var getPicker = function(itemName, preferenceType) {
     return $("#" + preferenceType + "-" + itemName);
+}
+
+var getChooser = function(preferenceType) {
+    return $("#" + preferenceType + "-chooser");
 }
