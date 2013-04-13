@@ -8,8 +8,16 @@ td{
 }
 #btn{
     font-size:1em
-
 }
+#menu{
+    float:left;
+    font-size:1em;
+}
+#profile{
+    float:right;
+    font-size:1em;
+}
+
 ul#selection{
 list-style-type:none;
 }
