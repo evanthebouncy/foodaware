@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
+    <script src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script src="External_Libraries/handlebars.js"></script>
+    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="Javascripts/restriction_prefs.js"></script>
+    <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
+    <title>FoodAware | Restrictions and preferences</title>
+
+    <script id="picker-template" type="text/x-handlebars-template">
+      <div class="chooser-group accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{prefType}}-chooser"
+             href="#{{prefType}}-group-{{groupName}}">
+            {{groupName}}
+          </a>
+        </div>
+
+        <div id="{{prefType}}-group-{{groupName}}" class="accordion-body collapse">
+          <div class="accordion-inner">
+            {{#each itemName}}
+            <div class="picker">
+              <button class="btn btn-block btn-large clearfix">
+                <img src="x" width="50" height="50"/>
+                {{this}}
+              </button>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </script>
+
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="row">
+        <h1>Restrictions and Preferences</h1>
+      </div>
+
+      <hr>
+
+      <!-- Restrictions menu -->
+      <div class="row">
+        <div class="span12">
+          <h2>Restrictions</h2>
+          <div class="food-chooser well accordion" id="restriction-chooser"></div>
+        </div>
+      </div>
+
+      <!-- Preferences menu -->
+      <div class="row">
+        <div class="span12">
+          <h2>Preferences</h2>
+          <div class="food-chooser well accordion" id="preference-chooser"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
