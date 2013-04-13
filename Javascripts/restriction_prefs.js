@@ -33,6 +33,12 @@ $(document).ready(function() {
         togglePreference(itemName, preferenceType);
     });
 
+    $("#clear-restrictions").click(function() {
+        clearPreferenceType("restriction");
+    });
+    $("#clear-preferences").click(function() {
+        clearPreferenceType("preference");
+    })
 });
 
 // "Toggle" the preference for the given item. If the preference is
