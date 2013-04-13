@@ -35,3 +35,7 @@ div.chooser-group .picker .pseudo-checkbox {
 #preference-chooser .chooser-group .picker.checked .pseudo-checkbox {
     background: #33ff33;
 }
+
+.navbar {
+    font-size: 180%;
+}
