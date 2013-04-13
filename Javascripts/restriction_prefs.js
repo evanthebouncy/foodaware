@@ -4,6 +4,10 @@ function ucFirst(str) {
     });
 }
 
+function createIdentifier(str) {
+    return str.toLowerCase().replace(/ /g, "_");
+}
+
 var food = { "dairy": ["eggs", "milk", "butter", "ice cream"],
          "meat": ["pork", "steak", "veal"],
          "vegetables": ["carrots", "pickles", "onions"] };
@@ -18,9 +22,17 @@ $(document).ready(function() {
     var pickerTemplate = Handlebars.compile($("#picker-template").html());
     var dairy = pickerTemplate({groupName: "dairy", itemName: food["dairy"]});
     $.each(foodGroups, function(index, group) {
-        var restrictionResult = pickerTemplate({groupName: ucFirst(group), itemName: $.map(food[group], ucFirst),
+        var items = $.map(food[group], function(itemName) {
+            return {identifier: createIdentifier(itemName),
+                    displayName: ucFirst(itemName)
+                   };
+        });
+
+        var restrictionResult = pickerTemplate({groupName: ucFirst(group),
+                                                items: items,
                                                prefType: "restriction"});
-        var preferenceResult = pickerTemplate({groupName: ucFirst(group), itemName: $.map(food[group], ucFirst),
+        var preferenceResult = pickerTemplate({groupName: ucFirst(group),
+                                               items: items,
                                                prefType: "preference"});
         $("#restriction-chooser").append(restrictionResult);
         $("#preference-chooser").append(preferenceResult);
