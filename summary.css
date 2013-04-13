@@ -1,0 +1,35 @@
+#table{
+    align:center;
+    padding: 10em 5em;
+    margin: auto;
+}
+td{
+    padding:1em;
+}
+#btn{
+    font-size:1em
+}
+#menu{
+    float:left;
+    font-size:1em;
+}
+#profile{
+    float:right;
+    font-size:1em;
+}
+
+ul#selection{
+list-style-type:none;
+}
+
+.selected{
+    color:green;
+    text-decoration-color: green;
+}
+.restricted{
+    color:red;
+    text-decoration-color: red;
+}
+#printBtn{
+    align:center;
+}

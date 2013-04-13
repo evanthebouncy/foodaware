@@ -1,0 +1,41 @@
+div.chooser-group {
+    border: 1px solid #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 15px 0px;
+}
+
+div.chooser-group .accordion-heading {
+    font-size: 120%;
+}
+
+div.chooser-group .accordion-inner .picker {
+    display: inline-block;
+    width: 200px;
+    margin: 10px 20px;
+}
+
+div.chooser-group .accordion-inner .picker img {
+    float: left;
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+div.chooser-group .picker .pseudo-checkbox {
+    width: 44px;
+    height: 44px;
+    margin-top: -12px;
+    margin-bottom: -12px;
+    border-right: 1px solid #dddddd;
+}
+
+#restriction-chooser .chooser-group .picker.checked .pseudo-checkbox {
+    background: #ff3333;
+}
+
+#preference-chooser .chooser-group .picker.checked .pseudo-checkbox {
+    background: #33ff33;
+}
+
+.navbar {
+    font-size: 180%;
+}
