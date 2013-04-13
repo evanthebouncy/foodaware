@@ -25,6 +25,14 @@ $(document).ready(function() {
 
     $("div.picker button").click(function(eventObj) {
         $(this).closest(".picker").toggleClass("checked");
+
+        // Un-prefer the item if we just restricted it, and
+        // vice-versa.
+        var preferenceType = $(this).closest(".food-chooser").attr("id").split("-")[0];
+        var otherType = preferenceType == "preference" ? "restriction" : "preference";
+        var otherName = $(this).closest(".accordion-body").attr("id").replace(preferenceType, otherType);
+        console.log(otherName);
+        $("#" + otherName + " .picker").removeClass("checked");
     });
 
 });
