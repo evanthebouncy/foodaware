@@ -12,7 +12,6 @@ foodGroups = ["meat", "vegetables", "dairy"];
 
 $(document).ready(function() {
     var source = $("#picker-template").html();
-    console.log(source);
     var pickerTemplate = Handlebars.compile($("#picker-template").html());
     var dairy = pickerTemplate({groupName: "dairy", itemName: food["dairy"]});
     $.each(foodGroups, function(index, group) {
@@ -22,6 +21,10 @@ $(document).ready(function() {
                                                prefType: "preference"});
         $("#restriction-chooser").append(restrictionResult);
         $("#preference-chooser").append(preferenceResult);
+    });
+
+    $("div.picker button").click(function(eventObj) {
+        $(this).closest(".picker").toggleClass("checked");
     });
 
 });
