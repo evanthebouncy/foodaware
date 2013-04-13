@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>FoodAware - Login</title>
+
+    <!-- Load main style sheet -->
+    <link rel="stylesheet" type="text/css" href="summaryStyle.css" />
+    <link href="External_Libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Loading external Javascript libraries here -->
+    <script type="text/javascript" src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Javascript/summary.js"></script>
+
+</head>
+
+<body>
+<table id="table" border="0">
+    <tr>
+        <td>Restarunt Info</td>
+    </tr>
+
+    <tr>
+        <td><input type = checkbox value = "" checked> Print Your Selected Dishes</td>
+    </tr>
+
+    <tr>
+        <td class ="selected">
+
+            <ul id="selection">
+                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item1 </span> </li>
+                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item2 </span>  </li>
+                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item3 </span> </li>
+                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item4 </span> </li>
+
+            </ul>
+    </tr>
+
+    <tr>
+
+        <td><input type = checkbox value = ""> Print Your Restricted Dishes </td>
+
+    </tr>
+
+    <tr>
+        <td class="restricted">
+        <ul id="restriction" >
+            <li> Item1 </li>
+            <li> Item2 </li>
+            <li> item 3</li>
+            <li> item 4</li>
+
+        </ul>
+    </td>
+
+
+
+    <tr id="printBtn">
+        <td colspan = "2">
+        <input id="btn" type = button value = " Print " >
+        </td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
