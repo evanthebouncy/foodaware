@@ -33,3 +33,6 @@ list-style-type:none;
 #printBtn{
     align:center;
 }
+.navbar {
+    font-size: 180%;
+}
