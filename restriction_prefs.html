@@ -22,11 +22,11 @@
 
         <div id="{{prefType}}-group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
-            {{#each itemName}}
-            <div class="picker" id="{{../prefType}}-{{this}}">
+            {{#each items}}
+            <div class="picker" id="{{../prefType}}-{{this.identifier}}">
               <button class="btn btn-block btn-large clearfix">
                 <div class="pull-left pseudo-checkbox"></div>
-                {{this}}
+                {{this.displayName}}
               </button>
             </div>
             {{/each}}
