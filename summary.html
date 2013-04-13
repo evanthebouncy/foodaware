@@ -19,15 +19,15 @@
 </head>
 
 <body>
-<a href="restriction_prefs.html">
-    <img border="0" alt="Profile" src="Menu_Resources/LeftArrow.png" width="100" height="100">
-    Profile</a>
-<a href = "MainPage.html">
-    <img border="0" alt="Menu" src="Menu_Resources/LeftArrow.png" width="100" height="100">Menu</a>
+<a id= "profile" href="restriction_prefs.html">
+    <img border="0" alt="Profile" src="/Menu_Resources/LeftArrow.png" width="100" height="100">
+    </a>
+<a id = "menu" href = "MainPage.html">
+    <img border="0" alt="Menu" src="LeftArrow.png" width="100" height="100"></a>
 
-<table id="table" border="0">
+<table class ="table" border="0">
     <tr>
-        <td>Restarunt Info</td>
+        <td><h3>Restarunt Info</h3></td>
     </tr>
 
     <tr>
@@ -39,8 +39,8 @@
 
         </td>
 
-    <tr>
-        <td>Your Selected Dishes</td>
+    <tr id="selectionHeader">
+        <td><h3>Your Selected Dishes</h3></td>
     </tr>
 
     <tr>
@@ -50,37 +50,31 @@
                 <li> <input type = checkbox value = "" checked> <span class ="selected"> Item2 </span>  </li>
                 <li> <input type = checkbox value = "" checked> <span class ="selected"> Item3 </span> </li>
                 <li> <input type = checkbox value = "" checked> <span class ="selected"> Item4 </span> </li>
-
             </ul>
     </tr>
-
+    <tr id="restrictionHeader">
+        <td><h3>Your Restricted Dishes</h3></td>
+    </tr>
     <tr>
-
-        <td><input type = checkbox value = ""> Your Restricted Dishes </td>
-
-    </tr>
-
-    <tr >
-        <td class="restricted">
-            <ul id="restriction" >
-                <li> Item1 </li>
-                <li> Item2 </li>
-                <li> item 3</li>
-                <li> item 4</li>
-
+        <td>
+            <ul>
+                <li > <span class="restricted"> Item1</span> -- <span class="restricted"> Peanut </span></li>
+                <li>  <span class="restricted">Item2</span> -- <span class="restricted"> Milk </span></li>
+                <li>  <span class="restricted">Item3</span> -- <span class="restricted"> Chicken </span></li>
+                <li>  <span class="restricted">Item4</span> -- <span class="restricted"> Beef </span></li>
             </ul>
+
         </td>
-
-
-
+    </tr>
     <tr id="printBtn">
-        <td colspan = "2">
+        <td>
             <input id="btn" type = button value = " Print " >
             <input type = checkbox value = ""> Include Your Restriction
         </td>
     </tr>
-
 </table>
+
+
 
 
 </body>
