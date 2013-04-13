@@ -23,7 +23,7 @@
         <div id="{{prefType}}-group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
             {{#each itemName}}
-            <div class="picker">
+            <div class="picker" id="{{../prefType}}-{{this}}">
               <button class="btn btn-block btn-large clearfix">
                 <div class="pull-left pseudo-checkbox"></div>
                 {{this}}

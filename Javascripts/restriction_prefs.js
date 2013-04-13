@@ -4,11 +4,14 @@ function ucFirst(str) {
     });
 }
 
-food = { "dairy": ["eggs", "milk", "butter", "ice cream"],
+var food = { "dairy": ["eggs", "milk", "butter", "ice cream"],
          "meat": ["pork", "steak", "veal"],
          "vegetables": ["carrots", "pickles", "onions"] };
 
-foodGroups = ["meat", "vegetables", "dairy"];
+var foodGroups = ["meat", "vegetables", "dairy"];
+
+var preferences = {};
+
 
 $(document).ready(function() {
     var source = $("#picker-template").html();
@@ -24,15 +27,33 @@ $(document).ready(function() {
     });
 
     $("div.picker button").click(function(eventObj) {
-        $(this).closest(".picker").toggleClass("checked");
-
-        // Un-prefer the item if we just restricted it, and
-        // vice-versa.
-        var preferenceType = $(this).closest(".food-chooser").attr("id").split("-")[0];
-        var otherType = preferenceType == "preference" ? "restriction" : "preference";
-        var otherName = $(this).closest(".accordion-body").attr("id").replace(preferenceType, otherType);
-        console.log(otherName);
-        $("#" + otherName + " .picker").removeClass("checked");
+        var id = $(this).closest(".picker").attr("id").split("-");
+        var preferenceType = id[0];
+        var itemName = id[1];
+        togglePreference(itemName, preferenceType);
     });
 
 });
+
+// "Toggle" the preference for the given item. If the preference is
+// already the given preference type, the preference will be cleared;
+// else, it will be set to that type.
+var togglePreference = function(itemName, preferenceType) {
+    getPicker(itemName, preferenceType).toggleClass("checked");
+    // Un-prefer the item if we just restricted it, and
+    // vice-versa.
+    var otherType = preferenceType == "preference" ? "restriction" : "preference";
+    getPicker(itemName, otherType).removeClass("checked");
+
+    // Now actually set the preferences.
+    if (preferences[itemName] == preferenceType)
+        delete preferences[itemName];
+    else
+        preferences[itemName] = preferenceType;
+}
+
+
+// Get the picker for a given item name and preference type.
+var getPicker = function(itemName, preferenceType) {
+    return $("#" + preferenceType + "-" + itemName);
+}
