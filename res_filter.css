@@ -1,0 +1,22 @@
+
+td{
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+
+.navbar {
+    font-size: 180%;
+}
+
+input {
+    margin-bottom: 0 !important;
+}
+
+select {
+    margin-bottom: 0 !important;
+}
+
+h1{
+    font-family: 'Denk One', sans-serif;
+}
