@@ -7,8 +7,16 @@
  */
 $(document).ready(function()
 {
-    $("address").focus(function(){
-        $(this).text("hello");
+
+
+    $(".restaurant").click(function(){
+        $(this).css({"background-color":"grey", "display":"block" })
+
+
+    });
+    $("#GoToMenuBtn").click(function(){
+
     })
+
 
 });

@@ -3,6 +3,10 @@ td{
     padding: 0.5em;
     vertical-align: middle;
 }
+.header{
+    padding-bottom: 1em;
+    margin-top:5em;
+}
 
 
 .navbar {
@@ -20,3 +24,20 @@ select {
 h1{
     font-family: 'Denk One', sans-serif;
 }
+.restaurantList{
+    margin-top:5em;
+    margin-bottom:5em;
+}
+#resList{
+    list-style-type: decimal;
+}
+.filter{
+    margin-top:2em;
+    margin-bottom:2em;
+
+}
+.restaurant{
+    display:block;
+}
+
+
