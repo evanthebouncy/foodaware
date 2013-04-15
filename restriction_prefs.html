@@ -15,19 +15,26 @@
     <script id="picker-template" type="text/x-handlebars-template">
       <div class="chooser-group accordion-group">
         <div class="accordion-heading">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{prefType}}-chooser"
-             href="#{{prefType}}-group-{{groupName}}">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#chooser"
+             href="#group-{{groupName}}">
             {{groupName}}
           </a>
         </div>
 
-        <div id="{{prefType}}-group-{{groupName}}" class="accordion-body collapse">
+        <div id="group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
             {{#each items}}
-            <div class="picker" id="{{../prefType}}-{{this.identifier}}">
-              <button class="btn btn-block btn-large clearfix">
-                <div class="pull-left pseudo-checkbox"></div>
+            <div class="picker btn-group" id="{{this.identifier}}"
+                 data-food-id="{{this.identifier}}"
+                 data-food-name="{{this.displayName}}">
+              <button class="btn btn-large clearfix prefer">
+                <i class="icon-plus-sign"></i>
+              </button>
+              <button class="btn btn-large clearfix neutral">
                 {{this.displayName}}
+              </button>
+              <button class="btn btn-large clearfix restrict">
+                <i class="icon-minus-sign"></i>
               </button>
             </div>
             {{/each}}
@@ -61,27 +68,43 @@
 
       <hr>
 
-      <!-- Restrictions menu -->
       <div class="row">
-        <div class="span12">
-          <h2>Restrictions
-            <button id="clear-restrictions" class="btn btn-medium btn-danger">
-              <i class="icon-trash icon-large"></i> Clear all</button>
-          </h2>
+        <!-- A list of all items, not just the 'apathetic' ones -->
+        <div class="span6">
+          <h2>Ingredients</h2>
           <div class="food-chooser well accordion" id="restriction-chooser"></div>
         </div>
+
+        <!-- Right bar; items we care about one way or another -->
+        <div class="span6">
+          <!-- Preferred items -->
+          <div id="preferred">
+            <h2>Preferred ingredients
+              <button id="clear-restrictions" class="btn btn-medium btn-danger">
+                <i class="icon-trash icon-large"></i> Clear all
+              </button>
+            </h2>
+
+            <div id="prefer-list" class="well food-list">
+            </div>
+          </div>
+
+          <!-- Restricted items -->
+          <div id="restricted">
+            <h2>Restricted ingredients
+              <button id="clear-restrictions" class="btn btn-medium btn-danger">
+                <i class="icon-trash icon-large"></i> Clear all
+              </button>
+            </h2>
+
+            <div id="restrict-list" class="well food-list">
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- Preferences menu -->
-      <div class="row">
-        <div class="span12">
-          <h2>Preferences
-            <button id="clear-preferences" class="btn btn-medium btn-danger">
-              <i class="icon-trash icon-large"></i> Clear all</button>
-          </h2>
-          <div class="food-chooser well accordion" id="preference-chooser"/>
-        </div>
-      </div>
     </div>
   </body>
 </html>
