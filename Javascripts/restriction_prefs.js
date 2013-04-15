@@ -62,6 +62,10 @@ $(document).ready(function() {
     $(".picker button.restrict").click(function() {
         updateButtonView($(this), "restrict");
     });
+
+    // Dynamically calculate the padding so that we leave enough space
+    // no matter how narrow the window is.
+    $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
 });
 
 var updateButtonView = function($button, preferenceType) {

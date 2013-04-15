@@ -38,4 +38,5 @@ div .food-list button {
 
 .navbar {
     font-size: 180%;
+    position: fixed;
 }
