@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+   COLLABORATORS:
+   I googled extensively. All the codes are self-contained though
+   No third party libraries used   
+  -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script type="text/javascript" src="restaurants.json"></script>
+    <script type="text/javascript" src="ingredients.json"></script>
+    <script type="text/javascript">
+      console.log("using the restaurants variable");
+      console.log(restaurants[0]["name"]);
+      console.log(restaurants[0]["logo"]);
+      console.log(restaurants[0]["addr"]);
+      console.log(restaurants[0]["phone"]);
+      console.log(restaurants[0]["dishes"][0]["name"]);
+      console.log(restaurants[0]["dishes"][0]["price"]);
+      console.log(restaurants[0]["dishes"][0]["description"]);
+      console.log(restaurants[0]["dishes"][0]["image"]);
+      console.log(restaurants[0]["dishes"][0]["ingredients"]);
+
+      console.log(" ");
+      console.log("using the ingredients variable");
+      console.log(ingredients["meat"]);
+      console.log(ingredients["vegetable"]);
+      console.log(ingredients["fruit"]);
+      console.log(ingredients["dairy"]);
+      console.log(ingredients["grain"]);
+      console.log(ingredients["nut"]);
+      console.log(ingredients["condiment"]);
+    </script>
+
+  </head>
+
+  <body>
+
+  </body>
+</html>
