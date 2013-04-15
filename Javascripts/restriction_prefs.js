@@ -42,7 +42,6 @@ $(document).ready(function() {
         var id = $(this).closest(".picker").attr("id").split("-");
         var preferenceType = id[0];
         var itemName = id[1];
-        togglePreference(itemName, preferenceType);
     });
 
     $("#clear-restrictions").click(function() {
@@ -53,12 +52,12 @@ $(document).ready(function() {
     })
 
     // Set up handlers.
-    $(".picker button div.prefer-pseudo").click(function() {
+    $(".picker button.prefer").click(function() {
         var foodName = $(this).closest("div.picker").attr("data-food");
         setPreference(foodName, "prefer");
     });
 
-    $(".picker button div.restrict-pseudo").click(function() {
+    $(".picker button.restrict").click(function() {
         var foodName = $(this).closest("div.picker").attr("data-food");
         setPreference(foodName, "restrict");
     });

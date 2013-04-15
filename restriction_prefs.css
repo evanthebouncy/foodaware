@@ -24,13 +24,11 @@ div.chooser-group .picker .pseudo-checkbox {
     width: 44px;
 }
 
-div.chooser-group .picker .pseudo-checkbox.restrict-pseudo {
-    border-left: 1px solid #dddddd;
+div.chooser-group .picker button.restrict {
     color: #ff3333;
 }
 
-div .chooser-group .picker .pseudo-checkbox.prefer-pseudo {
-    border-right: 1px solid #dddddd;
+div .chooser-group .picker button.prefer {
     color: #00dd00;
 }
 
