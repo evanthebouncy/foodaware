@@ -15,19 +15,26 @@
     <script id="picker-template" type="text/x-handlebars-template">
       <div class="chooser-group accordion-group">
         <div class="accordion-heading">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{prefType}}-chooser"
-             href="#{{prefType}}-group-{{groupName}}">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#chooser"
+             href="#group-{{groupName}}">
             {{groupName}}
           </a>
         </div>
 
-        <div id="{{prefType}}-group-{{groupName}}" class="accordion-body collapse">
+        <div id="group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
             {{#each items}}
-            <div class="picker" id="{{../prefType}}-{{this.identifier}}">
-              <button class="btn btn-block btn-large clearfix">
-                <div class="pull-left pseudo-checkbox"></div>
+            <div class="picker btn-group" id="{{this.identifier}}"
+                 data-food-id="{{this.identifier}}"
+                 data-food-name="{{this.displayName}}">
+              <button class="btn btn-large clearfix prefer">
+                <i class="icon-plus-sign"></i>
+              </button>
+              <button class="btn btn-large clearfix neutral">
                 {{this.displayName}}
+              </button>
+              <button class="btn btn-large clearfix restrict">
+                <i class="icon-minus-sign"></i>
               </button>
             </div>
             {{/each}}
@@ -46,9 +53,11 @@
         <div class="navbar-inner">
           <a class="brand" href="#" onclick="return false;">FoodAware</a>
           <ul class="nav">
-            <li><a href="MainPage.html"><i class="icon-food"></i> Menu</a></li>
-            <li class="active"><a href="#"><i class="icon-cogs"></i> Preferences</a></li>
-            <li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
+            <li> <a href="homePage.html"><i class="icon-info-sign"></i> Information</a> </li>
+			<li class="active"><a href="restriction_prefs.html"><i class="icon-heart"></i> Preferences</a></li>
+			<li><a href="res_filter.html"><i class="icon-glass"></i> Restaurant</a></li>
+			<li><a href="Menu.html"><i class="icon-food"></i> Menu</a></li>
+			<li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
           </ul>
         </div>
       </div>
@@ -59,27 +68,54 @@
 
       <hr>
 
-      <!-- Restrictions menu -->
       <div class="row">
-        <div class="span12">
-          <h2>Restrictions
-            <button id="clear-restrictions" class="btn btn-medium btn-danger">
-              <i class="icon-trash icon-large"></i> Clear all</button>
-          </h2>
+        <!-- A list of all items, not just the 'apathetic' ones -->
+        <div class="span6">
+          <h2>Ingredients</h2>
           <div class="food-chooser well accordion" id="restriction-chooser"></div>
+        </div>
+
+        <!-- Right bar; items we care about one way or another -->
+        <div class="span6">
+          <!-- Preferred items -->
+          <div id="preferred">
+            <h2>Preferred ingredients
+              <button id="clear-restrictions" class="btn btn-medium btn-danger">
+                <i class="icon-trash icon-large"></i> Clear all
+              </button>
+            </h2>
+
+            <div id="prefer-list" class="well food-list">
+            </div>
+          </div>
+
+          <!-- Restricted items -->
+          <div id="restricted">
+            <h2>Restricted ingredients
+              <button id="clear-restrictions" class="btn btn-medium btn-danger">
+                <i class="icon-trash icon-large"></i> Clear all
+              </button>
+            </h2>
+
+            <div id="restrict-list" class="well food-list">
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Preferences menu -->
       <div class="row">
         <div class="span12">
-          <h2>Preferences
-            <button id="clear-preferences" class="btn btn-medium btn-danger">
-              <i class="icon-trash icon-large"></i> Clear all</button>
-          </h2>
-          <div class="food-chooser well accordion" id="preference-chooser"/>
+          <button class="btn pull-left btn-large btn-primary">
+            Save
+          </button>
+          <a href="res_filter.html" class="btn pull-right btn-large btn-success">
+            Proceed
+          </a>
         </div>
       </div>
+
+
     </div>
   </body>
 </html>

@@ -42,7 +42,6 @@ $(document).ready(function() {
         var id = $(this).closest(".picker").attr("id").split("-");
         var preferenceType = id[0];
         var itemName = id[1];
-        togglePreference(itemName, preferenceType);
     });
 
     $("#clear-restrictions").click(function() {
@@ -51,44 +50,52 @@ $(document).ready(function() {
     $("#clear-preferences").click(function() {
         clearPreferenceType("preference");
     })
+
+    // Set up handlers.
+    $(".picker button.prefer").click(function() {
+        updateButtonView($(this), "prefer");
+    });
+    $(".picker button.neutral").click(function() {
+        updateButtonView($(this), undefined);
+    });
+
+    $(".picker button.restrict").click(function() {
+        updateButtonView($(this), "restrict");
+    });
+
+    // Dynamically calculate the padding so that we leave enough space
+    // no matter how narrow the window is.
+    $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
 });
 
-// "Toggle" the preference for the given item. If the preference is
-// already the given preference type, the preference will be cleared;
-// else, it will be set to that type.
-var togglePreference = function(itemName, preferenceType) {
-    getPicker(itemName, preferenceType).toggleClass("checked");
-    // Un-prefer the item if we just restricted it, and
-    // vice-versa.
-    var otherType = preferenceType == "preference" ? "restriction" : "preference";
-    getPicker(itemName, otherType).removeClass("checked");
-
-    // Now actually set the preferences.
-    if (preferences[itemName] == preferenceType)
-        delete preferences[itemName];
-    else
-        preferences[itemName] = preferenceType;
-}
-
-var clearPreferenceType = function(preferenceType) {
-    getChooser(preferenceType).find(".picker").removeClass("checked");
-    $.each(preferences, function(key, value) {
-        if (value == preferenceType)
-            preferences[key] = undefined;
-    });
-}
-
-var clearAllPreferences = function() {
-    clearPreferences("preference");
-    clearPreferences("restriction");
+var updateButtonView = function($button, preferenceType) {
+    var foodName = $button.closest("div.picker").attr("data-food-name");
+    $button.siblings("button").removeClass("active");
+    if (preferenceType)
+        $button.addClass("active");
+    setPreference(foodName, preferenceType);
 }
 
 
-// Get the picker for a given item name and preference type.
-var getPicker = function(itemName, preferenceType) {
-    return $("#" + preferenceType + "-" + itemName);
-}
+// Set the preference of the given item to either "prefer",
+// "restrict", or apathy (i.e., anything false-y).
+var setPreference = function(foodName, preferenceType) {
+    if (preferenceType && preferenceType != "prefer" && preferenceType != "restrict") {
+        console.warn("preference type " + preferenceType + " bad. bug!");
+        return;
+    }
 
-var getChooser = function(preferenceType) {
-    return $("#" + preferenceType + "-chooser");
+    $("#prefer-list button[data-food=\"" + escape(foodName) + "\"]").remove();
+    $("#restrict-list button[data-food=\"" + escape(foodName) + "\"]").remove();
+
+    if (!preferenceType)
+        return;
+
+    var $targetList = $("#" + preferenceType + "-list");
+    var $button = $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
+        .append(" " + foodName).attr("data-food", foodName)
+        .click(function() {
+            setPreference(foodName, undefined);
+        });
+    $targetList.append($button);
 }
