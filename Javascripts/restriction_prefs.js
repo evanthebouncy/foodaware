@@ -34,8 +34,7 @@ $(document).ready(function() {
         var preferenceResult = pickerTemplate({groupName: ucFirst(group),
                                                items: items,
                                                prefType: "preference"});
-        $("#restriction-chooser").append(restrictionResult);
-        $("#preference-chooser").append(preferenceResult);
+        $("#chooser").append(restrictionResult);
     });
 
     $("div.picker button").click(function(eventObj) {
@@ -44,12 +43,13 @@ $(document).ready(function() {
         var itemName = id[1];
     });
 
-    $("#clear-restrictions").click(function() {
-        clearPreferenceType("restriction");
-    });
     $("#clear-preferences").click(function() {
-        clearPreferenceType("preference");
+        clearPreferenceType("prefer");
     })
+
+    $("#clear-restrictions").click(function() {
+        clearPreferenceType("restrict");
+    });
 
     // Set up handlers.
     $(".picker button.prefer").click(function() {
@@ -99,4 +99,8 @@ var setPreference = function(foodName, preferenceType) {
             setPreference(foodName, undefined);
         });
     $targetList.append($button);
+}
+
+var clearPreferenceType = function(preferenceType) {
+    $("#" + preferenceType + "-list").empty();
 }
