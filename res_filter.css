@@ -1,6 +1,6 @@
 
 td{
-    padding: 0.5em;
+    padding: 1em;
     vertical-align: middle;
 }
 .header{
@@ -13,18 +13,19 @@ td{
     font-size: 180%;
 }
 
-input {
+/*input {
     margin-bottom: 0 !important;
 }
 
 select {
     margin-bottom: 0 !important;
-}
+}*/
 
 h1{
     font-family: 'Denk One', sans-serif;
 }
 .restaurantList{
+    display:none;
     margin-top:5em;
     margin-bottom:5em;
 }
@@ -39,5 +40,30 @@ h1{
 .restaurant{
     display:block;
 }
+.res_pic{
+    margin: 10px;}
+
+.restaurant:hover{
+    background-color:lightgoldenrodyellow;
+    display:block
+}
+
+.selected{
+    background-color:#CCEBD6;
+    display:block
+}
+.selected:hover{
+    background-color:#CCEBD6;
+}
+.wrapper{
+    text-align: center;
+    float:right;
+}
+
+#GoToBtn{
+    vertical-align: 50%;
+}
+
+
 
 
