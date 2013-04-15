@@ -89,13 +89,11 @@ var setPreference = function(foodName, preferenceType) {
     $("#prefer-list button[data-food-name=\"" + quoted + "\"]").remove();
     $("#restrict-list button[data-food-name=\"" + quoted + "\"]").remove();
 
-    if (!preferenceType)
-        return;
-
     var $targetList = $("#" + preferenceType + "-list");
     var $button = $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
         .append(" " + foodName).attr("data-food-name", foodName)
         .click(function() {
+            $(".picker[data-food-name=\"" + quoted + "\"] button").removeClass("active");
             setPreference(foodName, undefined);
         });
     $targetList.append($button);
@@ -103,4 +101,5 @@ var setPreference = function(foodName, preferenceType) {
 
 var clearPreferenceType = function(preferenceType) {
     $("#" + preferenceType + "-list").empty();
+    $(".picker button." + preferenceType).removeClass("active");
 }
