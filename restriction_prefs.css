@@ -32,6 +32,10 @@ div .chooser-group .picker button.prefer {
     color: #00dd00;
 }
 
+div .food-list button {
+    margin: 0px 4px;
+}
+
 .navbar {
     font-size: 180%;
 }

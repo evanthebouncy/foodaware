@@ -53,17 +53,45 @@ $(document).ready(function() {
 
     // Set up handlers.
     $(".picker button.prefer").click(function() {
-        var foodName = $(this).closest("div.picker").attr("data-food");
-        setPreference(foodName, "prefer");
+        updateButtonView($(this), "prefer");
+    });
+    $(".picker button.neutral").click(function() {
+        updateButtonView($(this), undefined);
     });
 
     $(".picker button.restrict").click(function() {
-        var foodName = $(this).closest("div.picker").attr("data-food");
-        setPreference(foodName, "restrict");
+        updateButtonView($(this), "restrict");
     });
 });
 
+var updateButtonView = function($button, preferenceType) {
+    var foodName = $button.closest("div.picker").attr("data-food-name");
+    $button.siblings("button").removeClass("active");
+    if (preferenceType)
+        $button.addClass("active");
+    setPreference(foodName, preferenceType);
+}
 
-var setPreference = function(itemName, preferenceType) {
-    alert("ok");
+
+// Set the preference of the given item to either "prefer",
+// "restrict", or apathy (i.e., anything false-y).
+var setPreference = function(foodName, preferenceType) {
+    if (preferenceType && preferenceType != "prefer" && preferenceType != "restrict") {
+        console.warn("preference type " + preferenceType + " bad. bug!");
+        return;
+    }
+
+    $("#prefer-list button[data-food=\"" + escape(foodName) + "\"]").remove();
+    $("#restrict-list button[data-food=\"" + escape(foodName) + "\"]").remove();
+
+    if (!preferenceType)
+        return;
+
+    var $targetList = $("#" + preferenceType + "-list");
+    var $button = $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
+        .append(" " + foodName).attr("data-food", foodName)
+        .click(function() {
+            setPreference(foodName, undefined);
+        });
+    $targetList.append($button);
 }

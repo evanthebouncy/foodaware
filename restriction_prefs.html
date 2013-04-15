@@ -24,11 +24,13 @@
         <div id="group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
             {{#each items}}
-            <div class="picker btn-group" id="{{this.identifier}}" data-food="{{this.identifier}}">
+            <div class="picker btn-group" id="{{this.identifier}}"
+                 data-food-id="{{this.identifier}}"
+                 data-food-name="{{this.displayName}}">
               <button class="btn btn-large clearfix prefer">
                 <i class="icon-ok"></i>
               </button>
-              <button class="btn btn-large clearfix">
+              <button class="btn btn-large clearfix neutral">
                 {{this.displayName}}
               </button>
               <button class="btn btn-large clearfix restrict">
@@ -81,7 +83,7 @@
               </button>
             </h2>
 
-            <div id="preferred-list" class="well">
+            <div id="prefer-list" class="well food-list">
             </div>
           </div>
 
@@ -93,7 +95,7 @@
               </button>
             </h2>
 
-            <div id="restricted-list" class="well">
+            <div id="restrict-list" class="well food-list">
             </div>
           </div>
 
