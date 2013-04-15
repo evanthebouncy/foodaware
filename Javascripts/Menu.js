@@ -19,34 +19,58 @@ $(document).ready(function()
 	$('#close_selection_button').click(function(event)
 	{
 		selectionWindow.style.display = "none";
-		selectedDiv.style.border = "1px solid black";
+		selectedDiv.style.border = "1px solid #dddddd";
 	});
 	$('#order_button').click(function(event)
 	{
 		selectionWindow.style.display = "none";
-		selectedDiv.style.border = "1px solid black";
+		selectedDiv.style.border = "1px solid #dddddd";
 	});
-	$('.dish_item').hover(function(){
-		this.style.width = "105px";
-		this.style.height = "105px";
-		this.style.margin = "5px";
-	},
-	function(){
-		this.style.height = "100px";
-		this.style.width = "100px";
-		this.style.margin = "10px";
-	});
-	
-	$('.dish_item').click(function()
+	$('.thumbnail').click(function()
 	{
 		if(selectedDiv != null)
 		{
-			selectedDiv.style.border = "1px solid black";
+			selectedDiv.style.border = "1px solid #dddddd";
 		}
 		selectedDiv = this;
-		this.style.border = "2px solid green";
+		selectedDiv.style.border = "1px solid green";
 		selectionWindow.style.display = "block";
 	});
+	
+	$('.ingredient_option_like').click(function()
+	{
+		$(this).addClass("like_checked");
+		var par = $(this).parent();
+		var child = par.children(".ingredient_option_dislike");
+		$(child[0]).removeClass("dislike_checked");
+	});
+	$('.ingredient_option_dislike').click(function()
+	{
+		$(this).addClass("dislike_checked");
+		var par = $(this).parent();
+		var child = par.children(".ingredient_option_like");
+		$(child[0]).removeClass("like_checked");
+	});
+	
+	$('.thumbnail').hover(function(){
+		if(this == selectedDiv)
+		{
+			return;
+		}
+		else
+		{
+			$(this).css("border","1px solid black");
+		}},
+		function(){
+		if(this == selectedDiv)
+		{
+			return;
+		}
+		else
+		{
+			$(this).css("border","1px solid #dddddd");
+		}
+	}); 
 	center_display.filter = function(event)
 	{
 		console.log("testing dynamic filter");
