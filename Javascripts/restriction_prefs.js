@@ -51,44 +51,20 @@ $(document).ready(function() {
     $("#clear-preferences").click(function() {
         clearPreferenceType("preference");
     })
+
+    // Set up handlers.
+    $(".picker button div.prefer-pseudo").click(function() {
+        var foodName = $(this).closest("div.picker").attr("data-food");
+        setPreference(foodName, "prefer");
+    });
+
+    $(".picker button div.restrict-pseudo").click(function() {
+        var foodName = $(this).closest("div.picker").attr("data-food");
+        setPreference(foodName, "restrict");
+    });
 });
 
-// "Toggle" the preference for the given item. If the preference is
-// already the given preference type, the preference will be cleared;
-// else, it will be set to that type.
-var togglePreference = function(itemName, preferenceType) {
-    getPicker(itemName, preferenceType).toggleClass("checked");
-    // Un-prefer the item if we just restricted it, and
-    // vice-versa.
-    var otherType = preferenceType == "preference" ? "restriction" : "preference";
-    getPicker(itemName, otherType).removeClass("checked");
 
-    // Now actually set the preferences.
-    if (preferences[itemName] == preferenceType)
-        delete preferences[itemName];
-    else
-        preferences[itemName] = preferenceType;
-}
-
-var clearPreferenceType = function(preferenceType) {
-    getChooser(preferenceType).find(".picker").removeClass("checked");
-    $.each(preferences, function(key, value) {
-        if (value == preferenceType)
-            preferences[key] = undefined;
-    });
-}
-
-var clearAllPreferences = function() {
-    clearPreferences("preference");
-    clearPreferences("restriction");
-}
-
-
-// Get the picker for a given item name and preference type.
-var getPicker = function(itemName, preferenceType) {
-    return $("#" + preferenceType + "-" + itemName);
-}
-
-var getChooser = function(preferenceType) {
-    return $("#" + preferenceType + "-chooser");
+var setPreference = function(itemName, preferenceType) {
+    alert("ok");
 }
