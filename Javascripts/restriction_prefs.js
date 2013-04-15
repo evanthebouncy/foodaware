@@ -8,21 +8,15 @@ function createIdentifier(str) {
     return str.toLowerCase().replace(/ /g, "_");
 }
 
-var food = { "dairy": ["eggs", "milk", "butter", "ice cream"],
-         "meat": ["pork", "steak", "veal"],
-         "vegetables": ["carrots", "pickles", "onions"] };
-
-var foodGroups = ["meat", "vegetables", "dairy"];
-
 var preferences = {};
 
 
 $(document).ready(function() {
     var source = $("#picker-template").html();
     var pickerTemplate = Handlebars.compile($("#picker-template").html());
-    var dairy = pickerTemplate({groupName: "dairy", itemName: food["dairy"]});
-    $.each(foodGroups, function(index, group) {
-        var items = $.map(food[group], function(itemName) {
+    var dairy = pickerTemplate({groupName: "dairy", itemName: ingredients["dairy"]});
+    $.each(ingredientGroups, function(index, group) {
+        var items = $.map(ingredients[group], function(itemName) {
             return {identifier: createIdentifier(itemName),
                     displayName: ucFirst(itemName)
                    };
