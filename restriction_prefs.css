@@ -22,18 +22,16 @@ div.chooser-group .accordion-inner .picker img {
 
 div.chooser-group .picker .pseudo-checkbox {
     width: 44px;
-    height: 44px;
-    margin-top: -12px;
-    margin-bottom: -12px;
+}
+
+div.chooser-group .picker .pseudo-checkbox.restrict-pseudo {
+    border-left: 1px solid #dddddd;
+    color: #ff3333;
+}
+
+div .chooser-group .picker .pseudo-checkbox.prefer-pseudo {
     border-right: 1px solid #dddddd;
-}
-
-#restriction-chooser .chooser-group .picker.checked .pseudo-checkbox {
-    background: #ff3333;
-}
-
-#preference-chooser .chooser-group .picker.checked .pseudo-checkbox {
-    background: #33ff33;
+    color: #00dd00;
 }
 
 .navbar {
