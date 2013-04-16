@@ -65,42 +65,46 @@ def parse_dishes(dishes_lines):
         one_dish_lines.append(line)
   dish_groups.append(one_dish_lines)
 
+
   ret = []
   for dish in dish_groups:
     ret.append(parse_dish(dish))
   return ret
 
 def parse_dish(dishes_lines):
+#  print "FUUUUUUUUUUUUUUUUUUUUUUUUUCKKK"
+#  pprint.pprint(dishes_lines)
   ret = dict()
   line_ctr = -1
-  while line_ctr < len(rest_lines)-1:
+  while line_ctr < len(dishes_lines)-1:
     line_ctr += 1
-    cur_line = rest_lines[line_ctr]
+    cur_line = dishes_lines[line_ctr]
     if (cur_line == 'name:\n'):
       line_ctr += 1
-      ret['name'] = rest_lines[line_ctr][0:-1]
+      ret['name'] = dishes_lines[line_ctr][0:-1]
     if (cur_line == 'price:\n'):
       line_ctr += 1
-      ret['price'] = rest_lines[line_ctr][0:-1]
+      ret['price'] = dishes_lines[line_ctr][0:-1]
     if (cur_line == 'description:\n'):
       line_ctr += 1
       desc = ''
-      while rest_lines[line_ctr] != '\n':
-        desc += rest_lines[line_ctr][0:-1] + ' '
+      while dishes_lines[line_ctr] != '\n':
+        desc += dishes_lines[line_ctr][0:-1] + ' '
         line_ctr += 1
       ret['description'] = desc
     if (cur_line == 'image:\n'):
       line_ctr += 1
-      ret['image'] = rest_lines[line_ctr][0:-1]
+      ret['image'] = dishes_lines[line_ctr][0:-1]
     
-    if (rest_lines[line_ctr] == 'ingredients:\n'):
+    if (dishes_lines[line_ctr] == 'ingredients:\n'):
       line_ctr += 1
       ingr = []
-      while rest_lines[line_ctr] != '\n':
-        ingr.append(rest_lines[line_ctr][0:-1])
+      while dishes_lines[line_ctr] != '\n':
+        ingr.append(dishes_lines[line_ctr][0:-1])
         line_ctr += 1
       ret['ingredients'] = ingr
-  
+#  print "YOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUU"
+#  pprint.pprint(ret)
   return ret
 
 parsed_restaurants = parse_restaurants(rest_lines)

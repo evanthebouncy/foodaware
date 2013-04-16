@@ -6,19 +6,25 @@
 }
 #restrictions_main
 {
-	height:200px;
 	border-radius:10px;
-	overflow:auto;
 }
 #preferences_main
 {
-	height:200px;
+	//height:200px;
 	border-radius:10px;
-	overflow:auto;
+	//overflow:auto;
+}
+.user_preference
+{
+	margin:5px;
+}
+.user_restriction
+{
+	margin:5px;
 }
 .navbar
 {
-	font-size:180%;
+	font-size:20pt;
 }
 .thumbnail
 {
@@ -58,21 +64,8 @@
 }
 .ingredient_option
 {
-	background: #dddddd;
 	margin:10px;
 	border-radius:10px;
-}
-.ingredient_option_like
-{
-	border-right: 1px solid #777777;
-	text-align:center;
-	cursor:pointer;
-}
-.ingredient_option_dislike
-{
-	border-left: 1px solid #777777;
-	text-align:center;
-	cursor:pointer;
 }
 .like_checked
 {

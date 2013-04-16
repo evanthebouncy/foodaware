@@ -39,17 +39,26 @@ $(document).ready(function()
 	
 	$('.ingredient_option_like').click(function()
 	{
-		$(this).addClass("like_checked");
+		$(this).addClass("active");
 		var par = $(this).parent();
 		var child = par.children(".ingredient_option_dislike");
-		$(child[0]).removeClass("dislike_checked");
+		$(child[0]).removeClass("active");
 	});
 	$('.ingredient_option_dislike').click(function()
 	{
-		$(this).addClass("dislike_checked");
+		$(this).addClass("active");
 		var par = $(this).parent();
 		var child = par.children(".ingredient_option_like");
-		$(child[0]).removeClass("like_checked");
+		$(child[0]).removeClass("active");
+	});
+	
+	$('.ingredient_option_name').click(function()
+	{
+		var par = $(this).parent();
+		var child = par.children(".ingredient_option_like");
+		$(child[0]).removeClass("active");
+		var child2 = par.children(".ingredient_option_dislike");
+		$(child2[0]).removeClass("active");
 	});
 	
 	$('.thumbnail').hover(function(){

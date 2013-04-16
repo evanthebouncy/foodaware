@@ -1,93 +1,105 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>FoodAware| Summary Page</title>
-
-    <!-- Load main style sheet -->
-    <link rel="stylesheet" type="text/css" href="summary.css" />
-    <link href="External_Libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
-	
+    <script src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script src="External_Libraries/handlebars.js"></script>
+    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="Javascripts/res_filter.js"></script>
+    <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
+    <script type="text/javascript" src="menu_ingr_data/ingredients.json"></script>
+
     <!-- Loading external Javascript libraries here -->
     <script type="text/javascript" src="External_Libraries/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="External_Libraries/jquery-ui-1.10.0.custom.min.js"></script>
     <script type="text/javascript" src="External_Libraries/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="Javascript/summary.js"></script>
+    <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
+    <script src="Javascripts/navbar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="summary.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <title>FoodAware | Selection Summary</title>
+
+
+    <script>
+
+$(document).ready(function() {
+  console.log(restaurants);
+
+    
+})
+
+    </script>
+  
+
+
 
 </head>
-
 <body>
-	<div class="container" id="container">
-      <!-- Navigation bar -->
+
+<div class="container" id="container">
+    <!-- Navigation bar -->
       <div class="navbar">
         <div class="navbar-inner">
           <a class="brand" href="#" onclick="return false;">FoodAware</a>
           <ul class="nav">
             <li> <a href="homePage.html"><i class="icon-info-sign"></i> Information</a> </li>
 			<li><a href="restriction_prefs.html"><i class="icon-heart"></i> Preferences</a></li>
-			<li><a href="res_filter.html"><i class="icon-glass"></i> Restaurant</a></li>
+			<li><a href="#"><i class="icon-glass"></i> Restaurant</a></li>
 			<li><a href="Menu.html"><i class="icon-food"></i> Menu</a></li>
-			<li class="active"><a href="#"><i class="icon-reorder"></i> Summary</a></li>
+			<li class="active"><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
           </ul>
         </div>
       </div>
 
 
-<table class ="table" border="0">
-    <tr>
-        <td><h3>Restarunt Info</h3></td>
-    </tr>
+    <!-- Header -->
+    <div class="header">
+        <h1>Your Selection Summary</h1>
+    </div>
 
-    <tr>
-        <td>
-            <p>Life Alive </br>
-                Address:  765 Massachusetts Ave, Cambridge, MA 02139-3303</br>
-                Phone: 617-354-5433</br>
-            </p>
+    <!-- Restaurant Info -->
+    <div>
+        <h3>Restaurant Info</h3>
+        <div>
+            Life Alive </br>
+            Address: 765 Massachusetts Ave</br> 
+            Cambridge, MA 02139-3303</br>
+            Phone: 617-354-5433</br>
+        </div>
+    </div>
 
-        </td>
+    <!-- Dish Selection -->
+    <div>
+      <h3>Dish Selections</h3>
+        <ul id="selection">
+          <li class="sel"> <input type = checkbox checked="checked"> 
+            <div id="dish1">
+            </div> 
+          </li>
+    
+          <li class="sel"> <input type = checkbox checked="checked"> 
+            <div id="dish1">
+            </div> 
+          </li>
+        </ul>
+    </div>
 
-    <tr id="selectionHeader">
-        <td><h3>Your Selected Dishes</h3></td>
-    </tr>
+    <!-- Warning Dish -->
+    <div>
+    </div>
 
-    <tr>
-        <td class ="selected">
-            <ul id="selection">
-                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item1 </span> </li>
-                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item2 </span>  </li>
-                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item3 </span> </li>
-                <li> <input type = checkbox value = "" checked> <span class ="selected"> Item4 </span> </li>
-            </ul>
-    </tr>
-    <tr id="restrictionHeader">
-        <td><h3>Your Restricted Dishes</h3></td>
-    </tr>
-    <tr>
-        <td>
-            <ul>
-                <li > <span class="restricted"> Item1</span> -- <span class="restricted"> Peanut </span></li>
-                <li>  <span class="restricted">Item2</span> -- <span class="restricted"> Milk </span></li>
-                <li>  <span class="restricted">Item3</span> -- <span class="restricted"> Chicken </span></li>
-                <li>  <span class="restricted">Item4</span> -- <span class="restricted"> Beef </span></li>
-            </ul>
+    <!-- print -->
+    <div>
+    </div>
 
-        </td>
-    </tr>
-    <tr id="printBtn">
-        <td>
-            <input id="btn" type = button value = " Print " >
-            <input type = checkbox value = ""> Include Your Restriction
-        </td>
-    </tr>
-</table>
+</div>
 
 
 
-	</div>
 </body>
 </html>
