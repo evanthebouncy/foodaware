@@ -12,3 +12,8 @@ h1{
 .navbar {
     font-size: 20pt;
 }
+
+.res_pic{
+    height:200px;
+    width:200px;
+}
