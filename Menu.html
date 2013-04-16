@@ -3,7 +3,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>FoodAware| Menu</title>
+<title>FoodAware | Menu</title>
 
 <!-- Load main style sheet -->
 <link rel="stylesheet" type="text/css" href="Menu.css" />
@@ -69,30 +69,27 @@
 								<div id="likert_ingredients_box">
 									<div class= "row-fluid">
 										<p class="span3">Want More</p>
-										<p class="span3 offset5">Can't Have</p>
+										<p class="span3 offset3">Can't Have</p>
 									</div>
 									<div class= "row-fluid">
-										<div class="ingredient_option span11">
-											<div class="span2 ingredient_option_like"><i class="icon-ok"></i></div>
-											<img class="span2 ingredient_option_img"></img>
-											<div class="span6 ingredient_option_name">Ingredient Name</div>
-											<div class="span2 ingredient_option_dislike"><i class="icon-remove"></i></div>
+										<div class="ingredient_option btn-group">
+											<button class="btn btn-medium clearfix ingredient_option_like"><i class="icon-plus-sign" style="color:#00dd00;"></i></button>
+											<button class="btn btn-medium clearfix ingredient_option_name">Ingredient Name</button>
+											<button class="btn btn-medium clearfix ingredient_option_dislike"><i class="icon-minus-sign" style="color:#ff3333;"></i></button>
 										</div>
 									</div>
 									<div class= "row-fluid">
-										<div class="ingredient_option span11">
-											<div class="span2 ingredient_option_like"><i class="icon-ok"></i></div>
-											<img class="span2 ingredient_option_img"></img>
-											<div class="span6 ingredient_option_name">Ingredient Name</div>
-											<div class="span2 ingredient_option_dislike"><i class="icon-remove"></i></div>
+										<div class="ingredient_option btn-group">
+											<button class="btn btn-medium clearfix ingredient_option_like"><i class="icon-plus-sign" style="color:#00dd00;"></i></button>
+											<button class="btn btn-medium clearfix ingredient_option_name">Ingredient Name</button>
+											<button class="btn btn-medium clearfix ingredient_option_dislike"><i class="icon-minus-sign" style="color:#ff3333;"></i></button>
 										</div>
 									</div>
 									<div class= "row-fluid">
-										<div class="ingredient_option span11">
-											<div class="span2 ingredient_option_like"><i class="icon-ok"></i></div>
-											<img class="span2 ingredient_option_img"></img>
-											<div class="span6 ingredient_option_name">Ingredient Name</div>
-											<div class="span2 ingredient_option_dislike"><i class="icon-remove"></i></div>
+										<div class="ingredient_option btn-group">
+											<button class="btn btn-medium clearfix ingredient_option_like"><i class="icon-plus-sign" style="color:#00dd00;"></i></button>
+											<button class="btn btn-medium clearfix ingredient_option_name">Ingredient Name</button>
+											<button class="btn btn-medium clearfix ingredient_option_dislike" ><i class="icon-minus-sign" style="color:#ff3333;"></i></button>
 										</div>
 									</div>
 								</div>
@@ -103,31 +100,37 @@
 						<li class="span3">
 							<div class="thumbnail">
 								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
-								<p>Dish Number</p>
+								<p style="text-align:center; margin:5px;">Dish Number</p>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
-								<p>Dish Number</p>
+								<p style="text-align:center; margin:5px;">Dish Number</p>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
-								<p>Dish Number</p>
+								<p style="text-align:center; margin:5px;">Dish Number</p>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
-								<p>Dish Number</p>
+								<p style="text-align:center; margin:5px;">Dish Number</p>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
-								<p>Dish Number</p>
+								<p style="text-align:center; margin:5px;">Dish Number</p>
+							</div>
+						</li>
+						<li class="span3">
+							<div class="thumbnail">
+								<img src="Menu_Resources/Prawn-Pad-Thai.png" alt="">
+								<p style="text-align:center; margin:5px;">Dish Number</p>
 							</div>
 						</li>
 					</ul>
@@ -142,8 +145,8 @@
 								<th>Click to Remove</th>
 							</thead>
 							<tbody>
-								<tr><td><input type="checkbox"></input></td><td>Restricted Ingredient 1</td></tr>
-								<tr><td><input type="checkbox"></input></td><td>Restricted Ingredient 2</td></tr>
+								<tr><td><button class="user_restriction"><i class="icon-remove" style="margin:5px"></i>Restricted Ingredient 1</button></td></tr>
+								<tr><td><button class="user_restriction"><i class="icon-remove" style="margin:5px"></i>Restricted Ingredient 2</button></td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -154,8 +157,8 @@
 								<th>Click to Remove</th>
 							</thead>
 							<tbody>
-								<tr><td><input type="checkbox"></input></td><td>Preferred Ingredient 1</td></tr>
-								<tr><td><input type="checkbox"></input></td><td>Preferred Ingredient 2</td></tr>
+								<tr><td><button class="user_preference"><i class="icon-remove" style="margin:5px"></i>Preferred Ingredient 1</button></td></tr>
+								<tr><td><button class="user_preference"><i class="icon-remove" style="margin:5px"></i>Preferred Ingredient 2</button></td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -164,7 +167,7 @@
 		</div>
 
 		<div class="row-fluid">
-			<div class="offset5 span2"><a href = "summary.html"> <button id="summary_button" class="btn btn-large btn-success">Go to Selection Summary</button></a></div>
+			<div class="offset5 span2"><a href = "summary.html"> <button id="summary_button" class="btn btn-large btn-primary">View Summary</button></a></div>
 		</div>
 		<div class="row-fluid">
 			<div class="offset5 span2" id="SelectionCount">0 items</div>
