@@ -8,21 +8,15 @@ function createIdentifier(str) {
     return str.toLowerCase().replace(/ /g, "_");
 }
 
-var food = { "dairy": ["eggs", "milk", "butter", "ice cream"],
-         "meat": ["pork", "steak", "veal"],
-         "vegetables": ["carrots", "pickles", "onions"] };
-
-var foodGroups = ["meat", "vegetables", "dairy"];
-
 var preferences = {};
 
 
 $(document).ready(function() {
     var source = $("#picker-template").html();
     var pickerTemplate = Handlebars.compile($("#picker-template").html());
-    var dairy = pickerTemplate({groupName: "dairy", itemName: food["dairy"]});
-    $.each(foodGroups, function(index, group) {
-        var items = $.map(food[group], function(itemName) {
+    var dairy = pickerTemplate({groupName: "dairy", itemName: ingredients["dairy"]});
+    $.each(ingredientGroups, function(index, group) {
+        var items = $.map(ingredients[group], function(itemName) {
             return {identifier: createIdentifier(itemName),
                     displayName: ucFirst(itemName)
                    };
@@ -34,8 +28,7 @@ $(document).ready(function() {
         var preferenceResult = pickerTemplate({groupName: ucFirst(group),
                                                items: items,
                                                prefType: "preference"});
-        $("#restriction-chooser").append(restrictionResult);
-        $("#preference-chooser").append(preferenceResult);
+        $("#chooser").append(restrictionResult);
     });
 
     $("div.picker button").click(function(eventObj) {
@@ -44,12 +37,13 @@ $(document).ready(function() {
         var itemName = id[1];
     });
 
-    $("#clear-restrictions").click(function() {
-        clearPreferenceType("restriction");
-    });
     $("#clear-preferences").click(function() {
-        clearPreferenceType("preference");
+        clearPreferenceType("prefer");
     })
+
+    $("#clear-restrictions").click(function() {
+        clearPreferenceType("restrict");
+    });
 
     // Set up handlers.
     $(".picker button.prefer").click(function() {
@@ -85,17 +79,21 @@ var setPreference = function(foodName, preferenceType) {
         return;
     }
 
-    $("#prefer-list button[data-food=\"" + escape(foodName) + "\"]").remove();
-    $("#restrict-list button[data-food=\"" + escape(foodName) + "\"]").remove();
-
-    if (!preferenceType)
-        return;
+    var quoted = foodName.replace("\"", "\\\"");
+    $("#prefer-list button[data-food-name=\"" + quoted + "\"]").remove();
+    $("#restrict-list button[data-food-name=\"" + quoted + "\"]").remove();
 
     var $targetList = $("#" + preferenceType + "-list");
     var $button = $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
-        .append(" " + foodName).attr("data-food", foodName)
+        .append(" " + foodName).attr("data-food-name", foodName)
         .click(function() {
+            $(".picker[data-food-name=\"" + quoted + "\"] button").removeClass("active");
             setPreference(foodName, undefined);
         });
     $targetList.append($button);
+}
+
+var clearPreferenceType = function(preferenceType) {
+    $("#" + preferenceType + "-list").empty();
+    $(".picker button." + preferenceType).removeClass("active");
 }
