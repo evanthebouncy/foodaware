@@ -45,3 +45,8 @@ p{
 body,p,td,div,span{
 font-size:16pt;
 }
+
+.res_pic{
+    height:200px;
+    width:200px;
+}
