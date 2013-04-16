@@ -10,7 +10,7 @@ td{
 }
 
 .navbar {
-    font-size: 180%;
+    font-size: 20pt;
 }
 
 input {
@@ -63,7 +63,3 @@ h1{
 #GoToBtn{
     vertical-align: 50%;
 }
-
-
-
-
