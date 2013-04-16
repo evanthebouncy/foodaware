@@ -33,7 +33,8 @@ div .chooser-group .picker button.prefer {
 }
 
 div .food-list button {
-    margin: 0px 4px;
+    display: block;
+    margin: 10px 0px;
 }
 
 .navbar {
