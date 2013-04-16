@@ -33,10 +33,10 @@ div .chooser-group .picker button.prefer {
 }
 
 div .food-list button {
-    margin: 0px 4px;
+    display: block;
+    margin: 10px 0px;
 }
 
 .navbar {
-    font-size: 180%;
-    position: fixed;
+    font-size: 20pt;
 }

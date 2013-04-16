@@ -10,16 +10,16 @@ td{
 }
 
 .navbar {
-    font-size: 180%;
+    font-size: 20pt;
 }
 
-/*input {
+input {
     margin-bottom: 0 !important;
 }
 
 select {
     margin-bottom: 0 !important;
-}*/
+}
 
 h1{
     font-family: 'Denk One', sans-serif;
@@ -63,7 +63,3 @@ h1{
 #GoToBtn{
     vertical-align: 50%;
 }
-
-
-
-

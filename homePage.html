@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
@@ -8,63 +8,64 @@
     <script src="External_Libraries/jquery-1.9.0.min.js"></script>
     <script src="External_Libraries/handlebars.js"></script>
     <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="Javascripts/navbar.js"></script>
     <link rel="stylesheet" type="text/css" href="homePage.css"/>
     <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
 
     <title>FoodAware | Home</title>
-
-</head>
-<body>
-
-<div class="container" id="container">
-    <!-- Navigation bar -->
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- Navigation bar -->
       <div class="navbar">
         <div class="navbar-inner">
           <a class="brand" href="#" onclick="return false;">FoodAware</a>
           <ul class="nav">
             <li class="active"> <a href="#"><i class="icon-info-sign"></i> Information</a> </li>
-			<li><a href="restriction_prefs.html"><i class="icon-heart"></i> Preferences</a></li>
-			<li><a href="res_filter.html"><i class="icon-glass"></i> Restaurant</a></li>
-			<li><a href="Menu.html"><i class="icon-food"></i> Menu</a></li>
-			<li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
+	    <li><a href="restriction_prefs.html"><i class="icon-heart"></i> Preferences</a></li>
+	    <li><a href="res_filter.html"><i class="icon-glass"></i> Restaurant</a></li>
+	    <li><a href="Menu.html"><i class="icon-food"></i> Menu</a></li>
+	    <li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
           </ul>
         </div>
       </div>
-</div>
-<h1> Welcome to FoodAware </h1>
-<p> Having Trouble finding safe food? We help you explore restaurant food safely</p>
+
+      <div class="row">
+        <h1> Welcome to FoodAware </h1>
+      </div>
+      <div class="row" style="margin: 40px 0px">
+        <p> Having trouble finding safe food? We help you explore restaurant food safely</p>
+      </div>
 
 
-<!-- 4-columns, 1/4 each -- put place holder image inside right now-->
-<div class="centered">
-	<div class="centered2">
-    <div class="item">
-        Enter your food restrictions<br/>
-        <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
+      <!-- 4-columns, 1/4 each -- put place holder image inside right now-->
+      <div class="row">
+        <div class="span3">
+          Enter your food restrictions<br/>
+          <img class = "res_pic"  src="Menu_Resources/restriction1.jpg" alt="restriction">
+        </div>
+
+        <div class="span3">
+          Pick your favorite restaurant<br/>
+          <img class = "res_pic"  src="Menu_Resources/local1.jpg" alt="local restaurants">
+        </div>
+
+        <div class="span3">
+          Browse the safe menu <br/>
+          <img class = "res_pic"  src="Menu_Resources/menu1.jpg" alt="menu">
+        </div>
+
+        <div class="span3">
+          Find your food <br/>
+          <img class = "res_pic"  src="Menu_Resources/done1.jpg" alt="food">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center; margin-top: 60px">
+        <div class="span12">
+        <a href="restriction_prefs.html" class="btn btn-large btn-primary">Start!</a>
+        </div>
+      </div>
     </div>
-
-    <div class="item">
-        Pick your favorite restaurant<br/>
-        <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
-    </div>
-
-    <div class="item">
-        Browse the safe menu <br/>
-        <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
-    </div>
-
-    <div class="item">
-        Find your food <br/>
-        <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
-    </div>
-	</div>
-</div>
-
-<div class ="wrapper">
-
-    <a href = "restriction_prefs.html"> <button id="GoBtn" class="btn btn-large btn-success">Start!</button></a>
-
-</div>
-
-</body>
+  </body>
 </html>

@@ -1,47 +1,19 @@
+body {
+    text-align: center;
+    font-size: 16pt;
+}
+
 
 h1{
     font-family: 'Denk One', sans-serif;
     text-align: center;
 }
-p{
-    text-align: center;
-}
 
 .navbar {
-    font-size: 180%;
+    font-size: 20pt;
 }
 
-
-.centered{
-	margin-top:5em;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-	overflow:auto;
-}
-.centered2{
-	display:inline-block;
-}
-
-.item{
-	text-align: center;
-	float:left;
-}
-#GoBtn{
-    margin: auto;
-    font-size:20pt;
-    position: relative;
-    top: 50%;
-}
-
-.wrapper {
-    margin-top:10em;
-    text-align: center;
-}
-
-.button {
-
-}
-body,p,td,div,span{
-font-size:16pt;
+.res_pic{
+    height:200px;
+    width:200px;
 }

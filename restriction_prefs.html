@@ -8,7 +8,9 @@
     <script src="External_Libraries/jquery-1.9.0.min.js"></script>
     <script src="External_Libraries/handlebars.js"></script>
     <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="menu_ingr_data/ingredients.json"></script>
     <script src="Javascripts/restriction_prefs.js"></script>
+    <script src="Javascripts/navbar.js"></script>
     <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
     <title>FoodAware | Restrictions and preferences</title>
 
@@ -27,13 +29,13 @@
             <div class="picker btn-group" id="{{this.identifier}}"
                  data-food-id="{{this.identifier}}"
                  data-food-name="{{this.displayName}}">
-              <button class="btn btn-large clearfix prefer">
+              <button class="btn btn-medium clearfix prefer">
                 <i class="icon-plus-sign"></i>
               </button>
-              <button class="btn btn-large clearfix neutral">
+              <button class="btn btn-medium clearfix neutral">
                 {{this.displayName}}
               </button>
-              <button class="btn btn-large clearfix restrict">
+              <button class="btn btn-medium clearfix restrict">
                 <i class="icon-minus-sign"></i>
               </button>
             </div>
@@ -70,17 +72,17 @@
 
       <div class="row">
         <!-- A list of all items, not just the 'apathetic' ones -->
-        <div class="span6">
+        <div class="span8">
           <h2>Ingredients</h2>
-          <div class="food-chooser well accordion" id="restriction-chooser"></div>
+          <div class="food-chooser well accordion" id="chooser"></div>
         </div>
 
         <!-- Right bar; items we care about one way or another -->
-        <div class="span6">
+        <div class="span4">
           <!-- Preferred items -->
           <div id="preferred">
             <h2>Preferred ingredients
-              <button id="clear-restrictions" class="btn btn-medium btn-danger">
+              <button id="clear-preferences" class="btn btn-medium btn-danger">
                 <i class="icon-trash icon-large"></i> Clear all
               </button>
             </h2>

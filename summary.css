@@ -47,6 +47,7 @@ h1{
     text-align: center;
     float:right;
 }
+<<<<<<< HEAD
 
 #GoToBtn{
     vertical-align: 50%;
@@ -58,6 +59,10 @@ ul#selection{
 
 li.sel {
   list-style-type: none;
+=======
+.navbar {
+    font-size: 20pt;
+>>>>>>> 5d37ecf6faf47275d642a899f2564e3618235487
 }
 
 
