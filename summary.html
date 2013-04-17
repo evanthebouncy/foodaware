@@ -101,7 +101,7 @@ $(document).ready(function() {
   add_worry("#aware1",restaurants[1]["dishes"][2]);
   add_worry("#aware2",restaurants[1]["dishes"][1]);
   add_worry("#aware3",restaurants[1]["dishes"][0]);
-  
+
   $(".show_hide").click( function(){
     var to_hide = $(this).parent().children()[1];
     $(to_hide).toggleClass("hide");
@@ -117,20 +117,6 @@ $(document).ready(function() {
 <body>
 
 <div class="container" id="container">
-    <!-- Navigation bar -->
-      <div class="navbar">
-        <div class="navbar-inner">
-          <a class="brand" href="home.html">FoodAware</a>
-          <ul class="nav">
-	    <li><a href="restriction_prefs.html"><i class="icon-heart"></i> Diet Profile</a></li>
-	    <li><a href="filter.html"><i class="icon-glass"></i> Restaurant</a></li>
-	    <li><a href="menu.html"><i class="icon-food"></i> Menu</a></li>
-	    <li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
-          </ul>
-        </div>
-      </div>
-
-
     <!-- Header -->
     <div class="header">
         <h1>Your Selection Summary</h1>
@@ -151,10 +137,10 @@ $(document).ready(function() {
     <div>
       <h3>Dish Selections</h3>
         <ul id="selection">
-          <li class="sel"> 
+          <li class="sel">
             <button class="btn btn-small btn-success show_hide">show/hide</button>
             <div id="dish1">
-              
+
             </div>
           </li>
 
@@ -178,15 +164,15 @@ $(document).ready(function() {
       <div>
         <button class="btn btn-small btn-success show_hide">show/hide</button>
         <ul id="awareful">
-          <li class="sel"> 
+          <li class="sel">
             <div id="aware1">
             </div>
           </li>
-          <li class="sel"> 
+          <li class="sel">
             <div id="aware2">
             </div>
           </li>
-          <li class="sel"> 
+          <li class="sel">
             <div id="aware3">
             </div>
           </li>

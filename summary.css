@@ -8,10 +8,6 @@ td{
     margin-top:5em;
 }
 
-.navbar {
-    font-size: 180%;
-}
-
 h1{
     font-family: 'Denk One', sans-serif;
 }
@@ -58,9 +54,4 @@ ul#selection{
 
 li.sel {
   list-style-type: none;
-.navbar {
-    font-size: 20pt;
 }
-
-
-
