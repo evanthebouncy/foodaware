@@ -10,22 +10,28 @@ $(document).ready(function()
 
     $("#searchBtn").click(function(){
         $(".restaurantList").css({"display": "block"});
-        $('.restaurantList').shuffle();
-
+        $("#first").toggle();
     });
 
 
   /*  $(".restaurant").click(function(){
         $(".selected").removeClass("selected");
         $(this).addClass("selected");
-
-
-
     });*/
 
+    $(".restaurant").hover(function(){
+        $()
+
+    })
 
 
 
 
 
 });
+
+
+
+
+
+

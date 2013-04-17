@@ -37,12 +37,18 @@ h1{
 }
 .restaurant{
     display:block;
+    background-color:#FFFAF2;
+    border-radius: 20px
 }
 
 
 .restaurant:hover{
-    background-color:lightgoldenrodyellow;
-    display:block
+    background-color:#FFE0C2;
+    display:block;
+    border-radius: 20px;
+    position: relative;
+    top: -8px;
+
 }
 
 .selected{
@@ -60,15 +66,40 @@ h1{
 #GoToBtn{
     vertical-align: 50%;
 }
+
+/*round picture*/
 .res_pic{
     height: 150px;
     width: 150px;
     margin: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+
+    -webkit-border-radius: 60em;
+    -moz-border-radius: 60em;
+    border-radius: 60em;
+
+}
+
+/*picture becomes round when hover over*/
+.res_pic:hover{
+    -webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+
+    -webkit-border-radius: 60em;
+    -moz-border-radius: 60em;
+    border-radius: 60em;
+
+
+
 }
 .ResName{
     font-size:2em;
     text-align: center;
     margin:40px;
+
 }
 .resAddress{
     vertical-align: middle;

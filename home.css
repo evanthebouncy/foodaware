@@ -15,8 +15,10 @@ h1{
 div.thumbnail img {
     width: 200px;
     height: 200px;
+    border-radius: 20px;
 
 }
 a .btn btn-large btn-success{
     margin:10px;
 }
+
