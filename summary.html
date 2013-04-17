@@ -45,6 +45,14 @@ ul#awareful {
 .fdaware {
   padding-bottom: 20;
 }
+
+.dish_name {
+  font-weight:bold;
+}
+
+.unsafe {
+  color:#aa0000;
+}
 </style>
 
     <script>
@@ -76,12 +84,14 @@ function add_dish(dish_dir, dish_src){
 function add_worry(dish_dir, dish_src){
   var name_add = $('<div/>', {
               text: dish_src["name"],
-              class: "dish_name"
+              class: "dish_name unsafe"
   });
 
   var ingr_add = $('<div/>', {
-              text: 'contains: '+
-                    String(dish_src["ingredients"]).replace(
+              text: 'contains restricted ingredients: '+
+                    (String(dish_src["ingredients"][0]) +' '+
+                     String(dish_src["ingredients"][4]))
+                    .replace(
                     /_/g," ").replace(/,/g,", "),
               class: "dish_content"
   });
@@ -152,20 +162,17 @@ $(document).ready(function() {
       <h3>Dish Selections</h3>
         <ul id="selection">
           <li class="sel"> 
-            <button class="btn btn-small btn-success show_hide">show/hide</button>
             <div id="dish1">
               
             </div>
           </li>
 
           <li class="sel">
-            <button class="btn btn-small btn-success show_hide">show/hide</button>
             <div id="dish2">
             </div>
           </li>
 
           <li class="sel">
-            <button class="btn btn-small btn-success show_hide">show/hide</button>
             <div id="dish3">
             </div>
           </li>
@@ -174,9 +181,8 @@ $(document).ready(function() {
 
     <!-- Warning Dish -->
     <div class="fdaware">
-      <h3>Dishes to be aware</h3>
+      <h3>Unsafe Dishes</h3>
       <div>
-        <button class="btn btn-small btn-success show_hide">show/hide</button>
         <ul id="awareful">
           <li class="sel"> 
             <div id="aware1">
