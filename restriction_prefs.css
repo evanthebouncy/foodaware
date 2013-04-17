@@ -36,3 +36,7 @@ div .food-list button {
     display: block;
     margin: 10px 0px;
 }
+
+h1, h2 {
+    font-family: 'Denk One', sans-serif;
+}
