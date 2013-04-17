@@ -57,6 +57,11 @@ $(document).ready(function() {
         updateButtonView($(this), "restrict");
     });
 
+    $(".picker-band button.restrict").click(function() {
+        updateGroup($(this), "restrict");
+        return false;
+    });
+
     // Dynamically calculate the padding so that we leave enough space
     // no matter how narrow the window is.
     $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
@@ -70,6 +75,11 @@ var updateButtonView = function($button, preferenceType) {
     setPreference(foodName, preferenceType);
 }
 
+// THIS IS AWFUL, so awful. Don't let this get to production, please.
+var updateGroup = function($group) {
+    $inactive = $group.closest(".accordion-group").find(".picker .restrict:not(.active)")
+    $inactive.trigger("click");
+}
 
 // Set the preference of the given item to either "prefer",
 // "restrict", or apathy (i.e., anything false-y).

@@ -18,9 +18,15 @@
     <script id="picker-template" type="text/x-handlebars-template">
       <div class="chooser-group accordion-group">
         <div class="accordion-heading">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#chooser"
-             href="#group-{{groupName}}">
-            {{groupName}}
+            <div class="picker-band btn-group">
+              <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
+                 href="#group-{{groupName}}" data-group-id="{{groupName}}">
+
+                <button class="btn btn-large">{{groupName}}</button>
+                <button class="btn btn-large restrict">
+                  <i class="icon-minus-sign"></i>
+                </button>
+              </a>
           </a>
         </div>
 
