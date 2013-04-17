@@ -69,5 +69,9 @@ $(document).ready(function() {
     center_display.filter = function(event) {
 	console.log("testing dynamic filter");
     };
+
+    var itemTemplate = Handlebars.compile($("#item-template").html());
     selectionWindow = document.getElementById("dish_selection");
+    $("#dish_selection").append(itemTemplate({itemName: "Item name",
+                                              description: "Descr"}));
 });
