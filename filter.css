@@ -38,8 +38,7 @@ h1{
 .restaurant{
     display:block;
 }
-.res_pic{
-    margin: 10px;}
+
 
 .restaurant:hover{
     background-color:lightgoldenrodyellow;
@@ -62,8 +61,19 @@ h1{
     vertical-align: 50%;
 }
 .res_pic{
-    height: 200px;
-    width:200px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
 }
-
-
+.ResName{
+    font-size:2em;
+    text-align: center;
+    margin:40px;
+}
+.resAddress{
+    vertical-align: middle;
+}
+hr{
+    line-height: 10px;
+    
+}

@@ -3,7 +3,6 @@ body {
     font-size: 16pt;
 }
 
-
 h1{
     font-family: 'Denk One', sans-serif;
     text-align: center;
@@ -13,16 +12,11 @@ h1{
     font-size: 20pt;
 }
 
-.res_pic{
-    height:200px;
-    width:200px;
-    margin:30px;
+div.thumbnail img {
+    width: 200px;
+    height: 200px;
 
 }
-
-
-.intro{
-    font-size:1em;
-    font-family: 'Denk One', sans-serif;
-    text-align: center;
+a .btn btn-large btn-success{
+    margin:10px;
 }

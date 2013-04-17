@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
+    <script src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script src="External_Libraries/handlebars.js"></script>
+    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="Javascripts/res_filter.js"></script>
+    <script src="Javascripts/navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="filter.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <title>FoodAware | Restaurant Filter</title>
+
+</head>
+<body>
+
+<div class="container" id="container">
+      <!-- Navigation bar -->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="home.html">FoodAware</a>
+          <ul class="nav">
+	    <li><a href="restriction_prefs.html"><i class="icon-heart"></i> Diet Profile</a></li>
+	    <li><a href="filter.html"><i class="icon-glass"></i> Restaurant</a></li>
+	    <li><a href="menu.html"><i class="icon-food"></i> Menu</a></li>
+	    <li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    <!-- Header -->
+    <div class="header">
+        <h1> Find Your Restaurant</h1>
+    </div>
+
+
+    <!-- Filter -->
+    <table id="filter" border = "0">
+        <tr>
+            <td>
+                What is your zip code?
+            </td>
+            <td>
+                Sort Restaurant by
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="address"  type = "text" placeholder = "Your zip code" autofocus="autofocus" >
+            </td>
+            <!-- restaurant sort by options-->
+            <td>
+                <select>
+                    <option value="default">Default</option>
+                    <option value = "Alphabet"> Restaurant Name</option>
+                    <option value="Distance">Distance</option>
+                    <option value="Most popular">Most Popular</option>
+                    <option value="Top rated">Top Rated</option>
+                    <option value="Price">Price</option>
+                    <option value="Cuisines">Cuisines</option>
+                </select>
+            </td>
+
+            <td>
+                <button id="searchBtn" class="btn btn-medium btn-success">Search</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Restaurant List -->
+    <div class = "restaurantList">
+        <hr>
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Moksa Restaurant</span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/moksa-restaurant.jpg" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+
+                    <a href = "menu.html"> <button id="GoToMenuBtn0" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Cafe Expresso </span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+                    <a href = "menu.html"> <button id="GoToMenuBtn1" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Indian Spice</span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/indian_spice.jpg" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+                    <a href = "menu.html"> <button id="GoToMenuBtn2" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Indian Hillis</span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/indian_hillis.gif" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+                    <a href = "menu.html"> <button id="GoToMenuBtn3" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Sushi Restaurant</span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/sushi.jpg" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+                    <a href = "menu.html"> <button id="GoToMenuBtn4" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class = "restaurant">
+            <div class = "row">
+                <span class = "ResName">Kalara's Restaurant</span>
+            </div>
+            <div class = "row">
+                <div class = "span3">
+                    <img class = "res_pic"  src="Menu_Resources/kalaras.jpg" alt="cafe">
+                </div>
+                <div class = "span3">
+                    <p class ="resAddress">
+                        Address: 765 Massachusetts Ave<br>
+                        Cambridge, MA 02139-3303<br>
+                        Phone: 617-354-5433</p>
+                    <a href = "menu.html"> <button id="GoToMenuBtn5" class="btn btn-large btn-success">View Menu</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+</div>
+
+</body>
+</html>
