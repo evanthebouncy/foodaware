@@ -69,10 +69,15 @@ $(document).ready(function() {
 
 var updateButtonView = function($button, preferenceType) {
     var foodName = $button.closest("div.picker").attr("data-food-name");
-    $button.siblings("button").removeClass("active");
-    if (preferenceType)
-        $button.addClass("active");
-    setPreference(foodName, preferenceType);
+    if ($button.hasClass("active")) {
+        $button.removeClass("active");
+        setPreference(foodName, undefined);
+    } else {
+        $button.siblings("button").removeClass("active");
+        if (preferenceType)
+            $button.addClass("active");
+        setPreference(foodName, preferenceType);
+    }
 }
 
 // THIS IS AWFUL, so awful. Don't let this get to production, please.
