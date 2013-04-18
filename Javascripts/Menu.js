@@ -31,25 +31,20 @@ var selectedDiv;
 var selectionWindow;
 var SelectedDish;
 
-var restrictions = ["Vinegar"];
-var preferences = ["Bacon"];
-
+var settings = {"Vinegar": "restrict",
+                "Bacon": "prefer"};
 
 var itemScore = function(item) {
     var count = 0;
     for (var i = 0; i < item.ingredients.length; i++) {
-        if (preferences.indexOf(item.ingredients[i]) > -1) {
+        if (settings[item.ingredients[i]] == "prefer")
             count++;
-        }
     }
 
     return count;
 }
 
 $(document).ready(function() {
-    var itemTemplate = Handlebars.compile($("#item-template").html());
-    selectionWindow = document.getElementById("dish_selection");
-
     reloadSettings();
 
     // Global Event Listeners
@@ -57,6 +52,52 @@ $(document).ready(function() {
 	selectionWindow.style.display = "none";
 	selectedDiv.style.border = "1px solid #dddddd";
     });
+});
+
+
+var reloadSettings = function() {
+    var itemTemplate = Handlebars.compile($("#item-template").html());
+    selectionWindow = document.getElementById("dish_selection");
+
+    var preferences = [];
+    var restrictions = [];
+    $.each(settings, function(ingredient, setting) {
+        if (setting == "prefer") {
+            preferences.push(ingredient);
+        } else if (setting == "restrict") {
+            restrictions.push(ingredient);
+        }
+    });
+    restrictions.sort();
+    $("#restrictions_main").empty();
+    $.each(restrictions, function(unused, item) {
+        var $button = makeRemoverButton(item, "restrict");
+        $("#restrictions_main").append($button);
+    });
+
+    preferences.sort();
+    $("#preferences_main").empty();
+    $.each(preferences, function(unused, item) {
+        var $button = makeRemoverButton(item, "prefer");
+        $("#preferences_main").append($button);
+    });
+
+    // Populate the thumbnails template.
+    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
+    menuItems.sort(function(a, b) {
+        return itemScore(b) - itemScore(a);
+    });
+    var filteredItems = $.grep(menuItems, function(item) {
+        for (var i = 0; i < item.ingredients.length; i++) {
+            if (settings[item.ingredients[i]] == "restrict") {
+                return false;
+            }
+        }
+        return true;
+    });
+
+    $("#thumbnails").empty().append(thumbnailsTemplate(filteredItems));
+
     $('.thumbnail').click(function() {
         var targetFoodName = $(this).attr("data-food-name");
         console.log(targetFoodName);
@@ -85,7 +126,7 @@ $(document).ready(function() {
         $('.ingredient_option_like').click(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (toggle(preferences, ingredient))
+            if (toggle(ingredient, "prefer"))
                 $(this).addClass("active");
             else
                 $(this).removeClass("active");
@@ -94,13 +135,13 @@ $(document).ready(function() {
         }).each(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (preferences.indexOf(ingredient) > -1)
+            if (settings[ingredient] == "prefer")
                 $(this).addClass("active");
         });
         $('.ingredient_option_dislike').click(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (toggle(restrictions, ingredient))
+            if (toggle(ingredient, "restrict"))
                 $(this).addClass("active");
             else
                 $(this).removeClass("active");
@@ -109,7 +150,7 @@ $(document).ready(function() {
         }).each(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (restrictions.indexOf(ingredient) > -1)
+            if (settings[ingredient] == "restrict")
                 $(this).addClass("active");
         });
 
@@ -138,42 +179,6 @@ $(document).ready(function() {
 	    }
 	});
 
-    center_display.filter = function(event) {
-	console.log("testing dynamic filter");
-    };
-});
-
-
-var reloadSettings = function() {
-    restrictions.sort();
-    $("#restrictions_main").empty();
-    $(restrictions).each(function(unused, item) {
-        var $button = makeRemoverButton(item, "restrict");
-        $("#restrictions_main").append($button);
-    });
-
-    preferences.sort();
-    $("#preferences_main").empty();
-    $(preferences).each(function(unused, item) {
-        var $button = makeRemoverButton(item, "prefer");
-        $("#preferences_main").append($button);
-    });
-
-    // Populate the thumbnails template.
-    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
-    menuItems.sort(function(a, b) {
-        return itemScore(b) - itemScore(a);
-    });
-    var filteredItems = $.grep(menuItems, function(item) {
-        for (var i = 0; i < item.ingredients.length; i++) {
-            if (restrictions.indexOf(item.ingredients[i]) > -1) {
-                return false;
-            }
-        }
-        return true;
-    });
-
-    $("#thumbnails").empty().append(thumbnailsTemplate(filteredItems));
 }
 
 // Create a 'remover' button of the given type (i.e., 'prefer' or
@@ -183,25 +188,18 @@ function makeRemoverButton(item, type) {
     return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
         .append(" " + item).attr("data-food-name", item)
         .click(function() {
-            if (type == "prefer") {
-                var index = preferences.indexOf(item);
-                preferences.splice(index, 1);
-            } else {
-                var index = restrictions.indexOf(item);
-                restrictions.splice(index, 1);
-            }
+            settings[item] = undefined;
             reloadSettings();
         });
 }
 
 
-var toggle = function(array, item) {
-    var index = array.indexOf(item);
-    if (index == -1) {
-        array.push(item);
-        return true;
-    } else {
-        array.splice(index, 1);
+var toggle = function(item, setting) {
+    if (settings[item] == setting) {
+        settings[item] = undefined;
         return false;
+    } else {
+        settings[item] = setting;
+        return true;
     }
 }
