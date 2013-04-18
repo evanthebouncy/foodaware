@@ -43,12 +43,11 @@ h1{
 
 
 .restaurant:hover{
-    background-color:#FFE0C2;
+    /*background-color:#FFE0C2;*/
     display:block;
     border-radius: 20px;
-    position: relative;
-    top: -8px;
-
+    background-image: -webkit-linear-gradient(left, #FFEAE3 0%, #FFF5E0 100%);
+    -webkit-box-shadow: 3px 3px 4px #CCC;
 }
 
 .selected{
@@ -85,8 +84,11 @@ h1{
 
 .ResName{
     font-size:2em;
-    text-align: center;
-    margin:40px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
 
 }
 .resAddress{
