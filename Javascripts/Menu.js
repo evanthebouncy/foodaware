@@ -7,22 +7,22 @@ function ucFirst(str) {
 menuItems = [ {itemName: "Scrambled eggs",
                description: "Good for protein!",
                ingredients: ["Eggs", "Cheese", "Lactose"],
-               image: "Menu_Resources/Prawn-Pad-Thai.png"
+               image: "Menu_Resources/eggs.jpg"
               },
               {itemName: "Grilled cheese",
                description: "Goes great with tomato soup",
                ingredients: ["Bread", "Cheese", "Gluten"],
-               image: "Menu_Resources/Prawn-Pad-Thai.png"
+               image: "Menu_Resources/grilled cheese.jpg"
               },
               {itemName: "Salad",
                description: "What are you, a rabbit?",
-               ingredients: ["Lettuce", "Tomato", "Vinegar"],
-               image: "Menu_Resources/Prawn-Pad-Thai.png"
+               ingredients: ["Lettuce", "Tomato", "Vinegar", "Green Beans"],
+               image: "Menu_Resources/salad.jpg"
               },
               {itemName: "BLT",
                description: "A classic.",
                ingredients: ["Bacon", "Lettuce", "Tomato", "Bread", "Gluten"],
-               image: "Menu_Resources/Prawn-Pad-Thai.png"
+               image: "Menu_Resources/blt.jpg"
               }
             ]
 

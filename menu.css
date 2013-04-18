@@ -43,6 +43,7 @@
 	border:1px solid #bbbbbb;
 	border-radius:10px;
 	margin:10px;
+        overflow: hidden;
 }
 #menu_description_label
 {
