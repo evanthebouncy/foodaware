@@ -93,3 +93,8 @@
 {
 	text-align:center;
 }
+
+#restrictions_main button, #preferences_main button {
+    display: block;
+    margin: 10px 0px;
+}

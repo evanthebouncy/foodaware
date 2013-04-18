@@ -8,6 +8,7 @@ $(document).ready(function() {
     $(".container").prepend($navBar);
     $(".navbar").css({position: "fixed",
                       "font-size": "24px",
-                      "width": "1170px"});
+                      "width": "1170px",
+                      "z-index": 100});
     $(".navbar").next().css("margin-top", ($(".navbar").height() + 20) + "px");
 });

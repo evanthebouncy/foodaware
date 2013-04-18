@@ -31,6 +31,8 @@ var selectedDiv;
 var selectionWindow;
 var SelectedDish;
 
+var itemCount = 0;
+
 var settings = {"Vinegar": "restrict",
                 "Bacon": "prefer"};
 
@@ -47,11 +49,6 @@ var itemScore = function(item) {
 $(document).ready(function() {
     reloadSettings();
 
-    // Global Event Listeners
-    $('#order_button').click(function(event) {
-	selectionWindow.style.display = "none";
-	selectedDiv.style.border = "1px solid #dddddd";
-    });
 });
 
 
@@ -166,6 +163,13 @@ var reloadSettings = function() {
             reloadSettings();
         });
 
+    // Global Event Listeners
+    $('#order_button').click(function(event) {
+        itemCount++;
+        $("#SelectionCount").text(itemCount + " item(s)");
+    });
+
+
     });
 
     $('.thumbnail').hover(
@@ -182,7 +186,6 @@ var reloadSettings = function() {
 		$(this).css("border","1px solid #dddddd");
 	    }
 	});
-
 }
 
 // Create a 'remover' button of the given type (i.e., 'prefer' or
