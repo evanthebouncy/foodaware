@@ -126,10 +126,12 @@ var reloadSettings = function() {
         $('.ingredient_option_like').click(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (toggle(ingredient, "prefer"))
+            if (toggle(ingredient, "prefer")) {
+                $(this).siblings().removeClass("active");
                 $(this).addClass("active");
-            else
+            } else {
                 $(this).removeClass("active");
+            }
 
             reloadSettings();
         }).each(function() {
@@ -141,10 +143,12 @@ var reloadSettings = function() {
         $('.ingredient_option_dislike').click(function() {
             var ingredient = $(this).closest(".ingredient_option")
                 .attr("data-ingredient-name");
-            if (toggle(ingredient, "restrict"))
+            if (toggle(ingredient, "restrict")) {
+                $(this).siblings().removeClass("active");
                 $(this).addClass("active");
-            else
+            } else {
                 $(this).removeClass("active");
+            }
 
             reloadSettings();
         }).each(function() {
@@ -155,11 +159,11 @@ var reloadSettings = function() {
         });
 
         $('.ingredient_option_name').click(function() {
-	    var par = $(this).parent();
-	    var child = par.children(".ingredient_option_like");
-	    $(child[0]).removeClass("active");
-	    var child2 = par.children(".ingredient_option_dislike");
-	    $(child2[0]).removeClass("active");
+            var ingredient = $(this).closest(".ingredient_option")
+                .attr("data-ingredient-name");
+            $(this).siblings().removeClass("active");
+            settings[ingredient] = undefined;
+            reloadSettings();
         });
 
     });
