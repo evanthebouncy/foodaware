@@ -24,11 +24,11 @@ div.chooser-group .picker .pseudo-checkbox {
     width: 44px;
 }
 
-div.chooser-group .picker button.restrict {
+div.chooser-group button.restrict {
     color: #ff3333;
 }
 
-div .chooser-group .picker button.prefer {
+div .chooser-group button.prefer {
     color: #00dd00;
 }
 
@@ -37,9 +37,6 @@ div .food-list button {
     margin: 10px 0px;
 }
 
-.navbar {
-    font-size: 20pt;
-}
-h1{
+h1, h2 {
     font-family: 'Denk One', sans-serif;
 }

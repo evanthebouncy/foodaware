@@ -12,15 +12,21 @@
     <script src="Javascripts/restriction_prefs.js"></script>
     <script src="Javascripts/navbar.js"></script>
     <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet" type="text/css">
     <title>FoodAware | Restrictions and preferences</title>
 
     <script id="picker-template" type="text/x-handlebars-template">
       <div class="chooser-group accordion-group">
         <div class="accordion-heading">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#chooser"
-             href="#group-{{groupName}}">
-            {{groupName}}
+            <div class="picker-band btn-group">
+              <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
+                 href="#group-{{groupName}}" data-group-id="{{groupName}}">
+
+                <button class="btn btn-large">{{groupName}}</button>
+                <button class="btn btn-large restrict">
+                  <i class="icon-minus-sign"></i>
+                </button>
+              </a>
           </a>
         </div>
 
@@ -50,20 +56,6 @@
 
   <body>
     <div class="container" id="container">
-
-      <!-- Navigation bar -->
-      <div class="navbar">
-        <div class="navbar-inner">
-          <a class="brand" href="home.html">FoodAware</a>
-          <ul class="nav">
-	    <li><a href="restriction_prefs.html"><i class="icon-heart"></i> Diet Profile</a></li>
-	    <li><a href="filter.html"><i class="icon-glass"></i> Restaurant</a></li>
-	    <li><a href="menu.html"><i class="icon-food"></i> Menu</a></li>
-	    <li><a href="summary.html"><i class="icon-reorder"></i> Summary</a></li>
-          </ul>
-        </div>
-      </div>
-
       <div class="row">
         <h1>Restrictions and Preferences</h1>
       </div>
@@ -79,21 +71,10 @@
 
         <!-- Right bar; items we care about one way or another -->
         <div class="span4">
-          <!-- Preferred items -->
-          <div id="preferred">
-            <h2>Preferred ingredients
-              <button id="clear-preferences" class="btn btn-medium btn-danger">
-                <i class="icon-trash icon-large"></i> Clear all
-              </button>
-            </h2>
-
-            <div id="prefer-list" class="well food-list">
-            </div>
-          </div>
 
           <!-- Restricted items -->
           <div id="restricted">
-            <h2>Restricted ingredients
+            <h2>Selected restrictions
               <button id="clear-restrictions" class="btn btn-medium btn-danger">
                 <i class="icon-trash icon-large"></i> Clear all
               </button>
@@ -103,15 +84,27 @@
             </div>
           </div>
 
+          <!-- Preferred items -->
+          <div id="preferred">
+            <h2>Selected preferences
+              <button id="clear-preferences" class="btn btn-medium btn-danger">
+                <i class="icon-trash icon-large"></i> Clear all
+              </button>
+            </h2>
+
+            <div id="prefer-list" class="well food-list">
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="row">
         <div class="span12">
-          <button class="btn pull-left btn-large btn-primary">
+          <button class="btn pull-left btn-large btn-success">
             Save
           </button>
-          <a href="filter.html" class="btn pull-right btn-large btn-success">
+          <a href="filter.html" class="btn pull-right btn-large btn-primary">
             Proceed
           </a>
         </div>

@@ -1,6 +1,5 @@
 ﻿#menu_display
 {
-	min-height:400px;
 	border-radius:10px;
 	border: 1px solid #dddddd;
 }
@@ -22,10 +21,6 @@
 {
 	margin:5px;
 }
-.navbar
-{
-	font-size:20pt;
-}
 .thumbnail
 {
 	width:150px;
@@ -37,7 +32,7 @@
 #dish_selection
 {
 	margin:10px;
-	border:1px solid black;
+	border:1px solid #bbbbbb;
 	border-radius:10px;
 	display:none;
 }
@@ -45,9 +40,10 @@
 {
 	width:200px;
 	height:200px;
-	border:1px solid black;
+	border:1px solid #bbbbbb;
 	border-radius:10px;
 	margin:10px;
+        overflow: hidden;
 }
 #menu_description_label
 {
@@ -55,7 +51,7 @@
 }
 #likert_ingredients_box
 {
-	border:1px solid black;
+	border:1px solid #bbbbbb;
 	border-radius:10px;
 	margin:10px;
 	overflow:auto;
@@ -97,4 +93,9 @@
 #SelectionCount
 {
 	text-align:center;
+}
+
+#restrictions_main button, #preferences_main button {
+    display: block;
+    margin: 10px 0px;
 }
