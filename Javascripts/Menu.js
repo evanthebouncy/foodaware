@@ -30,6 +30,7 @@ var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
 var SelectedDish;
+
 var restrictions = ["Vinegar"];
 var preferences = ["Bacon"];
 
@@ -79,18 +80,39 @@ $(document).ready(function() {
 	    selectedDiv.style.border = "1px solid #dddddd";
         });
 
+
+        // Set up 'like' and 'dislike' buttons.
         $('.ingredient_option_like').click(function() {
-	    $(this).addClass("active");
-	    var par = $(this).parent();
-	    var child = par.children(".ingredient_option_dislike");
-	    $(child[0]).removeClass("active");
+            var ingredient = $(this).closest(".ingredient_option")
+                .attr("data-ingredient-name");
+            if (toggle(preferences, ingredient))
+                $(this).addClass("active");
+            else
+                $(this).removeClass("active");
+
+            reloadSettings();
+        }).each(function() {
+            var ingredient = $(this).closest(".ingredient_option")
+                .attr("data-ingredient-name");
+            if (preferences.indexOf(ingredient) > -1)
+                $(this).addClass("active");
         });
         $('.ingredient_option_dislike').click(function() {
-	    $(this).addClass("active");
-	    var par = $(this).parent();
-	    var child = par.children(".ingredient_option_like");
-	    $(child[0]).removeClass("active");
+            var ingredient = $(this).closest(".ingredient_option")
+                .attr("data-ingredient-name");
+            if (toggle(restrictions, ingredient))
+                $(this).addClass("active");
+            else
+                $(this).removeClass("active");
+
+            reloadSettings();
+        }).each(function() {
+            var ingredient = $(this).closest(".ingredient_option")
+                .attr("data-ingredient-name");
+            if (restrictions.indexOf(ingredient) > -1)
+                $(this).addClass("active");
         });
+
         $('.ingredient_option_name').click(function() {
 	    var par = $(this).parent();
 	    var child = par.children(".ingredient_option_like");
@@ -154,6 +176,9 @@ var reloadSettings = function() {
     $("#thumbnails").empty().append(thumbnailsTemplate(filteredItems));
 }
 
+// Create a 'remover' button of the given type (i.e., 'prefer' or
+// 'restrict'); when clicked, it'll remove the relevant item from the
+// setting list and reload.
 function makeRemoverButton(item, type) {
     return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
         .append(" " + item).attr("data-food-name", item)
@@ -167,4 +192,16 @@ function makeRemoverButton(item, type) {
             }
             reloadSettings();
         });
+}
+
+
+var toggle = function(array, item) {
+    var index = array.indexOf(item);
+    if (index == -1) {
+        array.push(item);
+        return true;
+    } else {
+        array.splice(index, 1);
+        return false;
+    }
 }
