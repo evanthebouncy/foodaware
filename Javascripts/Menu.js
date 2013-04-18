@@ -16,7 +16,7 @@ menuItems = [ {itemName: "Scrambled eggs",
               },
               {itemName: "Salad",
                description: "What are you, a rabbit?",
-               ingredients: ["Lettuce", "Tomato"],
+               ingredients: ["Lettuce", "Tomato", "Vinegar"],
                image: "Menu_Resources/Prawn-Pad-Thai.png"
               },
               {itemName: "BLT",
@@ -30,8 +30,9 @@ var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
 var SelectedDish;
-var RestrictedIngs;
-var PreferredIngs;
+var preferences = {"Vinegar": "restrict",
+                   "Bacon": "prefer"
+                  };
 
 $(document).ready(function() {
     var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
