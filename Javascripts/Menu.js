@@ -30,16 +30,15 @@ var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
 var SelectedDish;
-var preferences = {"Vinegar": "restrict",
-                   "Bacon": "prefer"
-                  };
+var restrictions = ["Vinegar"];
+var preferences = ["Bacon"];
 
 $(document).ready(function() {
-    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
-
     var itemTemplate = Handlebars.compile($("#item-template").html());
     selectionWindow = document.getElementById("dish_selection");
 
+    // Populate the thumbnails template.
+    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
     $("#thumbnails").append(thumbnailsTemplate(menuItems));
 
     // Global Event Listeners
@@ -115,4 +114,29 @@ $(document).ready(function() {
     center_display.filter = function(event) {
 	console.log("testing dynamic filter");
     };
+
+    reloadSettings();
 });
+
+
+var reloadSettings = function() {
+    restrictions.sort();
+    $("#restrictions_main").empty();
+    $(restrictions).each(function(unused, item) {
+        var $button = makeRemoverButton(item);
+        $("#restrictions_main").append($button);
+    });
+
+    preferences.sort();
+    $("#preferences_main").empty();
+    $(preferences).each(function(unused, item) {
+        var $button = makeRemoverButton(item);
+        $("#preferences_main").append($button);
+    });
+}
+
+function makeRemoverButton(item) {
+    return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
+        .append(" " + item).attr("data-food-name", item)
+        .click();
+}
