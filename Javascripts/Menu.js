@@ -167,6 +167,7 @@ var reloadSettings = function() {
     $('#order_button').click(function(event) {
         itemCount++;
         $("#SelectionCount").text(itemCount + " item(s)");
+        $("#add-message").text("Added!");
     });
 
 
