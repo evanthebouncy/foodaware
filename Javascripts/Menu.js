@@ -33,25 +33,25 @@ var SelectedDish;
 var restrictions = ["Vinegar"];
 var preferences = ["Bacon"];
 
+
+var itemScore = function(item) {
+    var count = 0;
+    for (var i = 0; i < item.ingredients.length; i++) {
+        if (preferences.indexOf(item.ingredients[i]) > -1) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
 $(document).ready(function() {
     var itemTemplate = Handlebars.compile($("#item-template").html());
     selectionWindow = document.getElementById("dish_selection");
 
-    // Populate the thumbnails template.
-    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
-    $("#thumbnails").append(thumbnailsTemplate(menuItems));
+    reloadSettings();
 
     // Global Event Listeners
-    $('#user_settings_button').click(function(event) {
-	console.log("Changing to User Settings");
-    });
-    $('#selection_summary_button').click(function(event) {
-	console.log("Changing to Selection Summary");
-    });
-    $('#close_selection_button').click(function(event) {
-	selectionWindow.style.display = "none";
-	selectedDiv.style.border = "1px solid #dddddd";
-    });
     $('#order_button').click(function(event) {
 	selectionWindow.style.display = "none";
 	selectedDiv.style.border = "1px solid #dddddd";
@@ -73,27 +73,32 @@ $(document).ready(function() {
 	selectedDiv = this;
 	selectedDiv.style.border = "1px solid green";
 	selectionWindow.style.display = "block";
-    });
 
-    $('.ingredient_option_like').click(function() {
-	$(this).addClass("active");
-	var par = $(this).parent();
-	var child = par.children(".ingredient_option_dislike");
-	$(child[0]).removeClass("active");
-    });
-    $('.ingredient_option_dislike').click(function() {
-	$(this).addClass("active");
-	var par = $(this).parent();
-	var child = par.children(".ingredient_option_like");
-	$(child[0]).removeClass("active");
-    });
+        $('#close_selection_button').click(function(event) {
+	    selectionWindow.style.display = "none";
+	    selectedDiv.style.border = "1px solid #dddddd";
+        });
 
-    $('.ingredient_option_name').click(function() {
-	var par = $(this).parent();
-	var child = par.children(".ingredient_option_like");
-	$(child[0]).removeClass("active");
-	var child2 = par.children(".ingredient_option_dislike");
-	$(child2[0]).removeClass("active");
+        $('.ingredient_option_like').click(function() {
+	    $(this).addClass("active");
+	    var par = $(this).parent();
+	    var child = par.children(".ingredient_option_dislike");
+	    $(child[0]).removeClass("active");
+        });
+        $('.ingredient_option_dislike').click(function() {
+	    $(this).addClass("active");
+	    var par = $(this).parent();
+	    var child = par.children(".ingredient_option_like");
+	    $(child[0]).removeClass("active");
+        });
+        $('.ingredient_option_name').click(function() {
+	    var par = $(this).parent();
+	    var child = par.children(".ingredient_option_like");
+	    $(child[0]).removeClass("active");
+	    var child2 = par.children(".ingredient_option_dislike");
+	    $(child2[0]).removeClass("active");
+        });
+
     });
 
     $('.thumbnail').hover(
@@ -114,8 +119,6 @@ $(document).ready(function() {
     center_display.filter = function(event) {
 	console.log("testing dynamic filter");
     };
-
-    reloadSettings();
 });
 
 
@@ -123,20 +126,45 @@ var reloadSettings = function() {
     restrictions.sort();
     $("#restrictions_main").empty();
     $(restrictions).each(function(unused, item) {
-        var $button = makeRemoverButton(item);
+        var $button = makeRemoverButton(item, "restrict");
         $("#restrictions_main").append($button);
     });
 
     preferences.sort();
     $("#preferences_main").empty();
     $(preferences).each(function(unused, item) {
-        var $button = makeRemoverButton(item);
+        var $button = makeRemoverButton(item, "prefer");
         $("#preferences_main").append($button);
     });
+
+    // Populate the thumbnails template.
+    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
+    menuItems.sort(function(a, b) {
+        return itemScore(b) - itemScore(a);
+    });
+    var filteredItems = $.grep(menuItems, function(item) {
+        for (var i = 0; i < item.ingredients.length; i++) {
+            if (restrictions.indexOf(item.ingredients[i]) > -1) {
+                return false;
+            }
+        }
+        return true;
+    });
+
+    $("#thumbnails").empty().append(thumbnailsTemplate(filteredItems));
 }
 
-function makeRemoverButton(item) {
+function makeRemoverButton(item, type) {
     return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
         .append(" " + item).attr("data-food-name", item)
-        .click();
+        .click(function() {
+            if (type == "prefer") {
+                var index = preferences.indexOf(item);
+                preferences.splice(index, 1);
+            } else {
+                var index = restrictions.indexOf(item);
+                restrictions.splice(index, 1);
+            }
+            reloadSettings();
+        });
 }
