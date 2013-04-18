@@ -1,3 +1,31 @@
+function ucFirst(str) {
+    return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
+        return letter.toUpperCase();
+    });
+}
+
+menuItems = [ {itemName: "Scrambled eggs",
+               description: "Good for protein!",
+               ingredients: ["Eggs", "Cheese", "Lactose"],
+               image: "Menu_Resources/Prawn-Pad-Thai.png"
+              },
+              {itemName: "Grilled cheese",
+               description: "Goes great with tomato soup",
+               ingredients: ["Bread", "Cheese", "Gluten"],
+               image: "Menu_Resources/Prawn-Pad-Thai.png"
+              },
+              {itemName: "Salad",
+               description: "What are you, a rabbit?",
+               ingredients: ["Lettuce", "Tomato"],
+               image: "Menu_Resources/Prawn-Pad-Thai.png"
+              },
+              {itemName: "BLT",
+               description: "A classic.",
+               ingredients: ["Bacon", "Lettuce", "Tomato", "Bread", "Gluten"],
+               image: "Menu_Resources/Prawn-Pad-Thai.png"
+              }
+            ]
+
 var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
@@ -6,6 +34,13 @@ var RestrictedIngs;
 var PreferredIngs;
 
 $(document).ready(function() {
+    var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
+
+    var itemTemplate = Handlebars.compile($("#item-template").html());
+    selectionWindow = document.getElementById("dish_selection");
+
+    $("#thumbnails").append(thumbnailsTemplate(menuItems));
+
     // Global Event Listeners
     $('#user_settings_button').click(function(event) {
 	console.log("Changing to User Settings");
@@ -22,6 +57,16 @@ $(document).ready(function() {
 	selectedDiv.style.border = "1px solid #dddddd";
     });
     $('.thumbnail').click(function() {
+        var targetFoodName = $(this).attr("data-food-name");
+        console.log(targetFoodName);
+        $(menuItems).each(function(unused, item) {
+            console.log(item.itemName);
+            if (item.itemName == targetFoodName) {
+                $(selectionWindow).html(itemTemplate(item));
+                return false;
+            }
+        });
+
 	if(selectedDiv != null) {
 	    selectedDiv.style.border = "1px solid #dddddd";
 	}
@@ -69,9 +114,4 @@ $(document).ready(function() {
     center_display.filter = function(event) {
 	console.log("testing dynamic filter");
     };
-
-    var itemTemplate = Handlebars.compile($("#item-template").html());
-    selectionWindow = document.getElementById("dish_selection");
-    $("#dish_selection").append(itemTemplate({itemName: "Item name",
-                                              description: "Descr"}));
 });
