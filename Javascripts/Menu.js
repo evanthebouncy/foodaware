@@ -15,13 +15,13 @@ menuItems = [ {itemName: "Scrambled eggs",
                image: "Menu_Resources/grilled cheese.jpg"
               },
               {itemName: "Salad",
-               description: "What are you, a rabbit?",
+               description: "Eat your greens!",
                ingredients: ["Lettuce", "Tomato", "Vinegar", "Green Beans"],
                image: "Menu_Resources/salad.jpg"
               },
               {itemName: "BLT",
                description: "A classic.",
-               ingredients: ["Bacon", "Lettuce", "Tomato", "Bread", "Gluten"],
+               ingredients: ["Pork", "Lettuce", "Tomato", "Bread", "Gluten"],
                image: "Menu_Resources/blt.jpg"
               }
             ]
@@ -33,8 +33,7 @@ var SelectedDish;
 
 var itemCount = 0;
 
-var settings = {"Vinegar": "restrict",
-                "Bacon": "prefer"};
+var settings = JSON.parse(localStorage["preferences"] || "{}");
 
 var itemScore = function(item) {
     var count = 0;
@@ -196,7 +195,8 @@ function makeRemoverButton(item, type) {
     return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
         .append(" " + item).attr("data-food-name", item)
         .click(function() {
-            settings[item] = undefined;
+            delete settings[item];
+            localStorage["preferences"] = JSON.stringify(settings);
             reloadSettings();
         });
 }
@@ -205,9 +205,11 @@ function makeRemoverButton(item, type) {
 var toggle = function(item, setting) {
     if (settings[item] == setting) {
         settings[item] = undefined;
+        localStorage["preferences"] = JSON.stringify(settings);
         return false;
     } else {
         settings[item] = setting;
+        localStorage["preferences"] = JSON.stringify(settings);
         return true;
     }
 }

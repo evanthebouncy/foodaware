@@ -1,3 +1,7 @@
+// Load in preferences from local storage
+localStorage["preferences"] = localStorage["preferences"] || "{}";
+var preferences = JSON.parse(localStorage["preferences"]);
+
 function ucFirst(str) {
     return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
         return letter.toUpperCase();
@@ -7,9 +11,6 @@ function ucFirst(str) {
 function createIdentifier(str) {
     return str.toLowerCase().replace(/ /g, "_");
 }
-
-var preferences = {};
-
 
 $(document).ready(function() {
     var source = $("#picker-template").html();
@@ -65,6 +66,11 @@ $(document).ready(function() {
     // Dynamically calculate the padding so that we leave enough space
     // no matter how narrow the window is.
     $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
+
+    // Load the preferences. This is a pretty awful way of doing it, but it works.
+    $.each(preferences, function(foodName, valence) {
+        $(".picker[data-food-name=\"" + foodName + "\"] ." + valence).click();
+    });
 });
 
 var updateButtonView = function($button, preferenceType) {
@@ -89,6 +95,8 @@ var updateGroup = function($group) {
 // Set the preference of the given item to either "prefer",
 // "restrict", or apathy (i.e., anything false-y).
 var setPreference = function(foodName, preferenceType) {
+    preferences[foodName] = preferenceType;
+    localStorage["preferences"] = JSON.stringify(preferences);
     if (preferenceType && preferenceType != "prefer" && preferenceType != "restrict") {
         console.warn("preference type " + preferenceType + " bad. bug!");
         return;
