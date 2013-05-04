@@ -5,6 +5,10 @@ function ucFirst(str) {
     });
 }
 
+function toIdentifier(str) {
+    return str.replace(/ /g, "_");
+}
+
 var Settings = Parse.Object.extend(
     "Settings", {
         initialize: function() {
@@ -54,6 +58,7 @@ var ValenceButton = Parse.View.extend({
 
     initialize: function() {
         _.bindAll(this, "render");
+        this.options.identifier = toIdentifier(this.options.displayName);
         // We only listen to when our own attribute is changed.
         this.model.bind("change:" + this.options.identifier, this.render);
     },
@@ -148,7 +153,7 @@ var ValenceGroup = Parse.View.extend({
         var buttons = _.map(valenceNames, function(name) {
             var $remove = $("<i>").addClass("icon-remove");
             return $("<button>").addClass("btn btn-medium").append($remove)
-                .append(" " + ucFirst(name)).click(function() {self.model.unset(name)});
+                .append(" " + ucFirst(name).replace(/_/g, " ")).click(function() {self.model.unset(name)});
         });
 
 

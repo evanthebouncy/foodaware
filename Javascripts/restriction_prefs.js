@@ -32,8 +32,7 @@ $(document).ready(function() {
 var setupEntrySystem = function(settings) {
     $.each(ingredientGroups, function(index, group) {
         var itemButtons = $.map(ingredients[group], function(itemName) {
-            return new ValenceButton({identifier: itemName,
-                                      displayName: ucFirst(itemName),
+            return new ValenceButton({displayName: ucFirst(itemName),
                                       model: settings
                                      });
         });
