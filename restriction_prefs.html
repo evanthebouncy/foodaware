@@ -27,25 +27,36 @@
     </script>
 
     <script id="chooser-template" type="text/x-handlebars-template">
-        <div class="accordion-heading">
-            <div class="picker-band btn-group">
-              <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
-                 href="#group-{{groupName}}" data-group-id="{{groupName}}">
-                <button class="btn btn-large">{{groupName}}</button>
-                <button class="btn btn-large restrict">
+      <div class="accordion-heading">
+        <div class="picker-band btn-group">
+          <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
+             href="#group-{{groupName}}" data-group-id="{{groupName}}">
+            <button class="btn btn-large">{{groupName}}</button>
+            <button class="btn btn-large restrict">
                   <i class="icon-minus-sign"></i>
-                </button>
-              </a>
+            </button>
           </a>
         </div>
+      </div>
 
-        <div id="group-{{groupName}}" class="accordion-body collapse">
-          <div class="accordion-inner">
-          </div>
+      <div id="group-{{groupName}}" class="accordion-body collapse">
+        <div class="accordion-inner">
         </div>
+      </div>
     </script>
 
+    <script id="valence-group-template" type="text/x-handlebars-template">
+      <h2>Selected {{typeNoun}}
+      {{#if hasClear}}
+        <button class="btn btn-medium btn-danger clear">
+          <i class="icon-trash icon-large"></i> Clear all
+        </button>
+        {{/if}}
+      </h2>
 
+      <div id="{{type}}-list" class="well food-list">
+      </div>
+    </script>
 
     <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
 
@@ -75,32 +86,7 @@
         </div>
 
         <!-- Right bar; items we care about one way or another -->
-        <div class="span4">
-
-          <!-- Restricted items -->
-          <div id="restricted">
-            <h2>Selected restrictions
-              <button id="clear-restrictions" class="btn btn-medium btn-danger">
-                <i class="icon-trash icon-large"></i> Clear all
-              </button>
-            </h2>
-
-            <div id="restrict-list" class="well food-list">
-            </div>
-          </div>
-
-          <!-- Preferred items -->
-          <div id="preferred">
-            <h2>Selected preferences
-              <button id="clear-preferences" class="btn btn-medium btn-danger">
-                <i class="icon-trash icon-large"></i> Clear all
-              </button>
-            </h2>
-
-            <div id="prefer-list" class="well food-list">
-            </div>
-          </div>
-
+        <div class="span4" id="valence-groups">
         </div>
       </div>
 
@@ -114,8 +100,6 @@
           </a>
         </div>
       </div>
-
-
     </div>
   </body>
 </html>

@@ -1,3 +1,10 @@
+// Uppercase the first letter of a string.
+function ucFirst(str) {
+    return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
+        return letter.toUpperCase();
+    });
+}
+
 var Settings = Parse.Object.extend("Settings");
 
 var ValenceButton = Parse.View.extend({
@@ -78,6 +85,66 @@ var ChooserGroup = Parse.View.extend({
         // Delegate events out so that we don't wind up rerendering
         // everything.
         this.delegateEvents();
+        return this;
+    }
+});
+
+// A group of options with the same valence; optionally, it can have a
+// 'clear all' button.
+var ValenceGroup = Parse.View.extend({
+    template: Handlebars.compile($("#valence-group-template").html()),
+
+    tagName: "div",
+    className: "valence-group",
+
+    events: {
+        "click .clear": "clearAll"
+    },
+
+    // Clear all settings with the given valence. This fires off a lot
+    // of changed events, but eh.
+    clearAll: function() {
+        var self = this;
+        _.each(_.clone(this.model.attributes), function(valence, name) {
+            if (valence == self.options.type) {
+                self.model.unset(name);
+            }
+        });
+    },
+
+    initialize: function() {
+        _.bindAll(this, "render");
+        this.model.bind("change", this.render);
+    },
+
+    render: function() {
+        // Get the sorted list of items with the relevant valence out.
+        var valenceNames = [];
+        var self = this;
+        _.each(this.model.attributes, function(valence, name) {
+            if (valence == self.options.type) {
+                valenceNames.push(name);
+            }
+        });
+        valenceNames.sort();
+
+        // Construct the buttons.
+        var buttons = _.map(valenceNames, function(name) {
+            var $remove = $("<i>").addClass("icon-remove");
+            return $("<button>").addClass("btn btn-medium").append($remove)
+            .append(" " + ucFirst(name)).click(function() {self.model.unset(name)});
+        });
+
+
+        var renderOpts = {
+            type: this.options.type,
+            hasClear: this.options.hasClear,
+            typeNoun: this.options.type == "prefer" ? "preferences" : "restrictions"
+        };
+        this.$el.html(this.template(renderOpts));
+
+        this.$el.find(".food-list").append(buttons);
+
         return this;
     }
 });

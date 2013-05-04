@@ -32,10 +32,10 @@ $(document).ready(function() {
 var setupEntrySystem = function(settings) {
     $.each(ingredientGroups, function(index, group) {
         var itemButtons = $.map(ingredients[group], function(itemName) {
-            return new ValenceButton({identifier: createIdentifier(itemName),
+            return new ValenceButton({identifier: itemName,
                                       displayName: ucFirst(itemName),
                                       model: settings
-                   });
+                                     });
         });
 
         var group = new ChooserGroup({subviews: itemButtons,
@@ -43,6 +43,16 @@ var setupEntrySystem = function(settings) {
                                    model: settings});
         $("#chooser").append(group.render().el);
     });
+
+    preferenceValenceGroup = new ValenceGroup({type: "prefer",
+                                               hasClear: true,
+                                               model: settings});
+    restrictionValenceGroup = new ValenceGroup({type: "restrict",
+                                                hasClear: true,
+                                                model: settings});
+
+    $("#valence-groups").append(preferenceValenceGroup.render().el)
+        .append(restrictionValenceGroup.render().el);
 
     // Dynamically calculate the padding so that we leave enough space
     // no matter how narrow the window is.
