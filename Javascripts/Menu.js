@@ -46,8 +46,21 @@ var itemScore = function(item) {
 }
 
 $(document).ready(function() {
-    reloadSettings();
+    Parse.User.logIn("janedoe", "janedoe", function(user) {
+        var query = new Parse.Query(Settings);
+        query.equalTo("user", user).first({
+            success: function(result) {
+                result = result || new Settings({user: user});
+                settings = result.attributes;
+                reloadSettings();
+            },
 
+            error: function(result, error) {
+                result = result || new Settings({user: user});
+                settings = result.attributes;
+                reloadSettings();
+            }});
+    });
 });
 
 
@@ -162,12 +175,12 @@ var reloadSettings = function() {
             reloadSettings();
         });
 
-    // Global Event Listeners
-    $('#order_button').click(function(event) {
-        itemCount++;
-        $("#SelectionCount").text(itemCount + " item(s)");
-        $("#add-message").text("Added!");
-    });
+        // Global Event Listeners
+        $('#order_button').click(function(event) {
+            itemCount++;
+            $("#SelectionCount").text(itemCount + " item(s)");
+            $("#add-message").text("Added!");
+        });
 
 
     });

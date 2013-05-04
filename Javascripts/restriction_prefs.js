@@ -1,7 +1,3 @@
-Parse.initialize("NJaqeDB583JMB1TdWF2Tkpwkn9UbFsOOMhxhhPds", "69wSIovgcpBxqhsdhjlgohBJ2cTWGD3O1Y8JHQET");
-
-
-
 function ucFirst(str) {
     return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
         return letter.toUpperCase();

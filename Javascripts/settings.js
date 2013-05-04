@@ -1,3 +1,5 @@
+Parse.initialize("NJaqeDB583JMB1TdWF2Tkpwkn9UbFsOOMhxhhPds", "69wSIovgcpBxqhsdhjlgohBJ2cTWGD3O1Y8JHQET");
+
 // Uppercase the first letter of a string.
 function ucFirst(str) {
     return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
