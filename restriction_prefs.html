@@ -13,6 +13,27 @@
     <script src="menu_ingr_data/ingredients.json"></script>
     <script src="Javascripts/navbar.js"></script>
 
+    <script id="valence-template" type="text/x-handlebars-template">
+      <div class="picker btn-group" id="{{this.identifier}}"
+           data-food-id="{{this.identifier}}"
+           data-food-name="{{this.displayName}}">
+        <button class="btn btn-medium clearfix prefer">
+          <i class="icon-plus-sign"></i>
+        </button>
+        <button class="btn btn-medium clearfix neutral">
+                {{this.displayName}}
+        </button>
+        <button class="btn btn-medium clearfix restrict">
+          <i class="icon-minus-sign"></i>
+        </button>
+      </div>
+    </script>
+
+
+    <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+
+    <script src="Javascripts/underscore-min.js"></script>
+    <script src="Javascripts/settings.js"></script>
     <script src="Javascripts/restriction_prefs.js"></script>
 
     <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
@@ -37,19 +58,6 @@
         <div id="group-{{groupName}}" class="accordion-body collapse">
           <div class="accordion-inner">
             {{#each items}}
-            <div class="picker btn-group" id="{{this.identifier}}"
-                 data-food-id="{{this.identifier}}"
-                 data-food-name="{{this.displayName}}">
-              <button class="btn btn-medium clearfix prefer">
-                <i class="icon-plus-sign"></i>
-              </button>
-              <button class="btn btn-medium clearfix neutral">
-                {{this.displayName}}
-              </button>
-              <button class="btn btn-medium clearfix restrict">
-                <i class="icon-minus-sign"></i>
-              </button>
-            </div>
             {{/each}}
           </div>
         </div>

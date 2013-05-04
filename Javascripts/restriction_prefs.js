@@ -1,6 +1,6 @@
-// Load in preferences from local storage
-localStorage["preferences"] = localStorage["preferences"] || "{}";
-var preferences = JSON.parse(localStorage["preferences"]);
+Parse.initialize("NJaqeDB583JMB1TdWF2Tkpwkn9UbFsOOMhxhhPds", "69wSIovgcpBxqhsdhjlgohBJ2cTWGD3O1Y8JHQET");
+
+
 
 function ucFirst(str) {
     return str.toLowerCase().replace(/^[a-z]/g, function(letter) {
@@ -13,6 +13,21 @@ function createIdentifier(str) {
 }
 
 $(document).ready(function() {
+    Parse.User.logIn("janedoe", "janedoe", function(user) {
+        var query = new Parse.Query(Settings);
+        query.equalTo("user", user).first({
+            success: function(settings) {
+                setupEntrySystem(settings || new Settings);
+            },
+
+            error: function(settings, error) {
+                console.log("no settings found, using default");
+                setupEntrySystem(settings || new Settings);
+            }});
+    });
+});
+
+var setupEntrySystem = function(settings) {
     var source = $("#picker-template").html();
     var pickerTemplate = Handlebars.compile($("#picker-template").html());
     var dairy = pickerTemplate({groupName: "dairy", itemName: ingredients["dairy"]});
@@ -67,11 +82,11 @@ $(document).ready(function() {
     // no matter how narrow the window is.
     $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
 
-    // Load the preferences. This is a pretty awful way of doing it, but it works.
-    $.each(preferences, function(foodName, valence) {
+    // Load the preferences.
+    _.each(settings.attributes, function(valence, foodName) {
         $(".picker[data-food-name=\"" + foodName + "\"] ." + valence).click();
     });
-});
+}
 
 var updateButtonView = function($button, preferenceType) {
     var foodName = $button.closest("div.picker").attr("data-food-name");
