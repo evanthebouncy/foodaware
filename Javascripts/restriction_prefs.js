@@ -56,4 +56,17 @@ var setupEntrySystem = function(settings) {
     // Dynamically calculate the padding so that we leave enough space
     // no matter how narrow the window is.
     $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
+
+    // Set up automatic debounced saving.
+    settings.on("change", _.debounce(function() {
+        settings.save(null, {
+            success: function() {
+                console.log("Successfully saved!");
+            },
+
+            error: function(obj, error) {
+                console.error("Save failure: ", error);
+                    }
+        })
+    }), 300);
 }

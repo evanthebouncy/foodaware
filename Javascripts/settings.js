@@ -9,23 +9,7 @@ function toIdentifier(str) {
     return str.replace(/ /g, "_");
 }
 
-var Settings = Parse.Object.extend(
-    "Settings", {
-        initialize: function() {
-            this.on("change", function() {
-                this.save(null, {
-                    success: function() {
-                        console.log("Successfully saved!");
-                    },
-
-                    error: function(obj, error) {
-                        console.error("Save failure: ", error);
-                    }
-                });
-            });
-        }
-    }
-);
+var Settings = Parse.Object.extend("Settings");
 
 var ValenceButton = Parse.View.extend({
     template: Handlebars.compile($("#valence-template").html()),
