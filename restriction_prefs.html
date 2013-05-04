@@ -14,9 +14,7 @@
     <script src="Javascripts/navbar.js"></script>
 
     <script id="valence-template" type="text/x-handlebars-template">
-      <div class="picker btn-group" id="{{this.identifier}}"
-           data-food-id="{{this.identifier}}"
-           data-food-name="{{this.displayName}}">
+
         <button class="btn btn-medium clearfix prefer">
           <i class="icon-plus-sign"></i>
         </button>
@@ -26,8 +24,27 @@
         <button class="btn btn-medium clearfix restrict">
           <i class="icon-minus-sign"></i>
         </button>
-      </div>
     </script>
+
+    <script id="chooser-template" type="text/x-handlebars-template">
+        <div class="accordion-heading">
+            <div class="picker-band btn-group">
+              <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
+                 href="#group-{{groupName}}" data-group-id="{{groupName}}">
+                <button class="btn btn-large">{{groupName}}</button>
+                <button class="btn btn-large restrict">
+                  <i class="icon-minus-sign"></i>
+                </button>
+              </a>
+          </a>
+        </div>
+
+        <div id="group-{{groupName}}" class="accordion-body collapse">
+          <div class="accordion-inner">
+          </div>
+        </div>
+    </script>
+
 
 
     <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
@@ -39,30 +56,6 @@
     <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
     <link href="http://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet" type="text/css">
     <title>FoodAware | Restrictions and preferences</title>
-
-    <script id="picker-template" type="text/x-handlebars-template">
-      <div class="chooser-group accordion-group">
-        <div class="accordion-heading">
-            <div class="picker-band btn-group">
-              <a class="accordion-toggle btn-group" data-toggle="collapse" data-parent="#chooser"
-                 href="#group-{{groupName}}" data-group-id="{{groupName}}">
-
-                <button class="btn btn-large">{{groupName}}</button>
-                <button class="btn btn-large restrict">
-                  <i class="icon-minus-sign"></i>
-                </button>
-              </a>
-          </a>
-        </div>
-
-        <div id="group-{{groupName}}" class="accordion-body collapse">
-          <div class="accordion-inner">
-            {{#each items}}
-            {{/each}}
-          </div>
-        </div>
-      </div>
-    </script>
 
   </head>
 
