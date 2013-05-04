@@ -17,12 +17,12 @@ $(document).ready(function() {
         var query = new Parse.Query(Settings);
         query.equalTo("user", user).first({
             success: function(settings) {
-                setupEntrySystem(settings || new Settings);
+                setupEntrySystem(settings || new Settings({user: user}));
             },
 
             error: function(settings, error) {
                 console.log("no settings found, using default");
-                setupEntrySystem(settings || new Settings);
+                setupEntrySystem(settings || new Settings({user: user}));
             }});
     });
 });

@@ -5,7 +5,23 @@ function ucFirst(str) {
     });
 }
 
-var Settings = Parse.Object.extend("Settings");
+var Settings = Parse.Object.extend(
+    "Settings", {
+        initialize: function() {
+            this.on("change", function() {
+                this.save(null, {
+                    success: function() {
+                        console.log("Successfully saved!");
+                    },
+
+                    error: function(obj, error) {
+                        console.error("Save failure: ", error);
+                    }
+                });
+            });
+        }
+    }
+);
 
 var ValenceButton = Parse.View.extend({
     template: Handlebars.compile($("#valence-template").html()),
@@ -132,7 +148,7 @@ var ValenceGroup = Parse.View.extend({
         var buttons = _.map(valenceNames, function(name) {
             var $remove = $("<i>").addClass("icon-remove");
             return $("<button>").addClass("btn btn-medium").append($remove)
-            .append(" " + ucFirst(name)).click(function() {self.model.unset(name)});
+                .append(" " + ucFirst(name)).click(function() {self.model.unset(name)});
         });
 
 
