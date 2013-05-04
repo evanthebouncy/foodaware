@@ -45,10 +45,6 @@ var setupEntrySystem = function(settings) {
     $("#valence-groups").append(preferenceValenceGroup.render().el)
         .append(restrictionValenceGroup.render().el);
 
-    // Dynamically calculate the padding so that we leave enough space
-    // no matter how narrow the window is.
-    $(".navbar").next().css("padding-top", $(".navbar").height() + "px");
-
     // Set up automatic debounced saving.
     settings.on("change", _.debounce(function() {
         settings.save(null, {

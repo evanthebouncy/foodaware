@@ -58,11 +58,19 @@
 	height:300px;
 	padding:10px;
 }
-.ingredient_option
-{
-	margin:10px;
-	border-radius:10px;
+
+div.picker {
+    display: inline-block;
+    width: 200px;
+    margin: 10px 20px;
 }
+
+/* Bootstrap wants a 5px left margin on .btn-group+.btn-group. Why? I
+have no clue. */
+.ingredient_list .btn-group+.btn-group {
+    margin-left: 20px;
+}
+
 .like_checked
 {
 	background: #33ff33;

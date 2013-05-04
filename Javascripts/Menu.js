@@ -136,6 +136,7 @@ var populateThumbnails = function(settings) {
             if (item.itemName == targetFoodName) {
                 $(selectionWindow).html(itemTemplate(item));
 
+                item.ingredients.sort();
                 var ingredientButtons = _.map(item.ingredients, function(ingredient) {
                     button = new ValenceButton({displayName: ingredient,
                                                 model: settings});
