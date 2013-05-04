@@ -111,6 +111,6 @@ parsed_restaurants = parse_restaurants(rest_lines)
 
 pprint.pprint(parsed_restaurants)
 print '===========json file============'
-print 'var restaurants = ' + json.dumps(parsed_restaurants)
+print json.dumps(parsed_restaurants)
 
 

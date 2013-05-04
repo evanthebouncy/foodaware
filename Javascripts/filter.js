@@ -14,16 +14,6 @@ $(document).ready(function()
     });
 
 
-  /*  $(".restaurant").click(function(){
-        $(".selected").removeClass("selected");
-        $(this).addClass("selected");
-    });*/
-
-    $(".restaurant").hover(function(){
-        $()
-
-    })
-
 
 
 

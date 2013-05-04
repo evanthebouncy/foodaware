@@ -28,10 +28,9 @@ bok_choy
 bell_pepper
 bean_sprout
 basil
-corn
 green_bean
 chinese_creuller
-tomatoe
+tomato
 seaweed
 snow_pea
 soy
