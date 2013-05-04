@@ -5,18 +5,17 @@ function ucFirst(str) {
 }
 
 $(document).ready(function() {
-    Parse.User.logIn("janedoe", "janedoe", function(user) {
-        var query = new Parse.Query(Settings);
-        query.equalTo("user", user).first({
-            success: function(settings) {
+    var user = Parse.User.current();
+    var query = new Parse.Query(Settings);
+    query.equalTo("user", user).first({
+        success: function(settings) {
                 setupEntrySystem(settings || new Settings({user: user}));
-            },
+        },
 
-            error: function(settings, error) {
-                console.log("no settings found, using default");
-                setupEntrySystem(settings || new Settings({user: user}));
-            }});
-    });
+        error: function(settings, error) {
+            console.log("no settings found, using default");
+            setupEntrySystem(settings || new Settings({user: user}));
+        }});
 });
 
 // This actually sets up all the data entry options; we call it once

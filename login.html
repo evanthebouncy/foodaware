@@ -5,9 +5,15 @@
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
 
+    <!-- External libraries -->
     <script src="External_Libraries/jquery-1.9.0.min.js"></script>
     <script src="External_Libraries/underscore-min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Local libraries -->
     <script src="Javascripts/navbar.js"></script>
+    <script src="Javascripts/login.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet" type="text/css">
     <title>FoodAware | Log in</title>
@@ -16,17 +22,23 @@
       <div class="container">
         <div class="row">
           <div class="span3 well offset4">
-          <h2>Log in</h2>
-          <fieldset>
-            <div class="clearfix">
-              <input type="text" name="username" placeholder="Username">
+            <h2>Log in</h2>
+            <div class="alert alert-error" id="fail-alert" style="display: none">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <span id="alert-message">Registration failed! A user with that username already exists.</span>
             </div>
-            <div class="clearfix">
-              <input type="password" name="password" placeholder="Password">
-            </div>
-            <button class="btn btn-primary" type="submit">Sign in</button>
-            <button class="btn" type="submit">Register</button>
-          </fieldset>
+            <form id="login-form">
+              <fieldset>
+                <div class="clearfix">
+                  <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="clearfix">
+                  <input type="password" name="password" placeholder="Password">
+                </div>
+                <button class="btn btn-primary" type="submit">Sign in</button>
+                <button class="btn" id="register">Register</button>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>

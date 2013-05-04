@@ -49,18 +49,17 @@ var itemScore = function(item) {
 }
 
 $(document).ready(function() {
-    Parse.User.logIn("janedoe", "janedoe", function(user) {
-        var query = new Parse.Query(Settings);
-        query.equalTo("user", user).first({
-            success: function(settings) {
-                setupMenu(settings);
+    var user = Parse.User.current();
+    var query = new Parse.Query(Settings);
+    query.equalTo("user", user).first({
+        success: function(settings) {
+            setupMenu(settings);
             },
 
-            error: function(settings, error) {
-                console.error("Something went wrong getting user data:", error);
-                setupMenu(settings);
-            }});
-    });
+        error: function(settings, error) {
+            console.error("Something went wrong getting user data:", error);
+            setupMenu(settings);
+        }});
 });
 
 
