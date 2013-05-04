@@ -1,0 +1,309 @@
+===================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean 
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomatoe
+mussel
+clam
+
+=========================
+name:
+Blonde Miso Soup  
+
+price:
+4.00
+
+description:
+Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+=======================
+name:
+Korean Seafood Tofu Bowl
+
+price:
+10.00
+
+description:
+Shrimp, clams, mussels, one egg, Kim Chi and Enoki Mushrooms
+House Made Kim Chi
+
+ingredients:
+shrimp
+clam
+mussel
+egg
+kimchi
+mushroom
+
+=========================
+name:
+Thai Green Papaya Salad
+
+price:
+8.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili) 
+Plated in shallow bowl w/ peanuts on top
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+
+========================
+name:
+Seaweed Salad
+
+price:
+8.00
+
+description:
+Seaweed salad (seaweed, sesame, sesame oil, mushroom, trace wheat & soy)
+House made mango salsa  (mango, red onion, blk. sesame, cilantro, sweet chili sauce 
+
+ingredients:
+seaweed
+sesame
+mushroom
+soy
+wheat
+mango
+onion
+cilantro
+chili
+
+========================
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili) 
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salald 
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep 
+Plated with salad in middle, pieces of tuna around sides
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomatoe
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description: 
+5 pc. Thin sliced yellowtail (hamachi), lightly torched 
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (Chāshū), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+Sautéed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomatoe
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+====================================
+name:
+Chicken Mee Goreng
+
+price:
+7.00
+
+description:
+Stir fried: egg, fried tofu, Chinese creuller, bean sprouts, halved cherry tomatoes, carrot, scallion, chicken julienne, garlic & shallot
+Add blanched lo mein noodles, sauce (garlic, soy, sugar, chili, tamarind), soy & sake
+Plated in shallow bowl w/ lime wedge, crushed peanuts and scallion garnish
+
+ingredients:
+egg
+tofu
+chinese_creuller
+bean_sprout
+tomatoe
+carrot
+scallion
+chicken
+garlic
+shallot
+lo_mein
+soy
+tamarind
+sake
+peanut
+
+================================
+name:
+Chicken Pad Thai
+
+price:
+8.00
+
+description:
+Stir fried: garlic, shallot, basil, onion, carrot, bean sprout,  scallion, fried tofu, chicken julienne and egg
+Add blanched rice noodles & sauce (tamarind, fish sauce, lemongrass), chili flake, soy
+Plated on large round w/ lime wedge, crushed peanuts and scallion garnish
+
+ingredients:
+garlic
+shallot
+basil
+onion
+carrot
+bean_sprout
+scallion
+tofu
+chicken
+egg
+rice_noodle
+tamarind
+fish_sauce
+lemon_grass
+chili
+soy
+

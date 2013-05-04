@@ -1,0 +1,57 @@
+td{
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.header{
+    padding-bottom: 1em;
+    margin-top:5em;
+}
+
+h1{
+    font-family: 'Denk One', sans-serif;
+}
+.restaurantList{
+    display:none;
+    margin-top:5em;
+    margin-bottom:5em;
+}
+#resList{
+    list-style-type: decimal;
+}
+.filter{
+    margin-top:2em;
+    margin-bottom:2em;
+
+}
+.restaurant{
+    display:block;
+}
+.res_pic{
+    margin: 10px;}
+
+.restaurant:hover{
+    background-color:lightgoldenrodyellow;
+    display:block
+}
+
+.selected:hover{
+    background-color:#CCEBD6;
+}
+
+.wrapper{
+    text-align: center;
+    float:right;
+}
+
+#GoToBtn{
+    vertical-align: 50%;
+}
+
+ul#selection{
+  margin:0;
+}
+
+li.sel {
+  list-style-type: none;
+}

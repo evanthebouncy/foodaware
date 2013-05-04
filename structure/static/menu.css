@@ -1,0 +1,101 @@
+﻿#menu_display
+{
+	border-radius:10px;
+	border: 1px solid #dddddd;
+}
+#restrictions_main
+{
+	border-radius:10px;
+}
+#preferences_main
+{
+	//height:200px;
+	border-radius:10px;
+	//overflow:auto;
+}
+.user_preference
+{
+	margin:5px;
+}
+.user_restriction
+{
+	margin:5px;
+}
+.thumbnail
+{
+	width:150px;
+	height:150px;
+	display:inline-block;
+	border-radius:10px;
+	cursor:pointer
+}
+#dish_selection
+{
+	margin:10px;
+	border:1px solid #bbbbbb;
+	border-radius:10px;
+	display:none;
+}
+#dish_selection_image
+{
+	width:200px;
+	height:200px;
+	border:1px solid #bbbbbb;
+	border-radius:10px;
+	margin:10px;
+        overflow: hidden;
+}
+#menu_description_label
+{
+	margin:10px;
+}
+#likert_ingredients_box
+{
+	border:1px solid #bbbbbb;
+	border-radius:10px;
+	margin:10px;
+	overflow:auto;
+	height:300px;
+	padding:10px;
+}
+.ingredient_option
+{
+	margin:10px;
+	border-radius:10px;
+}
+.like_checked
+{
+	background: #33ff33;
+}
+.dislike_checked
+{
+	background: #ff3333;
+}
+
+#DishNameLabel
+{
+	margin:10px;
+}
+#close_selection_button
+{
+	margin:10px;
+	cursor:pointer;
+}
+#order_button
+{
+	margin:10px;
+	cursor:pointer;
+}
+#summary_button
+{
+	margin:10px;
+}
+#SelectionCount
+{
+	text-align:center;
+}
+
+#restrictions_main button, #preferences_main button {
+    display: block;
+    margin: 10px 0px;
+}

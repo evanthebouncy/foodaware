@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
+    <script src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script src="External_Libraries/handlebars.js"></script>
+    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="Javascripts/filter.js"></script>
+    <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
+    <script type="text/javascript" src="menu_ingr_data/ingredients.json"></script>
+
+    <!-- Loading external Javascript libraries here -->
+    <script type="text/javascript" src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Javascript/summary.js"></script>
+    <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
+    <script src="Javascripts/navbar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="summary.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <title>FoodAware | Selection Summary</title>
+
+<style>
+
+.hide {
+  display:none;
+}
+
+.sel {
+  margin-bottom:20px;
+}
+
+ul#awareful {
+    margin-left: 0;
+}
+
+#print {
+  padding-top: 20px;
+}
+
+.fdaware {
+  padding-bottom: 20;
+}
+
+.dish_name {
+  font-weight:bold;
+}
+
+.unsafe {
+  color:#aa0000;
+}
+</style>
+
+    <script>
+
+function add_dish(dish_dir, dish_src){
+  var name_add = $('<div/>', {
+              text: dish_src["name"],
+              class: "dish_name"
+  });
+
+  var img_cont = $('<div/>', {
+    class: "img_container",
+  });
+  var img_add = $('<img class="dish_img">').attr('width','300');
+  img_add.attr('src', 'menu_ingr_data/menu_picture/' + dish_src["image"]).appendTo(img_cont);
+
+  var ingr_add = $('<div/>', {
+              text: 'contains: '+
+                    String(dish_src["ingredients"]).replace(
+                    /_/g," ").replace(/,/g,", "),
+              class: "dish_content"
+  });
+
+  $(dish_dir).append(name_add);
+  $(dish_dir).append(img_cont);
+  $(dish_dir).append(ingr_add);
+}
+
+function add_worry(dish_dir, dish_src){
+  var name_add = $('<div/>', {
+              text: dish_src["name"],
+              class: "dish_name unsafe"
+  });
+
+  var ingr_add = $('<div/>', {
+              text: 'contains restricted ingredients: '+
+                    (String(dish_src["ingredients"][0]) +' '+
+                     String(dish_src["ingredients"][4]))
+                    .replace(
+                    /_/g," ").replace(/,/g,", "),
+              class: "dish_content"
+  });
+
+  $(dish_dir).append(name_add);
+  $(dish_dir).append(ingr_add);
+}
+
+$(document).ready(function() {
+  console.log(restaurants);
+
+
+  add_dish("#dish1",restaurants[0]["dishes"][0]);
+  add_dish("#dish2",restaurants[0]["dishes"][1]);
+  add_dish("#dish3",restaurants[0]["dishes"][2]);
+
+  add_worry("#aware1",restaurants[1]["dishes"][2]);
+  add_worry("#aware2",restaurants[1]["dishes"][1]);
+  add_worry("#aware3",restaurants[1]["dishes"][0]);
+
+  $(".show_hide").click( function(){
+    var to_hide = $(this).parent().children()[1];
+    $(to_hide).toggleClass("hide");
+  })
+})
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+<div class="container" id="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>Your Selection Summary</h1>
+    </div>
+
+    <!-- Restaurant Info -->
+    <div>
+        <h3>Restaurant Info</h3>
+        <div>
+            Life Alive </br>
+            Address: 765 Massachusetts Ave</br>
+            Cambridge, MA 02139-3303</br>
+            Phone: 617-354-5433</br>
+        </div>
+    </div>
+
+    <!-- Dish Selection -->
+    <div>
+      <h3>Dish Selections</h3>
+        <ul id="selection">
+          <li class="sel">
+            <div id="dish1">
+
+            </div>
+          </li>
+
+          <li class="sel">
+            <div id="dish2">
+            </div>
+          </li>
+
+          <li class="sel">
+            <div id="dish3">
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Warning Dish -->
+    <div class="fdaware">
+      <h3>Unsafe Dishes</h3>
+      <div>
+        <ul id="awareful">
+          <li class="sel">
+            <div id="aware1">
+            </div>
+          </li>
+          <li class="sel">
+            <div id="aware2">
+            </div>
+          </li>
+          <li class="sel">
+            <div id="aware3">
+            </div>
+          </li>
+        </ul>
+      <div>
+    </div>
+
+    <!-- print -->
+    <div id="print">
+      <button class="btn btn-medium btn-primary">Print</button>
+    </div>
+
+</div>
+
+</body>
+</html>
