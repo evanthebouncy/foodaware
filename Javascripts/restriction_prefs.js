@@ -4,10 +4,6 @@ function ucFirst(str) {
     });
 }
 
-function createIdentifier(str) {
-    return str.toLowerCase().replace(/ /g, "_");
-}
-
 $(document).ready(function() {
     Parse.User.logIn("janedoe", "janedoe", function(user) {
         var query = new Parse.Query(Settings);

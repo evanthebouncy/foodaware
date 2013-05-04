@@ -4,6 +4,10 @@ function ucFirst(str) {
     });
 }
 
+function toIdentifier(str) {
+    return str.replace(/ /g, "_");
+}
+
 menuItems = [ {itemName: "Scrambled eggs",
                description: "Good for protein!",
                ingredients: ["Eggs", "Cheese", "Lactose"],
@@ -33,7 +37,6 @@ var SelectedDish;
 
 var itemCount = 0;
 
-var settings = JSON.parse(localStorage["preferences"] || "{}");
 
 var itemScore = function(item) {
     var count = 0;
@@ -49,56 +52,74 @@ $(document).ready(function() {
     Parse.User.logIn("janedoe", "janedoe", function(user) {
         var query = new Parse.Query(Settings);
         query.equalTo("user", user).first({
-            success: function(result) {
-                result = result || new Settings({user: user});
-                settings = result.attributes;
-                reloadSettings();
+            success: function(settings) {
+                setupMenu(settings);
             },
 
-            error: function(result, error) {
-                result = result || new Settings({user: user});
-                settings = result.attributes;
-                reloadSettings();
+            error: function(settings, error) {
+                console.error("Something went wrong getting user data:", error);
+                setupMenu(settings);
             }});
     });
 });
 
 
-var reloadSettings = function() {
+var setupMenu = function(settings) {
+    // Set up the valence groups on the side.
+    preferenceValenceGroup = new ValenceGroup({type: "prefer",
+                                               hasClear: true,
+                                               model: settings});
+    restrictionValenceGroup = new ValenceGroup({type: "restrict",
+                                                hasClear: true,
+                                                model: settings});
+
+    $("#valence-groups").append(preferenceValenceGroup.render().el)
+        .append(restrictionValenceGroup.render().el);
+
+    settings.on("change", _.debounce(function() {
+        settings.save(null, {
+            success: function() {
+                console.log("Successfully saved!");
+            },
+
+            error: function(obj, error) {
+                console.error("Save failure: ", error);
+            }
+        });
+
+        populateThumbnails(settings);
+    }), 300);
+
+
+    populateThumbnails(settings);
+}
+
+
+var populateThumbnails = function(settings) {
+
     var itemTemplate = Handlebars.compile($("#item-template").html());
     selectionWindow = document.getElementById("dish_selection");
 
-    var preferences = [];
-    var restrictions = [];
-    $.each(settings, function(ingredient, setting) {
-        if (setting == "prefer") {
-            preferences.push(ingredient);
-        } else if (setting == "restrict") {
-            restrictions.push(ingredient);
-        }
-    });
-    restrictions.sort();
-    $("#restrictions_main").empty();
-    $.each(restrictions, function(unused, item) {
-        var $button = makeRemoverButton(item, "restrict");
-        $("#restrictions_main").append($button);
-    });
-
-    preferences.sort();
-    $("#preferences_main").empty();
-    $.each(preferences, function(unused, item) {
-        var $button = makeRemoverButton(item, "prefer");
-        $("#preferences_main").append($button);
-    });
-
     // Populate the thumbnails template.
     var thumbnailsTemplate = Handlebars.compile($("#thumbnails-template").html());
+
+    var itemScore = function(item) {
+        var count = 0;
+        for (var i = 0; i < item.ingredients.length; i++) {
+            if (settings.get(toIdentifier(item.ingredients[i])) == "prefer")
+                count++;
+        }
+
+        return count;
+    }
+
     menuItems.sort(function(a, b) {
         return itemScore(b) - itemScore(a);
     });
+
     var filteredItems = $.grep(menuItems, function(item) {
         for (var i = 0; i < item.ingredients.length; i++) {
-            if (settings[item.ingredients[i]] == "restrict") {
+            if (settings.get(toIdentifier(item.ingredients[i])) == "restrict") {
                 return false;
             }
         }
@@ -114,6 +135,13 @@ var reloadSettings = function() {
             console.log(item.itemName);
             if (item.itemName == targetFoodName) {
                 $(selectionWindow).html(itemTemplate(item));
+
+                var ingredientButtons = _.map(item.ingredients, function(ingredient) {
+                    button = new ValenceButton({displayName: ingredient,
+                                                model: settings});
+                    return button.render().$el;
+                });
+                $(selectionWindow).find(".ingredient_list").append(ingredientButtons);
                 return false;
             }
         });
@@ -128,51 +156,6 @@ var reloadSettings = function() {
         $('#close_selection_button').click(function(event) {
 	    selectionWindow.style.display = "none";
 	    selectedDiv.style.border = "1px solid #dddddd";
-        });
-
-
-        // Set up 'like' and 'dislike' buttons.
-        $('.ingredient_option_like').click(function() {
-            var ingredient = $(this).closest(".ingredient_option")
-                .attr("data-ingredient-name");
-            if (toggle(ingredient, "prefer")) {
-                $(this).siblings().removeClass("active");
-                $(this).addClass("active");
-            } else {
-                $(this).removeClass("active");
-            }
-
-            reloadSettings();
-        }).each(function() {
-            var ingredient = $(this).closest(".ingredient_option")
-                .attr("data-ingredient-name");
-            if (settings[ingredient] == "prefer")
-                $(this).addClass("active");
-        });
-        $('.ingredient_option_dislike').click(function() {
-            var ingredient = $(this).closest(".ingredient_option")
-                .attr("data-ingredient-name");
-            if (toggle(ingredient, "restrict")) {
-                $(this).siblings().removeClass("active");
-                $(this).addClass("active");
-            } else {
-                $(this).removeClass("active");
-            }
-
-            reloadSettings();
-        }).each(function() {
-            var ingredient = $(this).closest(".ingredient_option")
-                .attr("data-ingredient-name");
-            if (settings[ingredient] == "restrict")
-                $(this).addClass("active");
-        });
-
-        $('.ingredient_option_name').click(function() {
-            var ingredient = $(this).closest(".ingredient_option")
-                .attr("data-ingredient-name");
-            $(this).siblings().removeClass("active");
-            settings[ingredient] = undefined;
-            reloadSettings();
         });
 
         // Global Event Listeners
@@ -199,30 +182,4 @@ var reloadSettings = function() {
 		$(this).css("border","1px solid #dddddd");
 	    }
 	});
-}
-
-// Create a 'remover' button of the given type (i.e., 'prefer' or
-// 'restrict'); when clicked, it'll remove the relevant item from the
-// setting list and reload.
-function makeRemoverButton(item, type) {
-    return  $("<button class='btn btn-medium'><i class='icon-remove'></i></button>")
-        .append(" " + item).attr("data-food-name", item)
-        .click(function() {
-            delete settings[item];
-            localStorage["preferences"] = JSON.stringify(settings);
-            reloadSettings();
-        });
-}
-
-
-var toggle = function(item, setting) {
-    if (settings[item] == setting) {
-        settings[item] = undefined;
-        localStorage["preferences"] = JSON.stringify(settings);
-        return false;
-    } else {
-        settings[item] = setting;
-        localStorage["preferences"] = JSON.stringify(settings);
-        return true;
-    }
 }
