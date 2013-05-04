@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    font-size: 16pt;
+}
+
+h1{
+    font-family: 'Denk One', sans-serif;
+    text-align: center;
+}
+
+
+div.thumbnail img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+a .btn btn-large btn-success{
+    margin:10px;
+}
