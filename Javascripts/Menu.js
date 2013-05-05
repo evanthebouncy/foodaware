@@ -8,6 +8,60 @@ function toIdentifier(str) {
     return str.replace(/ /g, "_");
 }
 
+/*
+menuItems = [ {itemName: "Scrambled eggs",
+               description: "Good for protein!",
+               ingredients: ["Eggs", "Cheese", "Lactose"],
+               image: "Menu_Resources/eggs.jpg"
+              },
+              {itemName: "Grilled cheese",
+               description: "Goes great with tomato soup",
+               ingredients: ["Bread", "Cheese", "Gluten"],
+               image: "Menu_Resources/grilled cheese.jpg"
+              },
+              {itemName: "Salad",
+               description: "Eat your greens!",
+               ingredients: ["Lettuce", "Tomato", "Vinegar", "Green Beans"],
+               image: "Menu_Resources/salad.jpg"
+              },
+              {itemName: "BLT",
+               description: "A classic.",
+               ingredients: ["Pork", "Lettuce", "Tomato", "Bread", "Gluten"],
+               image: "Menu_Resources/blt.jpg"
+              }
+            ]
+*/
+
+menuItems = null;
+
+var center_display = $('menu_display');
+var selectedDiv;
+var selectionWindow;
+var SelectedDish;
+
+var itemCount = 0;
+
+var itemScore = function(item) {
+    var count = 0;
+    for (var i = 0; i < item.ingredients.length; i++) {
+        if (settings[item.ingredients[i]] == "prefer")
+            count++;
+    }
+
+    return count;
+}
+
+$(document).ready(function() {
+  pull_restaurant_index(to_run_after_we_get_restaurant_index);
+});
+
+//when the body of this function is invoked
+//we would've already know the restaurant index which the user selected
+//on the previous page OH YEAH!
+var to_run_after_we_get_restaurant_index = function (index){
+  console.log("PLEASE HAVE INDEX" + index);
+
+//fake thing we gonna remove later
 menuItems = [ {itemName: "Scrambled eggs",
                description: "Good for protein!",
                ingredients: ["Eggs", "Cheese", "Lactose"],
@@ -30,38 +84,24 @@ menuItems = [ {itemName: "Scrambled eggs",
               }
             ]
 
-var center_display = $('menu_display');
-var selectedDiv;
-var selectionWindow;
-var SelectedDish;
+  console.log(restaurants);
+  var restaurant = restaurants[index];
+  menuItems = restaurant["dishes"];
+  console.log("FJKDSJFIEO!! here are the dishes");
+  console.log(menuItems);
+  
+  var user = Parse.User.current();
+  var query = new Parse.Query(Settings);
+  query.equalTo("user", user).first({
+      success: function(settings) {
+          setupMenu(settings);
+          },
 
-var itemCount = 0;
-
-
-var itemScore = function(item) {
-    var count = 0;
-    for (var i = 0; i < item.ingredients.length; i++) {
-        if (settings[item.ingredients[i]] == "prefer")
-            count++;
-    }
-
-    return count;
+      error: function(settings, error) {
+          console.error("Something went wrong getting user data:", error);
+          setupMenu(settings);
+      }});
 }
-
-$(document).ready(function() {
-    var user = Parse.User.current();
-    var query = new Parse.Query(Settings);
-    query.equalTo("user", user).first({
-        success: function(settings) {
-            setupMenu(settings);
-            },
-
-        error: function(settings, error) {
-            console.error("Something went wrong getting user data:", error);
-            setupMenu(settings);
-        }});
-});
-
 
 var setupMenu = function(settings) {
     // Set up the valence groups on the side.
