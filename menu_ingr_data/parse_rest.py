@@ -27,6 +27,7 @@ def parse_restaurant(rest_lines):
   line_ctr = -1
   while line_ctr < len(rest_lines)-1:
     line_ctr += 1
+
     cur_line = rest_lines[line_ctr]
     if (cur_line == 'name:\n'):
       line_ctr += 1
