@@ -22,6 +22,7 @@
     <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
     <script src="Javascripts/navbar.js"></script>
     <script src="Javascripts/requireLogin.js"></script>
+    <script src ="Javascripts/summary.js"></script>
 
     <link rel="stylesheet" type="text/css" href="summary.css"/>
     <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
@@ -170,7 +171,7 @@ $(document).ready(function() {
 
     <!-- Warning Dish -->
     <div class="fdaware">
-      <h3>Unsafe Dishes</h3>
+      <h3>Dishes You should be cautious about</h3>
       <div>
         <ul id="awareful">
           <li class="sel">
@@ -191,9 +192,10 @@ $(document).ready(function() {
 
     <!-- print -->
     <div id="print">
-      <button class="btn btn-medium btn-primary">Print</button>
+      <button id="print_btn" class="btn btn-medium btn-primary">Print</button>
     </div>
 
+</div>
 </div>
 
 </body>
