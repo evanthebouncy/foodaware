@@ -65,6 +65,10 @@ function pull_restaurant_index(call_back){
     success: function(rest_select){
       //console.log("found old entry for rest_query of this user");
       //console.log(rest_select);
+	  if(rest_select == null)
+	  {
+		call_back(-1);
+	  }
       var select = rest_select.get("restaurant");
       call_back(select);
     },
@@ -136,6 +140,10 @@ function pull_dishes_list(call_back){
     success: function(dish_select){
       //console.log("found old entry for dish_query of this user");
       //console.log(dish_select);
+	  if(dish_select == null)
+	  {
+		call_back(-1);
+	  }
       var select = dish_select.get("dishes");
       call_back(select);
     },

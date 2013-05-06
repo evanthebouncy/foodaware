@@ -47,8 +47,16 @@ function find_dish(rest_dish, dish_name){
 
 function callback1(dishes){
   console.log(dishes);
-
+  
   var render_page = function (rest){
+	if(rest == -1)
+	{
+		window.location = "filter.html";
+	}
+	if((dishes == -1 || dishes.length == 0) && rest != -1)
+	{
+	  window.location = "Menu.html";
+	}
     var restaurant = restaurants[rest];
     update_restaurant_info(restaurant);
 
@@ -59,7 +67,7 @@ function callback1(dishes){
     }
 
   }
-
+  
   pull_restaurant_index(render_page)
 }
 

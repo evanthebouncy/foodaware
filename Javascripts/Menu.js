@@ -13,16 +13,20 @@ menuItems = null;
 var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
-
+var totalPrice = 0;
 var selected_dishes = [];
+var global;
+
 function add_dish(dish){
   if ($.inArray(dish, selected_dishes) == -1){
     selected_dishes.push(dish);
-
+	totalPrice += parseInt($("#item_price_label").html()) * 100;
+	$("#total_price_label").html((totalPrice / 100).toFixed(2));
+	
     var selected_dish = $('<div/>', {
       id:dish
     });
-
+	
     var button_remove = $('<button/>', {
       id: dish+"_close",
       click: function (e) {
@@ -36,14 +40,23 @@ function add_dish(dish){
     var button = $('<button/>', {
       text: dish, //set text 1 to 10
       id: dish+"_view",
-      click: function () {
+      click: function (e) {
+		var dish_name = $(e.target).parent().attr('id');
+		$('.thumbnail').each(function(unused,item){
+			var targetFoodName = $(this).attr("data-food-name");
+			if (targetFoodName == dish_name)
+			{
+				console.log("Found " + dish_name);
+				this.click();
+			}
+		});
       }
     }).appendTo(selected_dish);
 
     console.log(button);
     button.addClass("btn view_btn");
     button_remove.addClass("btn close_btn");
-
+	
     $("#selected_dishes").append(selected_dish);
   } 
 }
@@ -75,10 +88,10 @@ $(document).ready(function() {
 //we would've already know the restaurant index which the user selected
 //on the previous page OH YEAH!
 var to_run_after_we_get_restaurant_index = function (index){
-  console.log("PLEASE HAVE INDEX" + index);
-
-//fake thing we gonna remove later
-
+  if(index == -1)
+  {
+	window.location = "filter.html";
+  }
   console.log(restaurants);
   var restaurant = restaurants[index];
   $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
@@ -207,11 +220,11 @@ var populateThumbnails = function(settings) {
         $('#order_button').click(function(event) {
             
             add_dish($("#DishNameLabel").html());
+			
             $("#SelectionCount").text(itemCount + " item(s)");
-            //$("#add-message").text("Added!");
+            selectionWindow.style.display = "none";
+			selectedDiv.style.border = "1px solid #dddddd";
         });
-
-
     });
 
     $('.thumbnail').hover(
