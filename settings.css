@@ -5,10 +5,10 @@ div .food-list button {
 }
 
 
-button.restrict {
+button.restrict, button.restrict.active, button.restrict:hover {
     color: #ff3333;
 }
 
-button.prefer {
+button.prefer, button.prefer.active, button.prefer:hover {
     color: #00dd00;
 }
