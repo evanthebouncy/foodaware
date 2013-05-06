@@ -59,6 +59,185 @@ tomatoe
 mussel
 clam
 
+
+
+===========================
+name:
+Blonde Miso Soup  
+
+price:
+4.00
+
+description:
+Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+DRAGON & PHOENIX
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+gragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name: mala crispy chicken
+
+price: 10.99
+
+image: mala_crispy_chicken.jpg
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name: veggie chicken with broccoli
+
+price: 10.29
+
+image:veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
+########################
+name:
+Cuisine Inn
+
+logo:
+cuisine_inn.jpg
+
+addr:
+1456 Barley Street,
+Cambridge, MA
+
+phone:
+482-223-5564
+
+===================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomatoe
+mussel
+clam
+
+
+
 ===========================
 name:
 Blonde Miso Soup
@@ -83,6 +262,631 @@ fish
 tofu
 mushroom
 scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+DRAGON & PHOENIX
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+gragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name: mala crispy chicken
+
+price: 10.99
+
+image: mala_crispy_chicken.jpg
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name: veggie chicken with broccoli
+
+price: 10.29
+
+image:veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
+########################
+name:
+Hawksworth Restaurant
+
+logo:
+hawksworth.jpg
+
+addr:
+1432 Green Street,
+Cambridge, MA
+
+phone:
+482-223-9843
+
+===================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomatoe
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+DRAGON & PHOENIX
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+gragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name: mala crispy chicken
+
+price: 10.99
+
+image: mala_crispy_chicken.jpg
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name: veggie chicken with broccoli
+
+price: 10.29
+
+image:veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
+########################
+name:
+Indian Hills
+
+logo:
+indian_hills.jpg
+
+addr:
+144 Charles Street,
+Cambridge, MA
+
+phone:
+482-223-4873
+
+===================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomatoe
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+<<<<<<< HEAD
+=======
+
+price:
+4.00
+
+description:
+Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+DRAGON & PHOENIX
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+gragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name: mala crispy chicken
+
+price: 10.99
+
+image: mala_crispy_chicken.jpg
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name: veggie chicken with broccoli
+
+price: 10.29
+
+image:veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
+########################
+name:
+Sushi
+
+logo:
+sushi.jpg
+
+addr:
+1432 Barley Street,
+Cambridge, MA
+
+phone:
+482-223-4531
+
+===================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomatoe
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+>>>>>>> ffee432b7dd54ba043d79287dc03c2428cfc231b
+
+price:
+4.00
+
+description:
+Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+DRAGON & PHOENIX
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+gragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name: mala crispy chicken
+
+price: 10.99
+
+image: mala_crispy_chicken.jpg
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name: veggie chicken with broccoli
+
+price: 10.29
+
+image:veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
+
 
 ########################
 name:
