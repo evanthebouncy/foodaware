@@ -27,7 +27,7 @@
     <!-- Item description template -->
     <script type="text/x-handlebars-template" id="item-template">
       <div class="row-fluid">
-        <h3 class="span6" id="DishNameLabel">{{itemName}}</h3>
+        <h3 class="span6" id="DishNameLabel">{{name}}</h3>
         <div id = "order_button" class="span2">
           <i class="icon-plus-sign" style="font-size:200%; font-align:center;"></i>
         </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="row-fluid">
         <div class="span6">
-          <div id="dish_selection_image"><img src="{{image}}"/></div>
+          <div id="dish_selection_image"><img src="menu_ingr_data/menu_picture/{{image}}"/></div>
           <p id="menu_description_label">{{description}}</p>
         </div>
         <div class="span6">
@@ -66,9 +66,9 @@
     <script type="text/x-handlebars-template" id="thumbnails-template">
       {{#each this}}
       <li class="span3">
-	<div class="thumbnail" data-food-name="{{this.itemName}}">
-	  <img src="{{this.image}}" alt="">
-	  <p style="text-align:center; margin:5px;">{{this.itemName}}</p>
+	<div class="thumbnail" data-food-name="{{this.name}}">
+	  <img src="menu_ingr_data/menu_picture/{{this.image}}" alt="">
+	  <p style="text-align:center; margin:5px;">{{this.name}}</p>
 	</div>
       </li>
       {{/each}}
@@ -134,7 +134,7 @@
       <div class="row-fluid">
 	<div class="span8">
 	  <div class="row-fluid">
-	    <img class="span2" src="Menu_Resources/MoksaLogo.jpg"></img>
+	    <img class="span2" id="restaurant_logo"></img>
 	    <h1 class="span1" style="font-family: 'Denk One', sans-serif;">Menu</h1>
 	  </div>
 	  <div id="menu_display" class="well">
@@ -142,8 +142,28 @@
 	    <ul id="thumbnails" class="thumbnails"></ul>
 	  </div>
 	</div>
-	<div class="span4" id="valence-groups">
-	</div>
+
+  
+	<div class="span4">
+    <div>
+      <h2>
+        Chosen Dishes 
+      </h2>
+      <div id="selected_dishes" class="well">
+      </div>
+
+      <div>
+        <button id="print_summary" class="offset7 btn btn-medium btn-primary clear">
+          <i class="icon-print icon-large"></i>
+            Print Summary
+        </button>
+      </div>
+    </div>
+    
+    <div class="" id="valence-groups">
+    </div>
+  </div>
+
       </div>
 
       <div class="row-fluid">

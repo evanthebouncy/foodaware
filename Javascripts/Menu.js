@@ -13,7 +13,47 @@ menuItems = null;
 var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
-var SelectedDish;
+
+var selected_dishes = [];
+function add_dish(dish){
+  if ($.inArray(dish, selected_dishes) == -1){
+    selected_dishes.push(dish);
+
+    var selected_dish = $('<div/>', {
+      id:dish
+    });
+
+    var button_remove = $('<button/>', {
+      id: dish+"_close",
+      click: function (e) {
+        var dish_name = $(e.target).parent().attr('id');
+        remove_dish(dish_name);
+      }
+    }).appendTo(selected_dish);
+
+    button_remove.append("<i class=\"icon-remove-sign\"></i>");
+
+    var button = $('<button/>', {
+      text: dish, //set text 1 to 10
+      id: dish+"_view",
+      click: function () {
+      }
+    }).appendTo(selected_dish);
+
+    console.log(button);
+    button.addClass("btn view_btn");
+    button_remove.addClass("btn close_btn");
+
+    $("#selected_dishes").append(selected_dish);
+  } 
+}
+
+function remove_dish(dish){
+  var index_of = selected_dishes.indexOf(dish);
+  selected_dishes.splice(index_of,1);
+  var elem = document.getElementById(dish);
+  elem.parentNode.removeChild(elem);
+}
 
 var itemCount = 0;
 
@@ -56,6 +96,16 @@ var to_run_after_we_get_restaurant_index = function (index){
           console.error("Something went wrong getting user data:", error);
           setupMenu(settings);
       }});
+
+  $("#print_summary").click(
+    function(){
+      push_dish_select(selected_dishes,
+        function() {
+          window.location ="summary.html";
+        }
+      );
+    }
+  )
 }
 
 var setupMenu = function(settings) {
@@ -155,9 +205,10 @@ var populateThumbnails = function(settings) {
 
         // Global Event Listeners
         $('#order_button').click(function(event) {
-            itemCount++;
+            
+            add_dish($("#DishNameLabel").html());
             $("#SelectionCount").text(itemCount + " item(s)");
-            $("#add-message").text("Added!");
+            //$("#add-message").text("Added!");
         });
 
 

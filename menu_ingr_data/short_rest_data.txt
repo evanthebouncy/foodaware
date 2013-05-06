@@ -621,6 +621,8 @@ clam
 ===========================
 name:
 Blonde Miso Soup
+<<<<<<< HEAD
+=======
 
 price:
 4.00
@@ -808,6 +810,7 @@ clam
 ===========================
 name:
 Blonde Miso Soup
+>>>>>>> ffee432b7dd54ba043d79287dc03c2428cfc231b
 
 price:
 4.00
@@ -1141,6 +1144,7 @@ seaweed
 chili_oil
 togaroshi
 
+==================================
 name:
 Kung Pao Angel Hair
 
@@ -1169,6 +1173,20 @@ scallion
 ginger
 soy
 potato
+
+########################
+name:
+Everything KungPow
+
+logo:
+0003_kungpow.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
 
 ====================================
 name:
