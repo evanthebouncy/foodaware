@@ -69,7 +69,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base â€“ â€˜Shiromisoâ€™ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -124,15 +124,20 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
 Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image: 
+mala_crispy_chicken.jpg
 
 ingredients:
 chicken
@@ -141,11 +146,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -246,7 +254,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base â€“ â€˜Shiromisoâ€™ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -301,11 +309,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -318,11 +329,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -339,9 +353,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -423,7 +441,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base â€“ â€˜Shiromisoâ€™ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -478,11 +496,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -495,11 +516,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -516,9 +540,11 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -600,7 +626,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base â€“ â€˜Shiromisoâ€™ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -655,11 +681,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -672,11 +701,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -693,9 +725,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -777,7 +813,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base â€“ â€˜Shiromisoâ€™ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -832,11 +868,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -849,11 +888,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -870,9 +912,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -1072,7 +1118,7 @@ description:
 Ramen base (lots of MSG) boiled with water.
  Miso = fermented soy & barley; rounder, earthier flavor.
  Shoyu = soy sauce and sake; salty, alcoholic flavor
-Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (Chāshū), Enoki mushroom, halved crab stick (kanikama)
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
 Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
 
 image:
@@ -1102,7 +1148,7 @@ price:
 10.00
 
 description:
-Sautéed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
 Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
 Plated in shallow bowl with crispy potato and scallion garnish
 
