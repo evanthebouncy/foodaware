@@ -13,53 +13,53 @@ $(document).ready(function()
     for (var i = 0; i < restaurants.length; i++) {
         ptrs.push(i);
     }
-    //console.log(ptrs);
-
-    //$(".restaurantList").empty();//cletar my div
-
     var new_order = shuffle(ptrs)
-    console.log(new_order);
+
+    $(".restaurantList").empty();//clear old div
+    $(".restaurantList").append($('<hr />'));
+
+    //add all the restaurants
     for (var i=0; i<new_order.length;i++){
-    var rest = restaurants[new_order[i]];
 
-    child= $('<div></div>').addClass("restaurant");
-    row1= $('<div> </div>').addClass("row");
-    resName = $('<span></span>').addClass("ResName").text(rest.name);
-    row1.append(resName)
+        var rest = restaurants[new_order[i]];
+        child= $('<div></div>').addClass("restaurant");
+        row1= $('<div> </div>').addClass("row");
+        resName = $('<span></span>').addClass("ResName").text(rest.name);
+        row1.append(resName)
 
-    //row2 has the image and info
-    row2 =  $('<div></div>').addClass("row");
-    span3 = $('<div></div>').addClass("span3");
-    image = $("<img>").addClass("res_pic").attr({src: "menu_ingr_data/rest_picture/"+rest.logo})
-    span3.append(image)
-    row2.append(span3);
-    span_3 = $('<div></div>').addClass("span8");
-    info = $("<p></p>").addClass("res_Address").text("Address: "+ rest.addr)
-    phone = $("<p></p>").addClass("res_Address").text("Phone: "+rest.phone)
-    info.append(phone);
-    button = $('<button/>', {
-        text: "View Menu", //set text 1 to 10
-        id: ''+i,
-        href: "menu.html",
-        click: function () { 
-          push_restaurant_index(new_order[parseInt(this.id)],
-            function() {
-              window.location ="menu.html"; 
-            }  
-          );
-        }
-        });
-    button.addClass("btn btn-large btn-primary");
+        //row2 has the image and info and button
+        row2 =  $('<div></div>').addClass("row");
+        span3 = $('<div></div>').addClass("span3");
+        image = $("<img>").addClass("res_pic").attr({src: "menu_ingr_data/rest_picture/"+rest.logo})
+        span3.append(image)
+        row2.append(span3);
+        span_3 = $('<div></div>').addClass("span8");
+        info = $("<p></p>").addClass("res_Address").text("Address: "+ rest.addr)
+        phone = $("<p></p>").addClass("res_Address").text("Phone: "+rest.phone)
+        info.append(phone);
+        button = $('<button/>', {
+            text: "View Menu", //set text 1 to 10
+            id: ''+i,
+            href: "menu.html",
+            click: function () {
+              push_restaurant_index(new_order[parseInt(this.id)],
+                function() {
+                  window.location ="menu.html";
+                }
+              );
+            }
+            });
+        button.addClass("btn btn-medium btn-primary");
 
-    span_3.append(info);
-    span_3.append(button);
-    row2.append(span_3);
+        span_3.append(info);
+        span_3.append(button);
+        row2.append(span_3);
 
-    //child restaurants
-    child.append(row1);
-    child.append(row2);
-    $(".restaurantList").append(child)
-    $(".restaurantList").append($('<hr />'))
+        //child restaurants
+        child.append(row1);
+        child.append(row2);
+        $(".restaurantList").append(child)
+        $(".restaurantList").append($('<hr />'))
     }
     $(".restaurantList").css({display:"block"});
    //console.log("")
