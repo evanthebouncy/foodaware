@@ -59,6 +59,8 @@ tomatoe
 mussel
 clam
 
+
+
 ===========================
 name:
 Blonde Miso Soup  
@@ -83,6 +85,25 @@ fish
 tofu
 mushroom
 scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+--
+
+ingredients:
+fish
+bean
+cabbage
+
 
 ########################
 name:
@@ -294,21 +315,6 @@ seaweed
 chili_oil
 togaroshi
 
-########################
-name:
-Everything KungPow
-
-logo:
-0003_kungpow.jpg
-
-addr:
-5534 Ginko Street,
-Cambridge, MA
-
-phone:
-545-777-3443
-
-==================================
 name:
 Kung Pao Angel Hair
 

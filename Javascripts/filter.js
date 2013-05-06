@@ -8,40 +8,41 @@
 $(document).ready(function()
 
 {
+
     $("#searchBtn").click(function(){
-    for (var k=0; k<restaurants.length;k++){
-    restaurants[k]["id"]=k;
-    }
-    //$(".restaurantList").empty();//clear my div
     $('.restaurantList').empty();
-    new_rests = shuffle(restaurants)
+    new_rests = shuffle(copy)
+
+    //Putting data into the divs
     for (var i=0; i<new_rests.length;i++){
     var rest = new_rests[i]
     child= $('<div></div>').addClass("restaurant");
-
     row1= $('<div> </div>').addClass("row");
     resName = $('<span></span>').addClass("ResName").text(rest.name);
     row1.append(resName)
+
+    //row2 has the image and info
     row2 =  $('<div></div>').addClass("row");
     span3 = $('<div></div>').addClass("span3");
     image = $("<img>").addClass("res_pic").attr({src: "menu_ingr_data/rest_picture/"+rest.logo})
     span3.append(image)
     row2.append(span3);
-
     span_3 = $('<div></div>').addClass("span8");
-        info = $("<p></p>").addClass("res_Address").text("Address: "+ rest.addr)
-        phone = $("<p></p>").addClass("res_Address").text("Phone: "+rest.phone)
-        info.append(phone);
-        button = $('<button/>', {
+    info = $("<p></p>").addClass("res_Address").text("Address: "+ rest.addr)
+    phone = $("<p></p>").addClass("res_Address").text("Phone: "+rest.phone)
+    info.append(phone);
+    button = $('<button/>', {
         text: "View Menu", //set text 1 to 10
         id: 'btn_'+i,
         href: "menu.html",
         click: function () { window.location ="menu.html"; push_restaurant_index(rest.id) }
                    });
-    button.addClass("btn btn-large btn-success");
+    button.addClass("btn btn-large btn-primary");
     span_3.append(info);
     span_3.append(button);
     row2.append(span_3);
+
+    //child restaurants
     child.append(row1);
     child.append(row2);
     $(".restaurantList").append(child)
@@ -52,25 +53,11 @@ $(document).ready(function()
     });
 
 /*
-var data = [
-	{
-		name: "Fancy Chinese Resturant",
-		logo: "chr1.png",
-		addr: "Cambridge MA 02139",
-		phone: "xxx-xxx-xxxx"
 
-		dishes: [{
-			image:"...png",
-			name: "Pad Thai",
-			ingredients: ["cucumber", "noodles", "nuts"]
-		}, {
-			name: "Hunan Triple Delight",
-			ingredients: ["chicken", "beef", "brocolli"]
-		}]
-	}
-];
-*/
 
+/**
+given an array o, this function shuffles its element. It will mutate the original array
+**/
 
 function shuffle(o){
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
