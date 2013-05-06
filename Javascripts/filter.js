@@ -8,38 +8,48 @@
 $(document).ready(function()
 
 {
-
     $("#searchBtn").click(function(){
-    //shuffle(json)
-    console.log("here")
-    });
+    for (var k=0; k<restaurants.length;k++){
+    restaurants[k]["id"]=k;
     }
+    //$(".restaurantList").empty();//clear my div
+    $('.restaurantList').empty();
+    new_rests = shuffle(restaurants)
+    for (var i=0; i<new_rests.length;i++){
+    var rest = new_rests[i]
+    child= $('<div></div>').addClass("restaurant");
 
-   /* var json = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': restaurants.json,
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    })();*/
+    row1= $('<div> </div>').addClass("row");
+    resName = $('<span></span>').addClass("ResName").text(rest.name);
+    row1.append(resName)
+    row2 =  $('<div></div>').addClass("row");
+    span3 = $('<div></div>').addClass("span3");
+    image = $("<img>").addClass("res_pic").attr({src: "menu_ingr_data/rest_picture/"+rest.logo})
+    span3.append(image)
+    row2.append(span3);
 
-// this will return a filter which will return true for menu_items whose ingredients should be excluded
-/*function getFilterThatExcludesIngredients(ingredients) {
-	return function(item) {
-		for(var i=0; i<item.ingredients.length;i++) {
-			var ingredient = item.ingredients[i];
-			if (_.contains(ingredients, ingredient)) return false;
-		}
-		return true;
-	};
-}*/
-
+    span_3 = $('<div></div>').addClass("span8");
+        info = $("<p></p>").addClass("res_Address").text("Address: "+ rest.addr)
+        phone = $("<p></p>").addClass("res_Address").text("Phone: "+rest.phone)
+        info.append(phone);
+        button = $('<button/>', {
+        text: "View Menu", //set text 1 to 10
+        id: 'btn_'+i,
+        href: "menu.html",
+        click: function () { window.location ="menu.html"; push_restaurant_index(rest.id) }
+                   });
+    button.addClass("btn btn-large btn-success");
+    span_3.append(info);
+    span_3.append(button);
+    row2.append(span_3);
+    child.append(row1);
+    child.append(row2);
+    $(".restaurantList").append(child)
+    $(".restaurantList").append($('<hr />'))
+    }
+    $(".restaurantList").css({display:"block"});
+   //console.log("")
+    });
 
 /*
 var data = [
@@ -61,47 +71,16 @@ var data = [
 ];
 */
 
-/*function shuffle(o){ //v1.0
+
+function shuffle(o){
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
 };
-}
 
-var array = [1,2 ,3,4,5,6,7,8]
+
+/*var array = [1,2 ,3,4,5,6,7,8]
 newArray = shuffle(array)
-console.log(newArray.toString()));
-
-function applyFilter(filter, json) {
-	var okRests = [];
-	for(var i=0;i<json.length;i++) {
-		var rest = json[i];
-		var okMenuItems = []
-		for(var j=0;j<rest.menu.length;j++) {
-			var menuItem = rest.menu[j];
-			if (filter(menuItem)) {
-				okMenuItems.push(menuItem);
-			}
-		}
-		if (okMenuItems.length > 0) {
-			var restCopy = JSON.parse(JSON.stringify(rest));
-			restCopy.menu = okMenuItems;
-			okRests.push(restCopy);
-		}
-	}
-	return okRests;
-}
-
-var filter = getFilterThatExcludesIngredients(["chicken", "beef"]);
-var okItems = applyFilter(filter, data);
-
-console.log(JSON.stringify(okItems));
-
-
-
-
-
-
-
+console.log(newArray);*/
 });
 
 

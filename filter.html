@@ -6,14 +6,17 @@
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
 
-    <script src="External_Libraries/jquery-1.9.0.min.js"></script>
-    <script src="External_Libraries/handlebars.js"></script>
-    <script src="External_Libraries/bootstrap/js/bootstrap.js"></script>
-    <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="External_Libraries/handlebars.js"></script>
+    <script type="text/javascript" src="External_Libraries/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
 
-    <script src="Javascripts/filter.js"></script>
-    <script src="Javascripts/navbar.js"></script>
-    <script src="Javascripts/requireLogin.js"></script>
+    <script type="text/javascript" src="Javascripts/filter.js"></script>
+    <script type="text/javascript" src="Javascripts/navbar.js"></script>
+    <script type="text/javascript" src="Javascripts/requireLogin.js"></script>
+    <script type="text/javascript" src="menu_ingr_data/ingredients.json"></script>
+    <script type="text/javascript" src="menu_ingr_data/restaurants.json"></script>
+    <script type="text/javascript" src="Javascript/sessiondata.js"></script>
 
     <link rel="stylesheet" type="text/css" href="filter.css"/>
     <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
@@ -46,7 +49,6 @@
             <!-- restaurant sort by options-->
             <td>
                 <select>
-
                     <option value="default">Distance</option>
                     <option value = "Alphabet"> Restaurant Name</option>
                     <option value="Most popular">Most Popular</option>
@@ -65,11 +67,9 @@
     <!-- Restaurant List -->
     <div  class = "restaurantList">
         <hr>
-        <div id = "first" class = "restaurant">
+        <div class = "restaurant">
             <div class = "row">
-
                     <span class = "ResName">Moksa Restaurant</span>
-
             </div>
             <div class = "row">
                 <div class = "span3">
@@ -87,101 +87,6 @@
         </div>
         <hr>
 
-        <div id = "second"  class = "restaurant">
-            <div class = "row">
-                <span class = "ResName">Cafe Expresso </span>
-            </div>
-            <div class = "row">
-                <div class = "span3">
-                    <img class = "res_pic"  src="Menu_Resources/Cafe-Expresso.jpg" alt="cafe">
-                </div>
-                <div class = "span3">
-                    <p class ="resAddress">
-                        Address: 765 Massachusetts Ave<br>
-                        Cambridge, MA 02139-3303<br>
-                        Phone: 617-354-5433</p>
-                    <a href = "menu.html"> <button id="GoToMenuBtn1" class="btn btn-large btn-success">View Menu</button></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <div id = "third" class = "restaurant">
-            <div class = "row">
-                <span class = "ResName">Indian Spice</span>
-            </div>
-            <div class = "row">
-                <div class = "span3">
-                    <img class = "res_pic"  src="Menu_Resources/indian_spice.jpg" alt="cafe">
-                </div>
-                <div class = "span3">
-                    <p class ="resAddress">
-                        Address: 765 Massachusetts Ave<br>
-                        Cambridge, MA 02139-3303<br>
-                        Phone: 617-354-5433</p>
-                    <a href = "menu.html"> <button id="GoToMenuBtn2" class="btn btn-large btn-success">View Menu</button></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <div id = "fourth" class = "restaurant">
-            <div class = "row">
-                <span class = "ResName">Indian Hillis</span>
-            </div>
-            <div class = "row">
-                <div class = "span3">
-                    <img class = "res_pic"  src="Menu_Resources/indian_hillis.gif" alt="cafe">
-                </div>
-                <div class = "span3">
-                    <p class ="resAddress">
-                        Address: 765 Massachusetts Ave<br>
-                        Cambridge, MA 02139-3303<br>
-                        Phone: 617-354-5433</p>
-                    <a href = "menu.html"> <button id="GoToMenuBtn3" class="btn btn-large btn-success">View Menu</button></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <div class = "restaurant">
-            <div class = "row">
-                <span class = "ResName">Sushi Restaurant</span>
-            </div>
-            <div class = "row">
-                <div class = "span3">
-                    <img class = "res_pic"  src="Menu_Resources/sushi.jpg" alt="cafe">
-                </div>
-                <div class = "span3">
-                    <p class ="resAddress">
-                        Address: 765 Massachusetts Ave<br>
-                        Cambridge, MA 02139-3303<br>
-                        Phone: 617-354-5433</p>
-                    <a href = "menu.html"> <button id="GoToMenuBtn4" class="btn btn-large btn-success">View Menu</button></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-
-        <div class = "restaurant">
-            <div class = "row">
-                <span class = "ResName">Kalara's Restaurant</span>
-            </div>
-            <div class = "row">
-                <div class = "span3">
-                    <img class = "res_pic"  src="Menu_Resources/kalaras.jpg" alt="cafe">
-                </div>
-                <div class = "span3">
-                    <p class ="resAddress">
-                        Address: 765 Massachusetts Ave<br>
-                        Cambridge, MA 02139-3303<br>
-                        Phone: 617-354-5433</p>
-                    <a href = "menu.html"> <button id="GoToMenuBtn5" class="btn btn-large btn-success">View Menu</button></a>
-                </div>
-            </div>
-        </div>
-        <hr>
 
 </div>
 

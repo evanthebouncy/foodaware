@@ -8,7 +8,7 @@ function ucFirst(str) {
 }
 
 function toIdentifier(str) {
-    return str.replace(/ /g, "_");
+    return str.replace(/ /g, "_").toLowerCase();
 }
 
 var Settings = Parse.Object.extend("Settings");
