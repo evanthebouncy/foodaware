@@ -9,14 +9,19 @@ $(document).ready(function()
 
 {
     $("#searchBtn").click(function(){
-    for (var k=0; k<restaurants.length;k++){
-    restaurants[k]["id"]=k;
+
+    var ptrs = []
+    for (var i = 0; i < restaurants.length; i++) {
+        ptrs.push(i);
     }
-    //$(".restaurantList").empty();//clear my div
+    console.log(ptrs);
+
+    //$(".restaurantList").empty();//cletar my div
     $('.restaurantList').empty();
-    new_rests = shuffle(restaurants)
-    for (var i=0; i<new_rests.length;i++){
-    var rest = new_rests[i]
+    var new_order = shuffle(ptrs)
+    console.log(new_order);
+    for (var i=0; i<new_order.length;i++){
+    var rest = restaurants[new_order[i]];
     child= $('<div></div>').addClass("restaurant");
 
     row1= $('<div> </div>').addClass("row");
@@ -34,10 +39,16 @@ $(document).ready(function()
         info.append(phone);
         button = $('<button/>', {
         text: "View Menu", //set text 1 to 10
-        id: 'btn_'+i,
+        id: ''+i,
         href: "menu.html",
-        click: function () { window.location ="menu.html"; push_restaurant_index(rest.id) }
-                   });
+        click: function () { 
+          push_restaurant_index(new_order[parseInt(this.id)],
+            function() {
+              window.location ="menu.html"; 
+            }  
+          );
+        }
+        });
     button.addClass("btn btn-large btn-success");
     span_3.append(info);
     span_3.append(button);
