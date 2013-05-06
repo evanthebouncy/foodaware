@@ -8,30 +8,6 @@ function toIdentifier(str) {
     return str.replace(/ /g, "_");
 }
 
-/*
-menuItems = [ {itemName: "Scrambled eggs",
-               description: "Good for protein!",
-               ingredients: ["Eggs", "Cheese", "Lactose"],
-               image: "Menu_Resources/eggs.jpg"
-              },
-              {itemName: "Grilled cheese",
-               description: "Goes great with tomato soup",
-               ingredients: ["Bread", "Cheese", "Gluten"],
-               image: "Menu_Resources/grilled cheese.jpg"
-              },
-              {itemName: "Salad",
-               description: "Eat your greens!",
-               ingredients: ["Lettuce", "Tomato", "Vinegar", "Green Beans"],
-               image: "Menu_Resources/salad.jpg"
-              },
-              {itemName: "BLT",
-               description: "A classic.",
-               ingredients: ["Pork", "Lettuce", "Tomato", "Bread", "Gluten"],
-               image: "Menu_Resources/blt.jpg"
-              }
-            ]
-*/
-
 menuItems = null;
 
 var center_display = $('menu_display');
@@ -62,32 +38,11 @@ var to_run_after_we_get_restaurant_index = function (index){
   console.log("PLEASE HAVE INDEX" + index);
 
 //fake thing we gonna remove later
-menuItems = [ {itemName: "Scrambled eggs",
-               description: "Good for protein!",
-               ingredients: ["Eggs", "Cheese", "Lactose"],
-               image: "Menu_Resources/eggs.jpg"
-              },
-              {itemName: "Grilled cheese",
-               description: "Goes great with tomato soup",
-               ingredients: ["Bread", "Cheese", "Gluten"],
-               image: "Menu_Resources/grilled cheese.jpg"
-              },
-              {itemName: "Salad",
-               description: "Eat your greens!",
-               ingredients: ["Lettuce", "Tomato", "Vinegar", "Green Beans"],
-               image: "Menu_Resources/salad.jpg"
-              },
-              {itemName: "BLT",
-               description: "A classic.",
-               ingredients: ["Pork", "Lettuce", "Tomato", "Bread", "Gluten"],
-               image: "Menu_Resources/blt.jpg"
-              }
-            ]
 
   console.log(restaurants);
   var restaurant = restaurants[index];
+  $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
   menuItems = restaurant["dishes"];
-  console.log("FJKDSJFIEO!! here are the dishes");
   console.log(menuItems);
   
   var user = Parse.User.current();
@@ -171,8 +126,8 @@ var populateThumbnails = function(settings) {
         var targetFoodName = $(this).attr("data-food-name");
         console.log(targetFoodName);
         $(menuItems).each(function(unused, item) {
-            console.log(item.itemName);
-            if (item.itemName == targetFoodName) {
+            console.log(item.name);
+            if (item.name == targetFoodName) {
                 $(selectionWindow).html(itemTemplate(item));
 
                 item.ingredients.sort();

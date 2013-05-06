@@ -8,14 +8,20 @@
 $(document).ready(function()
 
 {
-
     $("#searchBtn").click(function(){
-    $('.restaurantList').empty();
-    new_rests = shuffle(copy)
+    var ptrs = []
+    for (var i = 0; i < restaurants.length; i++) {
+        ptrs.push(i);
+    }
+    //console.log(ptrs);
 
-    //Putting data into the divs
-    for (var i=0; i<new_rests.length;i++){
-    var rest = new_rests[i]
+    //$(".restaurantList").empty();//cletar my div
+
+    var new_order = shuffle(ptrs)
+    console.log(new_order);
+    for (var i=0; i<new_order.length;i++){
+    var rest = restaurants[new_order[i]];
+
     child= $('<div></div>').addClass("restaurant");
     row1= $('<div> </div>').addClass("row");
     resName = $('<span></span>').addClass("ResName").text(rest.name);
@@ -33,11 +39,18 @@ $(document).ready(function()
     info.append(phone);
     button = $('<button/>', {
         text: "View Menu", //set text 1 to 10
-        id: 'btn_'+i,
+        id: ''+i,
         href: "menu.html",
-        click: function () { window.location ="menu.html"; push_restaurant_index(rest.id) }
-                   });
+        click: function () { 
+          push_restaurant_index(new_order[parseInt(this.id)],
+            function() {
+              window.location ="menu.html"; 
+            }  
+          );
+        }
+        });
     button.addClass("btn btn-large btn-primary");
+
     span_3.append(info);
     span_3.append(button);
     row2.append(span_3);
