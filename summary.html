@@ -23,6 +23,7 @@
     <script src="Javascripts/navbar.js"></script>
     <script src="Javascripts/requireLogin.js"></script>
     <script src ="Javascripts/summary.js"></script>
+    <script src="Javascripts/sessiondata.js"></script>
 
     <link rel="stylesheet" type="text/css" href="summary.css"/>
     <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
@@ -61,66 +62,6 @@ ul#awareful {
 
     <script>
 
-function add_dish(dish_dir, dish_src){
-  var name_add = $('<div/>', {
-              text: dish_src["name"],
-              class: "dish_name"
-  });
-
-  var img_cont = $('<div/>', {
-    class: "img_container",
-  });
-  var img_add = $('<img class="dish_img">').attr('width','300');
-  img_add.attr('src', 'menu_ingr_data/menu_picture/' + dish_src["image"]).appendTo(img_cont);
-
-  var ingr_add = $('<div/>', {
-              text: 'contains: '+
-                    String(dish_src["ingredients"]).replace(
-                    /_/g," ").replace(/,/g,", "),
-              class: "dish_content"
-  });
-
-  $(dish_dir).append(name_add);
-  $(dish_dir).append(img_cont);
-  $(dish_dir).append(ingr_add);
-}
-
-function add_worry(dish_dir, dish_src){
-  var name_add = $('<div/>', {
-              text: dish_src["name"],
-              class: "dish_name unsafe"
-  });
-
-  var ingr_add = $('<div/>', {
-              text: 'contains restricted ingredients: '+
-                    (String(dish_src["ingredients"][0]) +' '+
-                     String(dish_src["ingredients"][4]))
-                    .replace(
-                    /_/g," ").replace(/,/g,", "),
-              class: "dish_content"
-  });
-
-  $(dish_dir).append(name_add);
-  $(dish_dir).append(ingr_add);
-}
-
-$(document).ready(function() {
-  console.log(restaurants);
-
-
-  add_dish("#dish1",restaurants[0]["dishes"][0]);
-  add_dish("#dish2",restaurants[0]["dishes"][1]);
-  add_dish("#dish3",restaurants[0]["dishes"][2]);
-
-  add_worry("#aware1",restaurants[1]["dishes"][2]);
-  add_worry("#aware2",restaurants[1]["dishes"][1]);
-  add_worry("#aware3",restaurants[1]["dishes"][0]);
-
-  $(".show_hide").click( function(){
-    var to_hide = $(this).parent().children()[1];
-    $(to_hide).toggleClass("hide");
-  })
-})
 
     </script>
 
@@ -139,11 +80,11 @@ $(document).ready(function() {
     <!-- Restaurant Info -->
     <div>
         <h3>Restaurant Info</h3>
-        <div>
-            Life Alive </br>
-            Address: 765 Massachusetts Ave</br>
-            Cambridge, MA 02139-3303</br>
-            Phone: 617-354-5433</br>
+        <div id="rest_info">
+            <div id="rest_name"></div>
+            <img id="rest_logo"></img>
+            <div id="rest_addr"></div>
+            <div id="rest_phone"></div>
         </div>
     </div>
 
@@ -157,37 +98,7 @@ $(document).ready(function() {
             </div>
           </li>
 
-          <li class="sel">
-            <div id="dish2">
-            </div>
-          </li>
-
-          <li class="sel">
-            <div id="dish3">
-            </div>
-          </li>
         </ul>
-    </div>
-
-    <!-- Warning Dish -->
-    <div class="fdaware">
-      <h3>Dishes You should be cautious about</h3>
-      <div>
-        <ul id="awareful">
-          <li class="sel">
-            <div id="aware1">
-            </div>
-          </li>
-          <li class="sel">
-            <div id="aware2">
-            </div>
-          </li>
-          <li class="sel">
-            <div id="aware3">
-            </div>
-          </li>
-        </ul>
-      <div>
     </div>
 
     <!-- print -->
