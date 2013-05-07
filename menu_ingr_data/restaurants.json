@@ -1,2 +1,1024 @@
-var restaurants = [{"logo": "0001_kimchi.jpg", "dishes": [{"price": "4.00", "ingredients": ["butternut_squash", "curry", "coconut_milk", "soybean ", "heavy_cream"], "name": "Oven Roasted Butternut Squash Soup", "image": "0000_butternut_soup.jpeg", "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "}, {"price": "6.00", "ingredients": ["shrimp", "lemon_grass", "galangal", "lime", "mushroom", "tomato", "mussel", "clam"], "name": "Seafood Tom Yum", "image": "0001_seafood_tom_yum.jpeg", "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "}, {"price": "4.00", "ingredients": ["miso", "soybean", "kelp", "hondashi", "fish", "tofu", "mushroom", "scallion"], "name": "Blonde Miso Soup  ", "image": "0002_miso_soup.jpeg", "description": "Miso base \u2013 \u2018Shiromiso\u2019 (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "}], "name": "Kim's Home Food", "phone": "482-223-4531", "addr": ["1432 Barley Street,", "Cambridge, MA"]}, {"logo": "0002_oriental.jpg", "dishes": [{"price": "10.00", "ingredients": ["shrimp", "clam", "mussel", "egg", "kimchi", "mushroom"], "name": "Korean Seafood Tofu Bowl", "image": "0003_seafood_tofu_soup.jpeg", "description": "Shrimp, clams, mussels, one egg, Kim Chi and Enoki Mushrooms House Made Kim Chi "}, {"price": "8.00", "ingredients": ["green_papaya", "carrot", "bell_pepper", "mango", "chili", "peanut", "tamarind", "fish_sauce"], "name": "Thai Green Papaya Salad", "image": "0004_papaya_salad.jpeg", "description": "Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)  Plated in shallow bowl w/ peanuts on top "}, {"price": "8.00", "ingredients": ["seaweed", "sesame", "mushroom", "soy", "wheat", "mango", "onion", "cilantro", "chili"], "name": "Seaweed Salad", "image": "0005_seaweed_salad.jpeg", "description": "Seaweed salad (seaweed, sesame, sesame oil, mushroom, trace wheat & soy) House made mango salsa  (mango, red onion, blk. sesame, cilantro, sweet chili sauce  "}], "name": "Fred's Oriental Adventure", "phone": "132-424-5352", "addr": ["233 Pastry Street,", "Cambridge, MA"]}, {"logo": "0000_sumo.jpeg", "dishes": [{"price": "10.00", "ingredients": ["green_papaya", "carrot", "bell_pepper", "mango", "chili", "peanut", "tamarind", "fish_sauce", "beef", "garlic"], "name": "Thai Charred Beef Salad", "image": "0006_thai_beef_salad.jpeg", "description": "Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)  Plated in shallow bowl w/ peanuts on top added grilled skirt steak marinated in tamarind and garlic "}, {"price": "11.00", "ingredients": ["soy_sauce", "meat_protein", "tuna", "pepper", "lettuce", "tomatoe"], "name": "Seared Tuna Salald ", "image": "0007_seared_tuna_salad.jpg", "description": "Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein) 7 rolled slices of tuna seared with salt/pep  Plated with salad in middle, pieces of tuna around sides "}, {"price": "12.00", "name": "New Style Yellowtail Sashimi", "image": "0008_new_style_yellowtail.jpg", "ingredients": ["yellowtail", "meat_protein", "chili_oil", "ginger", "chive", "scallion"]}, {"price": "8.00", "ingredients": ["miso", "msg", "soy_sauce", "sake", "ramen_noodle", "egg", "japanese_fish_cake", "corn", "pork", "mushroom", "crab", "leek", "seaweed", "chili_oil", "togaroshi"], "name": "Miso Ramen", "image": "0009_miso_ramen.jpg", "description": "Ramen base (lots of MSG) boiled with water.  Miso = fermented soy & barley; rounder, earthier flavor.  Shoyu = soy sauce and sake; salty, alcoholic flavor Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (Ch\u0101sh\u016b), Enoki mushroom, halved crab stick (kanikama) Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle "}, {"price": "10.00", "ingredients": ["garlic", "shallot", "bok_choy", "tomatoe", "green_bean", "snow_pea", "chicken", "angel_hair", "chive", "scallion", "ginger", "soy", "potato"], "name": "Kung Pao Angel Hair", "image": "0010_kungpow_hair.jpg", "description": "Saut\u00e9ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger) Plated in shallow bowl with crispy potato and scallion garnish "}], "name": "The Hungry Sumo", "phone": "443-556-1232", "addr": ["1242 Dojo Street,", "Cambridge, MA"]}, {"logo": "0003_kungpow.jpg", "dishes": [{"price": "7.00", "ingredients": ["egg", "tofu", "chinese_creuller", "bean_sprout", "tomatoe", "carrot", "scallion", "chicken", "garlic", "shallot", "lo_mein", "soy", "tamarind", "sake", "peanut"], "name": "Chicken Mee Goreng", "image": "0011_chicken_mee_goreng.jpg", "description": "Stir fried: egg, fried tofu, Chinese creuller, bean sprouts, halved cherry tomatoes, carrot, scallion, chicken julienne, garlic & shallot Add blanched lo mein noodles, sauce (garlic, soy, sugar, chili, tamarind), soy & sake Plated in shallow bowl w/ lime wedge, crushed peanuts and scallion garnish "}, {"price": "8.00", "ingredients": ["garlic", "shallot", "basil", "onion", "carrot", "bean_sprout", "scallion", "tofu", "chicken", "egg", "rice_noodle", "tamarind", "fish_sauce", "lemon_grass", "chili", "soy"], "name": "Chicken Pad Thai", "image": "0012_chicken_pad_thai.jpeg", "description": "Stir fried: garlic, shallot, basil, onion, carrot, bean sprout,  scallion, fried tofu, chicken julienne and egg Add blanched rice noodles & sauce (tamarind, fish sauce, lemongrass), chili flake, soy Plated on large round w/ lime wedge, crushed peanuts and scallion garnish "}], "name": "Everything KungPow", "phone": "545-777-3443", "addr": ["5534 Ginko Street,", "Cambridge, MA"]}]
-
+var restaurants = [
+    {
+        "logo": "0001_kimchi.jpg", 
+        "dishes": [
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "butternut_squash", 
+                    "curry", 
+                    "coconut_milk", 
+                    "soybean ", 
+                    "heavy_cream"
+                ], 
+                "name": "Oven Roasted Butternut Squash Soup", 
+                "image": "0000_butternut_soup.jpeg", 
+                "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
+            }, 
+            {
+                "price": "6.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "lemon_grass", 
+                    "galangal", 
+                    "lime", 
+                    "mushroom", 
+                    "tomatoe", 
+                    "mussel", 
+                    "clam"
+                ], 
+                "name": "Seafood Tom Yum", 
+                "image": "0001_seafood_tom_yum.jpeg", 
+                "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
+            }, 
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "miso", 
+                    "soybean", 
+                    "kelp", 
+                    "hondashi", 
+                    "fish", 
+                    "tofu", 
+                    "mushroom", 
+                    "scallion"
+                ], 
+                "name": "Blonde Miso Soup  ", 
+                "image": "0002_miso_soup.jpeg", 
+                "description": "Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
+            }, 
+            {
+                "price": "14.99", 
+                "ingredients": [
+                    "fish", 
+                    "bean"
+                ], 
+                "name": "Szechuan fish with bean sauce", 
+                "image": "sichuan_fish.jpg", 
+                "description": "Crispy fish and vegetable in hot bean sauce. Hot and spicy. "
+            }, 
+            {
+                "price": "11.99", 
+                "ingredients": [
+                    "chicken", 
+                    "shrimp", 
+                    "broccoli", 
+                    "asparagus"
+                ], 
+                "name": "dragon and phoenix", 
+                "image": "dragon_phoenix.jpg", 
+                "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
+            }, 
+            {
+                "description": "Marinated diced chicken deep-fried until crispy sauteed with Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy. ", 
+                "ingredients": [
+                    "chicken", 
+                    "green_pepper", 
+                    "onion", 
+                    "mushroom"
+                ]
+            }, 
+            {
+                "image": "veggi_chicken.jpg", 
+                "description": "Our vegetarian meat substitution is not real meat, but it looks like \"meat\", tastes like \"meat\", can be made as crispy as \"meat\". It's magic vegetables with 100% soy protein and no cholesterol. ", 
+                "ingredients": [
+                    "green_pepper", 
+                    "tomato", 
+                    "potato", 
+                    "bean"
+                ]
+            }, 
+            {
+                "name": "Baingan bhartha", 
+                "ingredients": [
+                    "eggplant", 
+                    "onion", 
+                    "garlic", 
+                    "ginger", 
+                    "rice"
+                ]
+            }
+        ], 
+        "name": "Kim's Home Food", 
+        "phone": "482-223-4531", 
+        "addr": [
+            "1432 Barley Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "cuisine_inn.jpg", 
+        "dishes": [
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "butternut_squash", 
+                    "curry", 
+                    "coconut_milk", 
+                    "soybean", 
+                    "heavy_cream"
+                ], 
+                "name": "Oven Roasted Butternut Squash Soup", 
+                "image": "0000_butternut_soup.jpeg", 
+                "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
+            }, 
+            {
+                "price": "6.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "lemon_grass", 
+                    "galangal", 
+                    "lime", 
+                    "mushroom", 
+                    "tomato", 
+                    "mussel", 
+                    "clam"
+                ], 
+                "name": "Seafood Tom Yum", 
+                "image": "0001_seafood_tom_yum.jpeg", 
+                "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
+            }, 
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "miso", 
+                    "soybean", 
+                    "kelp", 
+                    "hondashi", 
+                    "fish", 
+                    "tofu", 
+                    "mushroom", 
+                    "scallion"
+                ], 
+                "name": "Blonde Miso Soup", 
+                "image": "0002_miso_soup.jpeg", 
+                "description": "Miso base  (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
+            }, 
+            {
+                "price": "14.99", 
+                "ingredients": [
+                    "fish", 
+                    "bean"
+                ], 
+                "name": "Szechuan fish with bean sauce", 
+                "image": "sichuan_fish.jpg", 
+                "description": "Crispy fish and vegetable in hot bean sauce. Hot and spicy. "
+            }, 
+            {
+                "price": "11.99", 
+                "ingredients": [
+                    "chicken", 
+                    "shrimp", 
+                    "broccoli", 
+                    "asparagus"
+                ], 
+                "name": "dragon and phoenix", 
+                "image": "dragon_phoenix.jpg", 
+                "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
+            }, 
+            {
+                "description": "Marinated diced chicken deep-fried until crispy sauteed with Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy. ", 
+                "ingredients": [
+                    "chicken", 
+                    "green_pepper", 
+                    "onion", 
+                    "mushroom"
+                ]
+            }, 
+            {
+                "image": "veggi_chicken.jpg", 
+                "description": "Our vegetarian meat substitution is not real meat, but it looks like \"meat\", tastes like \"meat\", can be made as crispy as \"meat\". It's magic vegetables with 100% soy protein and no cholesterol. ", 
+                "ingredients": [
+                    "green pepper", 
+                    "tomato", 
+                    "potato", 
+                    "bean"
+                ]
+            }, 
+            {
+                "image": "baingan_bhata.jpg", 
+                "ingredients": [
+                    "eggplant", 
+                    "onion", 
+                    "garlic", 
+                    "ginger", 
+                    "rice"
+                ], 
+                "name": "Baingan bhartha", 
+                "description": "Eggplant baked over open flame, mashed, and then sauteed with onions, garlic, ginger. Served with rice. Choose your level of spicyness. "
+            }
+        ], 
+        "name": "Cuisine Inn", 
+        "phone": "482-223-5564", 
+        "addr": [
+            "1456 Barley Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "hawksworth.jpg", 
+        "dishes": [
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "butternut_squash", 
+                    "curry", 
+                    "coconut_milk", 
+                    "soybean", 
+                    "heavy_cream"
+                ], 
+                "name": "Oven Roasted Butternut Squash Soup", 
+                "image": "0000_butternut_soup.jpeg", 
+                "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
+            }, 
+            {
+                "price": "6.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "lemon_grass", 
+                    "galangal", 
+                    "lime", 
+                    "mushroom", 
+                    "tomato", 
+                    "mussel", 
+                    "clam"
+                ], 
+                "name": "Seafood Tom Yum", 
+                "image": "0001_seafood_tom_yum.jpeg", 
+                "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
+            }, 
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "miso", 
+                    "soybean", 
+                    "kelp", 
+                    "hondashi", 
+                    "fish", 
+                    "tofu", 
+                    "mushroom", 
+                    "scallion"
+                ], 
+                "name": "Blonde Miso Soup", 
+                "image": "0002_miso_soup.jpeg", 
+                "description": "Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
+            }, 
+            {
+                "price": "14.99", 
+                "ingredients": [
+                    "fish", 
+                    "bean"
+                ], 
+                "name": "Szechuan fish with bean sauce", 
+                "image": "sichuan_fish.jpg", 
+                "description": "Crispy fish and vegetable in hot bean sauce. Hot and spicy. "
+            }, 
+            {
+                "price": "11.99", 
+                "ingredients": [
+                    "chicken", 
+                    "shrimp", 
+                    "broccoli", 
+                    "asparagus"
+                ], 
+                "name": "dragon and phoenix", 
+                "image": "dragon_phoenix.jpg", 
+                "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
+            }, 
+            {
+                "description": "Marinated diced chicken deep-fried until crispy sauteed with Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy. ", 
+                "ingredients": [
+                    "chicken", 
+                    "green_pepper", 
+                    "onion", 
+                    "mushroom"
+                ]
+            }, 
+            {
+                "image": "veggi_chicken.jpg", 
+                "description": "Our vegetarian meat substitution is not real meat, but it looks like \"meat\", tastes like \"meat\", can be made as crispy as \"meat\". It's magic vegetables with 100% soy protein and no cholesterol. ", 
+                "ingredients": [
+                    "green pepper", 
+                    "tomato", 
+                    "potato", 
+                    "bean"
+                ]
+            }, 
+            {
+                "image": "baingan_bhata.jpg", 
+                "name": "Baingan bhartha", 
+                "ingredients": [
+                    "eggplant", 
+                    "onion", 
+                    "garlic", 
+                    "ginger", 
+                    "rice"
+                ]
+            }
+        ], 
+        "name": "Hawksworth Restaurant", 
+        "phone": "482-223-9843", 
+        "addr": [
+            "1432 Green Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "indian_hills.jpg", 
+        "dishes": [
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "butternut_squash", 
+                    "curry", 
+                    "coconut_milk", 
+                    "soybean", 
+                    "heavy_cream"
+                ], 
+                "name": "Oven Roasted Butternut Squash Soup", 
+                "image": "0000_butternut_soup.jpeg", 
+                "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
+            }, 
+            {
+                "price": "6.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "lemon_grass", 
+                    "galangal", 
+                    "lime", 
+                    "mushroom", 
+                    "tomato", 
+                    "mussel", 
+                    "clam"
+                ], 
+                "name": "Seafood Tom Yum", 
+                "image": "0001_seafood_tom_yum.jpeg", 
+                "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
+            }, 
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "miso", 
+                    "soybean", 
+                    "kelp", 
+                    "hondashi", 
+                    "fish", 
+                    "tofu", 
+                    "mushroom", 
+                    "scallion"
+                ], 
+                "name": "Blonde Miso Soup", 
+                "image": "0002_miso_soup.jpeg", 
+                "description": "Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
+            }, 
+            {
+                "price": "14.99", 
+                "ingredients": [
+                    "fish", 
+                    "bean"
+                ], 
+                "name": "Szechuan fish with bean sauce", 
+                "image": "sichuan_fish.jpg", 
+                "description": "Crispy fish and vegetable in hot bean sauce. Hot and spicy. "
+            }, 
+            {
+                "price": "11.99", 
+                "ingredients": [
+                    "chicken", 
+                    "shrimp", 
+                    "broccoli", 
+                    "asparagus"
+                ], 
+                "name": "dragon and phoenix", 
+                "image": "dragon_phoenix.jpg", 
+                "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
+            }, 
+            {
+                "description": "Marinated diced chicken deep-fried until crispy sauteed with Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy. ", 
+                "ingredients": [
+                    "chicken", 
+                    "green_pepper", 
+                    "onion", 
+                    "mushroom"
+                ]
+            }, 
+            {
+                "image": "veggi_chicken.jpg", 
+                "description": "Our vegetarian meat substitution is not real meat, but it looks like \"meat\", tastes like \"meat\", can be made as crispy as \"meat\". It's magic vegetables with 100% soy protein and no cholesterol. ", 
+                "ingredients": [
+                    "green pepper", 
+                    "tomato", 
+                    "potato", 
+                    "bean"
+                ]
+            }, 
+            {
+                "image": "baingan_bhata.jpg", 
+                "ingredients": [
+                    "eggplant", 
+                    "onion", 
+                    "garlic", 
+                    "ginger", 
+                    "rice"
+                ], 
+                "name": "Baingan bhartha", 
+                "description": "Eggplant baked over open flame, mashed, and then sauteed with onions, garlic, ginger. Served with rice. Choose your level of spicyness. "
+            }
+        ], 
+        "name": "Indian Hills", 
+        "phone": "482-223-4873", 
+        "addr": [
+            "144 Charles Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "sushi.jpg", 
+        "dishes": [
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "butternut_squash", 
+                    "curry", 
+                    "coconut_milk", 
+                    "soybean", 
+                    "heavy_cream"
+                ], 
+                "name": "Oven Roasted Butternut Squash Soup", 
+                "image": "0000_butternut_soup.jpeg", 
+                "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
+            }, 
+            {
+                "price": "6.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "lemon_grass", 
+                    "galangal", 
+                    "lime", 
+                    "mushroom", 
+                    "tomato", 
+                    "mussel", 
+                    "clam"
+                ], 
+                "name": "Seafood Tom Yum", 
+                "image": "0001_seafood_tom_yum.jpeg", 
+                "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
+            }, 
+            {
+                "price": "4.00", 
+                "ingredients": [
+                    "miso", 
+                    "soybean", 
+                    "kelp", 
+                    "hondashi", 
+                    "fish", 
+                    "tofu", 
+                    "mushroom", 
+                    "scallion"
+                ], 
+                "name": "Blonde Miso Soup", 
+                "image": "0002_miso_soup.jpeg", 
+                "description": "Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
+            }, 
+            {
+                "price": "14.99", 
+                "ingredients": [
+                    "fish", 
+                    "bean"
+                ], 
+                "name": "Szechuan fish with bean sauce", 
+                "image": "sichuan_fish.jpg", 
+                "description": "Crispy fish and vegetable in hot bean sauce. Hot and spicy. "
+            }, 
+            {
+                "price": "11.99", 
+                "ingredients": [
+                    "chicken", 
+                    "shrimp", 
+                    "broccoli", 
+                    "asparagus"
+                ], 
+                "name": "dragon and phoenix", 
+                "image": "dragon_phoenix.jpg", 
+                "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
+            }, 
+            {
+                "description": "Marinated diced chicken deep-fried until crispy sauteed with Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy. ", 
+                "ingredients": [
+                    "chicken", 
+                    "green_pepper", 
+                    "onion", 
+                    "mushroom"
+                ]
+            }, 
+            {
+                "image": "veggi_chicken.jpg", 
+                "description": "Our vegetarian meat substitution is not real meat, but it looks like \"meat\", tastes like \"meat\", can be made as crispy as \"meat\". It's magic vegetables with 100% soy protein and no cholesterol. ", 
+                "ingredients": [
+                    "green pepper", 
+                    "tomato", 
+                    "potato", 
+                    "bean"
+                ]
+            }, 
+            {
+                "image": "baingan_bhata.jpg", 
+                "ingredients": [
+                    "eggplant", 
+                    "onion", 
+                    "garlic", 
+                    "ginger", 
+                    "rice"
+                ], 
+                "name": "Baingan bhartha", 
+                "description": "Eggplant baked over open flame, mashed, and then sauteed with onions, garlic, ginger. Served with rice. Choose your level of spicyness. "
+            }
+        ], 
+        "name": "Sushi", 
+        "phone": "482-223-4531", 
+        "addr": [
+            "1432 Barley Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "0002_oriental.jpg", 
+        "dishes": [
+            {
+                "price": "10.00", 
+                "ingredients": [
+                    "shrimp", 
+                    "clam", 
+                    "mussel", 
+                    "egg", 
+                    "kimchi", 
+                    "mushroom"
+                ], 
+                "name": "Korean Seafood Tofu Bowl", 
+                "image": "0003_seafood_tofu_soup.jpeg", 
+                "description": "Shrimp, clams, mussels, one egg, Kim Chi and Enoki Mushrooms House Made Kim Chi "
+            }, 
+            {
+                "price": "8.00", 
+                "ingredients": [
+                    "green_papaya", 
+                    "carrot", 
+                    "bell_pepper", 
+                    "mango", 
+                    "chili", 
+                    "peanut", 
+                    "tamarind", 
+                    "fish_sauce"
+                ], 
+                "name": "Thai Green Papaya Salad", 
+                "image": "0004_papaya_salad.jpeg", 
+                "description": "Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)  Plated in shallow bowl w/ peanuts on top "
+            }, 
+            {
+                "price": "8.00", 
+                "ingredients": [
+                    "seaweed", 
+                    "sesame", 
+                    "mushroom", 
+                    "soy", 
+                    "wheat", 
+                    "mango", 
+                    "onion", 
+                    "cilantro", 
+                    "chili"
+                ], 
+                "name": "Seaweed Salad", 
+                "image": "0005_seaweed_salad.jpeg", 
+                "description": "Seaweed salad (seaweed, sesame, sesame oil, mushroom, trace wheat & soy) House made mango salsa  (mango, red onion, blk. sesame, cilantro, sweet chili sauce  "
+            }
+        ], 
+        "name": "Fred's Oriental Adventure", 
+        "phone": "132-424-5352", 
+        "addr": [
+            "233 Pastry Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "0000_sumo.jpeg", 
+        "dishes": [
+            {
+                "price": "10.00", 
+                "ingredients": [
+                    "green_papaya", 
+                    "carrot", 
+                    "bell_pepper", 
+                    "mango", 
+                    "chili", 
+                    "peanut", 
+                    "tamarind", 
+                    "fish_sauce", 
+                    "beef", 
+                    "garlic"
+                ], 
+                "name": "Thai Charred Beef Salad", 
+                "image": "0006_thai_beef_salad.jpeg", 
+                "description": "Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)  Plated in shallow bowl w/ peanuts on top added grilled skirt steak marinated in tamarind and garlic "
+            }, 
+            {
+                "price": "11.00", 
+                "ingredients": [
+                    "soy_sauce", 
+                    "meat_protein", 
+                    "tuna", 
+                    "pepper", 
+                    "lettuce", 
+                    "tomatoe"
+                ], 
+                "name": "Seared Tuna Salald ", 
+                "image": "0007_seared_tuna_salad.jpg", 
+                "description": "Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein) 7 rolled slices of tuna seared with salt/pep  Plated with salad in middle, pieces of tuna around sides "
+            }, 
+            {
+                "price": "12.00", 
+                "name": "New Style Yellowtail Sashimi", 
+                "image": "0008_new_style_yellowtail.jpg", 
+                "ingredients": [
+                    "yellowtail", 
+                    "meat_protein", 
+                    "chili_oil", 
+                    "ginger", 
+                    "chive", 
+                    "scallion"
+                ]
+            }, 
+            {
+                "price": "8.00", 
+                "ingredients": [
+                    "miso", 
+                    "msg", 
+                    "soy_sauce", 
+                    "sake", 
+                    "ramen_noodle", 
+                    "egg", 
+                    "japanese_fish_cake", 
+                    "corn", 
+                    "pork", 
+                    "mushroom", 
+                    "crab", 
+                    "leek", 
+                    "seaweed", 
+                    "chili_oil", 
+                    "togaroshi"
+                ], 
+                "name": "Miso Ramen", 
+                "image": "0009_miso_ramen.jpg", 
+                "description": "Ramen base (lots of MSG) boiled with water.  Miso = fermented soy & barley; rounder, earthier flavor.  Shoyu = soy sauce and sake; salty, alcoholic flavor Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (Ch\u00c4\ufffdsh\u00c5\u00ab), Enoki mushroom, halved crab stick (kanikama) Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle "
+            }, 
+            {
+                "price": "10.00", 
+                "ingredients": [
+                    "garlic", 
+                    "shallot", 
+                    "bok_choy", 
+                    "tomato", 
+                    "green_bean", 
+                    "snow_pea", 
+                    "chicken", 
+                    "angel_hair", 
+                    "chive", 
+                    "scallion", 
+                    "ginger", 
+                    "soy", 
+                    "potato"
+                ], 
+                "name": "Kung Pao Angel Hair", 
+                "image": "0010_kungpow_hair.jpg", 
+                "description": "Saut\u00c3\u00a9ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger) Plated in shallow bowl with crispy potato and scallion garnish "
+            }
+        ], 
+        "name": "The Hungry Sumo", 
+        "phone": "443-556-1232", 
+        "addr": [
+            "1242 Dojo Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "0003_kungpow.jpg", 
+        "dishes": [
+            {
+                "price": "7.00", 
+                "ingredients": [
+                    "egg", 
+                    "tofu", 
+                    "chinese_creuller", 
+                    "bean_sprout", 
+                    "tomatoe", 
+                    "carrot", 
+                    "scallion", 
+                    "chicken", 
+                    "garlic", 
+                    "shallot", 
+                    "lo_mein", 
+                    "soy", 
+                    "tamarind", 
+                    "sake", 
+                    "peanut"
+                ], 
+                "name": "Chicken Mee Goreng", 
+                "image": "0011_chicken_mee_goreng.jpg", 
+                "description": "Stir fried: egg, fried tofu, Chinese creuller, bean sprouts, halved cherry tomatoes, carrot, scallion, chicken julienne, garlic & shallot Add blanched lo mein noodles, sauce (garlic, soy, sugar, chili, tamarind), soy & sake Plated in shallow bowl w/ lime wedge, crushed peanuts and scallion garnish "
+            }, 
+            {
+                "price": "8.00", 
+                "ingredients": [
+                    "garlic", 
+                    "shallot", 
+                    "basil", 
+                    "onion", 
+                    "carrot", 
+                    "bean_sprout", 
+                    "scallion", 
+                    "tofu", 
+                    "chicken", 
+                    "egg", 
+                    "rice_noodle", 
+                    "tamarind", 
+                    "fish_sauce", 
+                    "lemon_grass", 
+                    "chili", 
+                    "soy"
+                ], 
+                "name": "Chicken Pad Thai", 
+                "image": "0012_chicken_pad_thai.jpeg", 
+                "description": "Stir fried: garlic, shallot, basil, onion, carrot, bean sprout,  scallion, fried tofu, chicken julienne and egg Add blanched rice noodles & sauce (tamarind, fish sauce, lemongrass), chili flake, soy Plated on large round w/ lime wedge, crushed peanuts and scallion garnish "
+            }
+        ], 
+        "name": "Everything KungPow", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "antique.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Antique Restaurant", 
+        "phone": "545-777-3445", 
+        "addr": [
+            "5586 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "chemmeen.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Chemmeen Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "costa_macaroni.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Costa Macaroni", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "csons.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Csons Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "elias_restaurant.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Elias Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "foglia.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Foglia Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "garden_breeze_restaurant.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Garden Breeze Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "kimchi.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Kimchi", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "lemongrass_thai_cuisine.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Lemongrass Thai Cuisine", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "maggie_restaurant.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Maggie's Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "mexican_restaurant.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Mexican Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "noodle_house.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Noodle House", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "panda_wok.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Panda Wok", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "pasta_pane.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Pasta Pane", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "peds.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Ped's", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "roof.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Roof Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "satava_coastal_cuisine.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Satava Coastal Cuisine", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "seasons_restaurant.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Seasons Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "sushi1.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Sushi Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "sushi_yama.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Sushi Yama", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "tete.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "Tete's Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }, 
+    {
+        "logo": "the_jolly_chef_res.jpg", 
+        "dishes": [
+            {}
+        ], 
+        "name": "The Jolly Chef Restaurant", 
+        "phone": "545-777-3443", 
+        "addr": [
+            "5534 Ginko Street,", 
+            "Cambridge, MA"
+        ]
+    }
+]
