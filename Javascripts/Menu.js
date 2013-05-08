@@ -14,58 +14,70 @@ var center_display = $('menu_display');
 var selectedDiv;
 var selectionWindow;
 var totalPrice = 0;
+var restaur_index;
+
+//  $("#selected_dishes").html("");
+
+//view for dishes
 var selected_dishes = [];
-var global;
 
 function add_dish(dish){
+  //add to the dishes object if it's not already there
   if ($.inArray(dish, selected_dishes) == -1){
     selected_dishes.push(dish);
-	totalPrice += parseInt($("#item_price_label").html()) * 100;
-	$("#total_price_label").html((totalPrice / 100).toFixed(2));
-	
-    var selected_dish = $('<div/>', {
-      id:dish
-    });
-	
-    var button_remove = $('<button/>', {
-      id: dish+"_close",
-      click: function (e) {
-        var dish_name = $(e.target).parent().attr('id');
-        remove_dish(dish_name);
-      }
-    }).appendTo(selected_dish);
-
-    button_remove.append("<i class=\"icon-remove-sign\"></i>");
-
-    var button = $('<button/>', {
-      text: dish, //set text 1 to 10
-      id: dish+"_view",
-      click: function (e) {
-		var dish_name = $(e.target).parent().attr('id');
-		$('.thumbnail').each(function(unused,item){
-			var targetFoodName = $(this).attr("data-food-name");
-			if (targetFoodName == dish_name)
-			{
-				console.log("Found " + dish_name);
-				this.click();
-			}
-		});
-      }
-    }).appendTo(selected_dish);
-
-    console.log(button);
-    button.addClass("btn view_btn");
-    button_remove.addClass("btn close_btn");
-	
-    $("#selected_dishes").append(selected_dish);
   } 
+  //get rid of these when we're doing views
+  push_dish_select(selected_dishes,render_selected);
+}
+
+//move this into view
+function render_selected() {
+  $("#selected_dishes").html("");
+    _.each(selected_dishes, function(dish) {
+      var selected_dish = $('<div/>', {
+        id:dish
+      });
+    
+      var button_remove = $('<button/>', {
+        id: dish+"_close",
+        click: function (e) {
+          var dish_name = $(e.target).parent().attr('id');
+          remove_dish(dish_name);
+          render_selected();
+        }
+      }).appendTo(selected_dish);
+
+      button_remove.append("<i class=\"icon-remove-sign\"></i>");
+
+      var button = $('<button/>', {
+        text: dish, //set text 1 to 10
+        id: dish+"_view",
+        click: function (e) {
+      var dish_name = $(e.target).parent().attr('id');
+      $('.thumbnail').each(function(unused,item){
+        var targetFoodName = $(this).attr("data-food-name");
+        if (targetFoodName == dish_name)
+        {
+          console.log("Found " + dish_name);
+          this.click();
+        }
+      });
+        }
+      }).appendTo(selected_dish);
+
+      console.log(button);
+      button.addClass("btn view_btn");
+      button_remove.addClass("btn close_btn");
+    
+      $("#selected_dishes").append(selected_dish);
+    });
 }
 
 function remove_dish(dish){
   var index_of = selected_dishes.indexOf(dish);
   selected_dishes.splice(index_of,1);
-  var elem = document.getElementById(dish);
-  elem.parentNode.removeChild(elem);
+  //get rid of this when we're doing views
+  push_dish_select(selected_dishes,render_selected);
 }
 
 var itemCount = 0;
@@ -81,22 +93,32 @@ var itemScore = function(item) {
 }
 
 $(document).ready(function() {
-  pull_restaurant_index(to_run_after_we_get_restaurant_index);
+  //request restaurant_index and dishes_list from Parse Cloud
+  //once they're in, render the page
+  multi_pull([pull_restaurant_index, pull_dishes_list],menu_page_render);
 });
 
 //when the body of this function is invoked
 //we would've already know the restaurant index which the user selected
 //on the previous page OH YEAH!
-var to_run_after_we_get_restaurant_index = function (index){
-  if(index == -1)
+var menu_page_render = function (list_args) {
+  //initialize values based on what Parse gave back
+  console.log("logging args");
+  console.log(list_args);
+  restaur_index = list_args[0];
+  selected_dishes = list_args[1];
+
+  //kick you back
+  if(restaur_index == -1)
   {
-	window.location = "filter.html";
+	  window.location = "filter.html";
   }
-  console.log(restaurants);
-  var restaurant = restaurants[index];
+
+  //var selected_dishes_view = new SelectedDishesView({collection: selected_dishes});
+
+  var restaurant = restaurants[restaur_index];
   $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
   menuItems = restaurant["dishes"];
-  console.log(menuItems);
   
   var user = Parse.User.current();
   var query = new Parse.Query(Settings);
@@ -110,6 +132,24 @@ var to_run_after_we_get_restaurant_index = function (index){
           setupMenu(settings);
       }});
 
+  //some dirty hack...
+  //check if the restaurant contains the current dishes, if it doesn't, it's a diff restaurant
+  //had to resort to this as we didn't push along with dish_selected the restaurant it came from
+  if (selected_dishes.length > 0){
+    var try_dish = selected_dishes[0];
+    var same_rest = false;
+    _.each(menuItems, function(item){
+      if(item.name == try_dish){
+        same_rest = true;
+      }
+    });
+    //clear the selected_dishes if the restaurant is different
+    if (same_rest == false){
+      selected_dishes = [];
+    }
+  }
+
+  render_selected();
   $("#print_summary").click(
     function(){
       push_dish_select(selected_dishes,
@@ -219,11 +259,10 @@ var populateThumbnails = function(settings) {
         // Global Event Listeners
         $('#order_button').click(function(event) {
             
-            add_dish($("#DishNameLabel").html());
-			
-            $("#SelectionCount").text(itemCount + " item(s)");
-            selectionWindow.style.display = "none";
-			selectedDiv.style.border = "1px solid #dddddd";
+          add_dish($("#DishNameLabel").html());
+          $("#SelectionCount").text(itemCount + " item(s)");
+          selectionWindow.style.display = "none";
+			    selectedDiv.style.border = "1px solid #dddddd";
         });
     });
 
@@ -241,4 +280,5 @@ var populateThumbnails = function(settings) {
 		$(this).css("border","1px solid #dddddd");
 	    }
 	});
+
 }
