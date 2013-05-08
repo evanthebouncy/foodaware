@@ -49,6 +49,7 @@ coconut_milk
 lime
 mango
 tamarind
+avocado
 
 dairy:
 heavy_cream

@@ -13,6 +13,146 @@ phone:
 482-223-4531
 
 ===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
 name:
 Oven Roasted Butternut Squash Soup
 
@@ -55,11 +195,9 @@ lemon_grass
 galangal
 lime
 mushroom
-tomatoe
+tomato
 mussel
 clam
-
-
 
 ===========================
 name:
@@ -106,7 +244,6 @@ cabbage
 ===================================
 name:
 dragon and phoenix
-
 
 price:
 11.99
@@ -168,7 +305,8 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
 price: 7.00
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
@@ -241,8 +379,6 @@ mushroom
 tomato
 mussel
 clam
-
-
 
 ===========================
 name:
@@ -1060,7 +1196,7 @@ garlic
 
 ============================
 name:
-Seared Tuna Salald 
+Seared Tuna Salad
 
 price:
 11.00
@@ -1079,7 +1215,7 @@ meat_protein
 tuna
 pepper
 lettuce
-tomatoe
+tomato
 
 ============================
 name:
@@ -1203,7 +1339,7 @@ egg
 tofu
 chinese_creuller
 bean_sprout
-tomatoe
+tomato
 carrot
 scallion
 chicken
@@ -1248,6 +1384,9 @@ lemon_grass
 chili
 soy
 
+
+
+
 ########################
 name:
 Antique Restaurant
@@ -1264,6 +1403,314 @@ phone:
 
 ====================================
 
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
+
 ########################
 name:
 Chemmeen Restaurant
@@ -1278,7 +1725,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1294,7 +2049,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1310,7 +2373,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1326,7 +2697,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1342,7 +3021,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1357,8 +3344,315 @@ Cambridge, MA
 
 phone:
 545-777-3443
+===================================
 
-====================================
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1374,7 +3668,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1389,8 +3991,315 @@ Cambridge, MA
 
 phone:
 545-777-3443
+===================================
 
-====================================
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1406,7 +4315,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1422,7 +4639,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1438,7 +4963,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1454,7 +5287,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1470,7 +5611,315 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+=====================================
+name:
+Baingan bhartha
+
+image:
+baingan_bhata.jpg
+
+price: 7.00
+Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
+ginger. Served with rice. Choose your level of spicyness.
+
+ingredients:
+eggplant
+onion
+garlic
+ginger
+rice
 
 ########################
 name:
@@ -1486,7 +5935,299 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
+
 
 ########################
 name:
@@ -1502,7 +6243,298 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 
 ########################
 name:
@@ -1518,7 +6550,298 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 
 ########################
 name:
@@ -1534,7 +6857,298 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 
 ########################
 name:
@@ -1549,7 +7163,310 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Fresh Sushi
+
+price:
+10.00
+
+description:
+Fresh veggi sushi
+
+image:
+0sushi.jpeg
+
+ingredients:
+green_pepper
+tofu
+rice_noodle
+soy_sauce
+
+
+
+============================
+name:
+Fish Sushi
+
+price:
+11.00
+
+description:
+Fresh fish sushi
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+tuna
+pepper
+lettuce
+tomato
+rice
+
+
+============================
+name:
+Original Fish Sushi
+
+price:
+11.00
+
+description:
+Fresh fish sushi
+
+image:
+2sushi.jpg
+
+ingredients:
+soy_sauce
+tuna
+pepper
+lettuce
+rice
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 
 ########################
 name:
@@ -1565,7 +7482,365 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Fresh Vegetable Sushi
+
+price:
+10.00
+
+description:
+Fresh veggi sushi
+
+image:
+5sushi.jpg
+
+ingredients:
+green_pepper
+tofu
+rice_noodle
+soy_sauce
+carrot
+avocado
+
+
+
+============================
+name:
+Yello Fish Sushi
+
+price:
+11.00
+
+description:
+Fresh fish sushi
+
+image:
+4sushi.jpg
+
+ingredients:
+soy_sauce
+tuna
+pepper
+lettuce
+tomato
+rice
+
+
+============================
+name:
+Original Fish Sushi
+
+price:
+11.00
+
+description:
+Fresh fish sushi
+
+image:
+3sushi.jpg
+
+ingredients:
+soy_sauce
+tuna
+pepper
+lettuce
+rice
+
+
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 ########################
 name:
 Tete's Restaurant
@@ -1580,7 +7855,298 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 ########################
 name:
 The Jolly Chef Restaurant
@@ -1595,5 +8161,296 @@ Cambridge, MA
 phone:
 545-777-3443
 
-====================================
+===================================
+
+name:
+Thai Charred Beef Salad
+
+price:
+10.00
+
+description:
+Julienned: green papaya (unripe), carrot, red bell pepper, mango (unripe)& cuke
+Pinch of dried chili, ground peanuts, sauce (tamarind, fish sauce, chili)
+Plated in shallow bowl w/ peanuts on top
+added grilled skirt steak marinated in tamarind and garlic
+
+image:
+0006_thai_beef_salad.jpeg
+
+ingredients:
+green_papaya
+carrot
+bell_pepper
+mango
+chili
+peanut
+tamarind
+fish_sauce
+beef
+garlic
+
+============================
+name:
+Seared Tuna Salad
+
+price:
+11.00
+
+description:
+Mesclun spring mix with Yuzu dressing (soy sauce (wheat) & meat protein)
+7 rolled slices of tuna seared with salt/pep
+Plated with salad in middle, pieces of tuna around sides
+
+image:
+0007_seared_tuna_salad.jpg
+
+ingredients:
+soy_sauce
+meat_protein
+tuna
+pepper
+lettuce
+tomato
+
+============================
+name:
+New Style Yellowtail Sashimi
+
+price:
+12.00
+
+description:
+5 pc. Thin sliced yellowtail (hamachi), lightly torched
+Yuzu dressing (soy sauce (wheat) & meat protein) & Chili oil
+Ginger & Chive julienne on each pc
+Round plate, fish in star pattern w/ scallion garnish
+
+image:
+0008_new_style_yellowtail.jpg
+
+ingredients:
+yellowtail
+meat_protein
+chili_oil
+ginger
+chive
+scallion
+
+=============================
+name:
+Miso Ramen
+
+price:
+8.00
+
+description:
+Ramen base (lots of MSG) boiled with water.
+ Miso = fermented soy & barley; rounder, earthier flavor.
+ Shoyu = soy sauce and sake; salty, alcoholic flavor
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
+Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
+
+image:
+0009_miso_ramen.jpg
+
+ingredients:
+miso
+msg
+soy_sauce
+sake
+ramen_noodle
+egg
+japanese_fish_cake
+corn
+pork
+mushroom
+crab
+leek
+seaweed
+chili_oil
+togaroshi
+
+==================================
+name:
+Kung Pao Angel Hair
+
+price:
+10.00
+
+description:
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
+Plated in shallow bowl with crispy potato and scallion garnish
+
+image:
+0010_kungpow_hair.jpg
+
+ingredients:
+garlic
+shallot
+bok_choy
+tomato
+green_bean
+snow_pea
+chicken
+angel_hair
+chive
+scallion
+ginger
+soy
+potato
+
+=====================================
+name:
+Oven Roasted Butternut Squash Soup
+
+price:
+4.00
+
+description:
+Butternut squash, curry concentrate, coconut milk
+Boiled with soybeans and heavy cream
+Plated  in shallow bowl with cream drizzle
+
+image:
+0000_butternut_soup.jpeg
+
+ingredients:
+butternut_squash
+curry
+coconut_milk
+soybean
+heavy_cream
+
+===============================
+name:
+Seafood Tom Yum
+
+price:
+6.00
+
+description:
+Tom yum paste (contains shrimp), lemongrass, galangal, lime juice
+Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams
+Plated in shallow bowl with cilantro garnish
+
+image:
+0001_seafood_tom_yum.jpeg
+
+ingredients:
+shrimp
+lemon_grass
+galangal
+lime
+mushroom
+tomato
+mussel
+clam
+
+
+
+===========================
+name:
+Blonde Miso Soup
+
+price:
+4.00
+
+description:
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
+We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
+
+image:
+0002_miso_soup.jpeg
+
+ingredients:
+miso
+soybean
+kelp
+hondashi
+fish
+tofu
+mushroom
+scallion
+
+===================================
+name:
+Szechuan fish with bean sauce
+
+price:
+14.99
+
+description:
+Crispy fish and vegetable in hot bean sauce. Hot and spicy.
+
+image:
+sichuan_fish.jpg
+
+ingredients:
+fish
+bean
+cabbage
+===================================
+name:
+dragon and phoenix
+
+
+price:
+11.99
+
+description:
+Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
+
+image:
+dragon_phoenix.jpg
+
+ingredients:
+chicken
+shrimp
+broccoli
+asparagus
+
+===================================
+name:
+mala crispy chicken
+
+price:
+10.99
+
+description:
+Marinated diced chicken deep-fried until crispy sauteed with
+Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image:
+mala_crispy_chicken.jpg
+
+ingredients:
+chicken
+green_pepper
+onion
+mushroom
+
+===================================
+name:
+veggie chicken with broccoli
+
+price:
+10.29
+
+image:
+veggi_chicken.jpg
+
+description:
+Our vegetarian meat substitution is not real meat, but it looks like "meat",
+tastes like "meat", can be made as crispy as "meat".
+It's magic vegetables with 100% soy protein and no cholesterol.
+
+ingredients:
+green_pepper
+tomato
+potato
+bean
+
 

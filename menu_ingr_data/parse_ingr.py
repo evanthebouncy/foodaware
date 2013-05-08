@@ -34,7 +34,9 @@ def parse_ingredient(ingr_lines, line_ctr):
     return line_ctr, ingr
 
 ingredients = parse_ingredients(ingr_lines)
+#print ingredients
 pprint.pprint(ingredients)
 
-print '=========json file=========='
-print 'var ingredients = ' + json.dumps(ingredients)
+#print '=========json file=========='
+print 'var ingredients = '
+print json.dumps(ingredients, indent=4)
