@@ -11,6 +11,10 @@ td{
 h1{
     font-family: 'Denk One', sans-serif;
 }
+.dish_name {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
 .restaurantList{
     display:none;
     margin-top:5em;

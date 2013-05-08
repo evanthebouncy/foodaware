@@ -8,7 +8,7 @@ function update_restaurant_info(restaurant){
   //$("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
 }
 
-function add_dish(dish_src){
+function add_dish(dish_src, count){
   var li_ele = $('<li/>', {
     class: "sel",
   });
@@ -16,7 +16,7 @@ function add_dish(dish_src){
   li_ele.appendTo($("#selection"));
 
   var name_add = $('<div/>', {
-              text: dish_src["name"],
+              text: dish_src["name"] + (count == 1 ? "" : " x " + count),
               class: "dish_name"
   });
 
@@ -52,22 +52,26 @@ function callback1(dishes){
   console.log(dishes);
 
   var render_page = function (rest){
-	if(rest == -1)
-	{
-		window.location = "filter.html";
-	}
-	if((dishes == -1 || dishes.length == 0) && rest != -1)
-	{
+      if(rest == -1)
+      {
+	  window.location = "filter.html";
+      }
+      if((dishes == -1 || dishes.length == 0) && rest != -1)
+      {
 	  window.location = "Menu.html";
-	}
-    var restaurant = restaurants[rest];
-    update_restaurant_info(restaurant);
+      }
+      var restaurant = restaurants[rest];
+      update_restaurant_info(restaurant);
 
-    for (var i = 0; i < dishes.length; i++){
-      var dish_name = dishes[i];
-      var dish_idx = find_dish(restaurant.dishes, dish_name);
-      add_dish(restaurant["dishes"][dish_idx]);
-    }
+      // Get a count of the number of times each dish was ordered.
+      var count = _.countBy(dishes);
+      var uniqueDishes = _.uniq(dishes);
+
+      for (var i = 0; i < uniqueDishes.length; i++){
+          var dish_name = uniqueDishes[i];
+          var dish_idx = find_dish(restaurant.dishes, dish_name);
+          add_dish(restaurant["dishes"][dish_idx], count[dish_name]);
+      }
 
   }
 
