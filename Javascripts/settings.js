@@ -27,10 +27,27 @@ var ValenceButton = Parse.View.extend({
     },
 
     events: {
-        "click .prefer": "prefer",
+        "click .prefer": "togglePrefer",
         "click .neutral": "neutral",
-        "click .restrict": "restrict"
+        "click .restrict": "toggleRestrict"
     },
+
+    togglePrefer: function() {
+        var valence = this.model.get(this.options.identifier);
+        if (valence == "prefer")
+            this.neutral();
+        else
+            this.prefer();
+    },
+
+    toggleRestrict: function() {
+        var valence = this.model.get(this.options.identifier);
+        if (valence == "restrict")
+            this.neutral();
+        else
+            this.restrictw();
+    },
+
 
     prefer: function() {
         this.model.set(this.options.identifier, "prefer");
