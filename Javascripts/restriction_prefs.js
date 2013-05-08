@@ -23,14 +23,15 @@ var ValenceFilterView = Parse.View.extend({
 
     initialize: function() {
         _.bindAll(this, "render");
-        this.$el.html("<form><input><div class='well'></div></form>");
+        this.$el.html("<div class='well'><form><input></form><div class='filter'></div></div>");
         this.$el.find("form").addClass("form-search");
         this.$input = this.$el.find("input");
         this.$input.attr("placeholder", "Ingredient name")
-            .addClass("input-medium search-query")
+            .addClass("input-large search-query")
             .attr("type", "text")
-            .keyup(this.render);
-        this.$output = this.$el.find("div");
+            .keyup(this.render)
+            .css("font-size", "20px");
+        this.$output = this.$el.find("div.filter");
         this.options.ingredientList.sort();
         var self = this;
         var valenceButtons = _.map(this.options.ingredientList, function(ingredient) {
@@ -140,4 +141,3 @@ var setupEntrySystem = function(settings) {
 
 
 }
-

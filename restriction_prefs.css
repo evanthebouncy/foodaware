@@ -49,3 +49,8 @@ h1, h2 {
     font-size:17pt;
 
 }
+
+.filter {
+    max-height: 300px;
+    overflow: scroll;
+}
