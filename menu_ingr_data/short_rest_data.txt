@@ -2024,7 +2024,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -2348,7 +2351,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -2672,7 +2678,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -2996,7 +3005,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -3320,7 +3332,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -4290,7 +4305,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -5586,7 +5604,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -5910,7 +5931,10 @@ Baingan bhartha
 image:
 baingan_bhata.jpg
 
-price: 7.00
+price:
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
