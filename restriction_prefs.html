@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <script>var pageIndex=1</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" href="External_Libraries/font-awesome/font-awesome.min.css"/>
-
 
     <script src="External_Libraries/jquery-1.9.0.min.js"></script>
     <script src="External_Libraries/handlebars.js"></script>
@@ -17,6 +17,7 @@
     <script src="menu_ingr_data/ingredients.json"></script>
     <script src="Javascripts/navbar.js"></script>
     <script src="Javascripts/requireLogin.js"></script>
+
 
     <script id="valence-template" type="text/x-handlebars-template">
 
@@ -71,7 +72,6 @@
     <link rel="stylesheet" type="text/css" href="restriction_prefs.css"/>
     <link href="http://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet" type="text/css">
     <title>FoodAware | Restrictions and preferences</title>
-
   </head>
 
   <body>
@@ -86,27 +86,30 @@
         <!-- A list of all items, not just the 'apathetic' ones -->
         <div class="span8">
           <div id="search">
-          <h2>Search</h2>
+            <h2>Search</h2>
           </div>
           <div>
-          <h2>Ingredients</h2>
-          <div class="food-chooser well accordion" id="chooser"></div>
+            <h2>Ingredients</h2>
+            <div class="food-chooser well accordion" id="chooser"></div>
           </div>
         </div>
 
         <!-- Right bar; items we care about one way or another -->
         <div class="span4" id="valence-groups">
         </div>
+        <a href="filter.html" class="btn pull-right btn-large btn-primary">
+          Save &amp; Proceed
+          </a>
       </div>
 
       <div class="row">
         <div class="span12">
-          <button class="btn pull-left btn-large btn-success">
-            Save
-          </button>
-          <a href="filter.html" class="btn pull-right btn-large btn-primary">
-            Proceed
-          </a>
+          <!--<button id="save_btn" class="btn pull-left btn-large btn-success">-->
+          <!--Save-->
+            <!--</button>-->
+            <!--<div id="save_msg" style="display:none" >Saved!</div>-->
+
+
         </div>
       </div>
     </div>

@@ -75,6 +75,18 @@ $(document).ready(function() {
             console.log("no settings found, using default");
             setupEntrySystem(settings || new Settings({user: user}));
         }});
+
+    //notification for save button
+    $("#save_btn").click(function(){
+        $("#save_msg").show();
+        setTimeout(function(){
+            $("#save_msg").hide();
+        },2000)
+    });
+
+
+
+
 });
 
 // This actually sets up all the data entry options; we call it once
@@ -125,4 +137,7 @@ var setupEntrySystem = function(settings) {
     }), 300);
 
 
+
+
 }
+

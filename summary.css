@@ -55,3 +55,24 @@ ul#selection{
 li.sel {
   list-style-type: none;
 }
+
+
+@media print
+{
+    .navbar
+    {
+        display:none;
+    }
+    #print_btn{
+        display: none;
+    }
+}
+
+#res_inf{
+   padding-left:200px;
+}
+
+.rest_info{
+   margin-bottom:50px;
+   padding-bottom: 10px;
+}

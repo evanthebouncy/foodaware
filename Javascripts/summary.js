@@ -3,6 +3,10 @@ function update_restaurant_info(restaurant){
   $("#rest_addr").text(restaurant.addr);
   $("#rest_phone").text("phone: "+restaurant.phone);
   $("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
+  $("#rest_name").text("Restaurant: "+ restaurant.name).css("color","blue");
+  $("#rest_addr").text("Address: "+restaurant.addr).css("color","blue");
+  $("#rest_phone").text("phone: "+restaurant.phone).css("color","blue");
+  //$("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
 }
 
 function add_dish(dish_src){

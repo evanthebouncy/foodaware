@@ -35,6 +35,7 @@
 	border:1px solid #bbbbbb;
 	border-radius:10px;
 	display:none;
+    background-color: white;
 }
 #dish_selection_image
 {
@@ -94,6 +95,14 @@ have no clue. */
 	margin:10px;
 	cursor:pointer;
 }
+
+#order_button{
+    text-align: center;
+}
+
+#close_selection_button{
+    text-align: center;
+}
 #summary_button
 {
 	margin:10px;
@@ -115,7 +124,6 @@ have no clue. */
   margin-right:0;
 }
 
-
 .neutral {
     width: 170px;
 }
@@ -123,4 +131,17 @@ have no clue. */
 #selected_dishes .btn-group {
     display: block;
     margin: 10px 5xopx
+}
+
+#order_button:hover{
+    color:green;
+    display:block;
+}
+
+#close_selection_button:hover{
+    color:#f08080;
+    display:block;
+}
+#ingredients{
+    margin-left: 10px;
 }
