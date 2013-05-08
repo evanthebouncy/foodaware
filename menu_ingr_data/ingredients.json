@@ -1,3 +1,14 @@
-var ingredients = {"meats": ["beef", "chicken", "clam", "crab", "egg", "fish", "japanese fish cake", "meat protein", "mussel", "pork", "shrimp", "tuna", "yellowtail"], "nuts": ["peanut", "sesame"], "fruits": ["coconut milk", "green papaya", "lime", "mango", "tamarind"], "grains": ["angel hair", "lo mein", "ramen noodle", "rice noodle", "soybean", "wheat"], "vegetables": ["basil", "bean sprout", "bell pepper", "bok choy", "butternut squash", "carrot", "chinese creuller", "corn", "green bean", "kelp", "kimchi", "leek", "lettuce", "mushroom", "onion", "pepper", "potato", "seaweed", "snow pea", "soy", "tofu", "tomatoe"], "dairy": ["heavy cream"], "condiments": ["chili", "chili oil", "chive", "cilantro", "curry", "fish sauce", "galangal", "garlic", "ginger", "hondashi", "lemon grass", "miso", "msg", "sake", "scallion", "shallot", "soy sauce", "togaroshi"], "Allergens": ["lactose", "gluten"]}
+var ingredients = {
+    allergen: ["lactose", "gluten"],
+    fruit: ["coconut milk", "lime", "tomato"],
+    vegetable: ["broccoli", "asparagus", "scallion", "butternut squash", "green pepper", "onion", "lettuce",
+               "carrot"],
+    other: ["mushroom", "kelp", "tofu", "ginger", "oil"],
+    legume: ["soybean", "bean", "pistachio"],
+    grains: ["rice", "potato", "bread"],
+    dairy: ["heavy cream", "cheese"],
+    meat: ["shrimp", "clam", "mussel", "fish", "hondashi", "chicken", "beef"]
+};
 
-var ingredientGroups = ["Allergens", "meats", "nuts", "fruits", "grains", "vegetables", "dairy", "condiments"];
+
+var ingredientGroups = ["allergen", "meat", "fruit", "vegetable", "legume", "grains", "dairy", "other"]

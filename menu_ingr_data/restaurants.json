@@ -3,7 +3,6 @@ var asian = [
         "price": "4.00",
         "ingredients": [
             "butternut_squash",
-            "curry",
             "coconut_milk",
             "soybean ",
             "heavy_cream"
@@ -16,11 +15,10 @@ var asian = [
         "price": "6.00",
         "ingredients": [
             "shrimp",
-            "lemon_grass",
             "galangal",
             "lime",
             "mushroom",
-            "tomatoe",
+            "tomato",
             "mussel",
             "clam"
         ],
@@ -144,7 +142,7 @@ var american =  [
     { name: "Three-Alarm Chili",
       ingredients: [
           "beef",
-          "beans",
+          "bean",
           "chili powder",
           "onion",
           "cheese",
