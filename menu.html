@@ -47,10 +47,6 @@
         <div class="span6">
           <h3>Ingredients</h3>
           <div id="likert_ingredients_box">
-            <div class= "row-fluid">
-              <p class="span3">Want More</p>
-              <p class="span3 offset3">Can't Have</p>
-            </div>
             <div class="row-fluid ingredient_list">
             </div>
           </div>
@@ -61,7 +57,7 @@
     <!-- Thumbnail template -->
     <script type="text/x-handlebars-template" id="thumbnails-template">
       {{#each this}}
-      <li class="span3">
+      <li>
 	<div class="thumbnail" data-food-name="{{this.name}}">
 	  <img src="menu_ingr_data/menu_picture/{{this.image}}" alt="">
 	  <p style="text-align:center; margin:5px;">{{this.name}}</p>

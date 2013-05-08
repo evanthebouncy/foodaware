@@ -31,13 +31,26 @@ var CartButtonView = Parse.View.extend({
     className: "btn-group",
 
     events: {
-        "click .cart-remove": "removeItem"
+        "click .cart-remove": "removeItem",
+        "click .cart-focus": "focus"
     },
 
     removeItem: function() {
         this.model.remove("cart", this.options.itemName);
         this.model.save();
     },
+
+    focus: function() {
+        var itemName = this.options.itemName;
+        // This is so awful but I can't be bothered writing an escape
+        // function.
+        $(".thumbnail").each(function() {
+            if ($(this).attr("data-food-name") == itemName)
+                // Should've extracted this out into its own function.
+                $(this).click();
+        });
+    },
+
 
     render: function() {
         this.$el.html(this.template(this.options));
@@ -102,8 +115,6 @@ var menu_page_render = function (list_args) {
 	  window.location = "filter.html";
   }
 
-  //var selected_dishes_view = new SelectedDishesView({collection: selected_dishes});
-
   var user = Parse.User.current();
   var restaurant = restaurants[restaur_index];
   $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
@@ -125,23 +136,6 @@ var menu_page_render = function (list_args) {
           console.error("Something went wrong getting user data:", error);
           setupMenu(settings);
       }});
-
-  //some dirty hack...
-  //check if the restaurant contains the current dishes, if it doesn't, it's a diff restaurant
-  //had to resort to this as we didn't push along with dish_selected the restaurant it came from
-  if (selected_dishes.length > 0){
-    var try_dish = selected_dishes[0];
-    var same_rest = false;
-    _.each(menuItems, function(item){
-      if(item.name == try_dish){
-        same_rest = true;
-      }
-    });
-    //clear the selected_dishes if the restaurant is different
-    if (same_rest == false){
-      selected_dishes = [];
-    }
-  }
 }
 
 var setupMenu = function(settings) {
