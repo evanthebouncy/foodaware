@@ -54,6 +54,8 @@ ul#selection{
 
 li.sel {
   list-style-type: none;
+  display: inline-block;
+  margin: 20px;
 }
 
 
