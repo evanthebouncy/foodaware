@@ -151,3 +151,7 @@ ul#thumbnails.thumbnails > li {
     margin-left: 20px;
     margin-bottom: 40px;
 }
+
+body h2 {
+    font-family: 'Denk One', sans-serif;
+}
