@@ -119,3 +119,8 @@ have no clue. */
 .neutral {
     width: 170px;
 }
+
+#selected_dishes .btn-group {
+    display: block;
+    margin: 10px 5xopx
+}

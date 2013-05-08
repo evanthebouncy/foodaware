@@ -58,12 +58,20 @@ var ShoppingCartView = Parse.View.extend({
     render: function() {
         this.$el.html(this.template());
         var self = this;
+        var totalPrice = 0;
         _.each(this.model.get("cart"), function(itemName) {
             var buttonView = new CartButtonView({itemName: itemName,
                                                 model: self.model});
             self.$el.find("#selected_dishes").append(buttonView.render().$el);
+            // This is stupid, but I don't have time to go through and
+            // fix the data.
+            _.each(self.options.dishes, function(dish) {
+                if (dish.name == itemName)
+                    totalPrice += parseFloat(dish.price);
+            });
         });
 
+        this.$el.find("#total_price_label").text("$" + (Math.round(100 * totalPrice) / 100));
         return this;
     }
 });
@@ -73,9 +81,7 @@ $(document).ready(function() {
     //once they're in, render the page
     var user = Parse.User.current();
     user.fetch({success: function(user_) {
-        multi_pull([pull_restaurant_index, pull_dishes_list],menu_page_render);
-        var cartView = new ShoppingCartView({model: user_});
-        $("#cart").append(cartView.render().$el);
+        multi_pull([pull_restaurant_index, pull_dishes_list], menu_page_render)
     }});
 
 });
@@ -98,9 +104,15 @@ var menu_page_render = function (list_args) {
 
   //var selected_dishes_view = new SelectedDishesView({collection: selected_dishes});
 
+  var user = Parse.User.current();
   var restaurant = restaurants[restaur_index];
   $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
   menuItems = restaurant["dishes"];
+
+    var cartView = new ShoppingCartView({model: user,
+                                        dishes: restaurant.dishes})
+    $("#cart").append(cartView.render().$el);
+
 
   var user = Parse.User.current();
   var query = new Parse.Query(Settings);
