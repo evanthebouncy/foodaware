@@ -35,6 +35,13 @@ seaweed
 snow_pea
 soy
 tofu
+cabbage
+bean
+broccoli
+asparagus
+green_pepper
+eggplant
+
 
 fruit:
 green_papaya
@@ -53,6 +60,7 @@ ramen_noodle
 rice_noodle
 wheat
 soybean
+rice
 
 nut:
 sesame

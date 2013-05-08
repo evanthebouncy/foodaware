@@ -9,6 +9,7 @@ $(document).ready(function()
 
 {
     $("#searchBtn").click(function(){
+    console.log(restaurants.length);
     var ptrs = []
     for (var i = 0; i < restaurants.length; i++) {
         ptrs.push(i);

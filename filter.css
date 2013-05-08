@@ -89,6 +89,8 @@ h1{
 }
 .resAddress{
     vertical-align: middle;
+    font-size:20px;
+    font-weight:bold;
 }
 hr{
     line-height: 10px;

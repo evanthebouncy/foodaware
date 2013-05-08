@@ -100,9 +100,11 @@ def parse_dish(dishes_lines):
     if (dishes_lines[line_ctr] == 'ingredients:\n'):
       line_ctr += 1
       ingr = []
-      while dishes_lines[line_ctr] != '\n':
+      #print len(dishes_lines), "dishlines"
+      while dishes_lines[line_ctr] != '\n' and line_ctr<len(dishes_lines)-1:
         ingr.append(dishes_lines[line_ctr][0:-1])
         line_ctr += 1
+        #print line_ctr
       ret['ingredients'] = ingr
 #  print "YOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUU"
 #  pprint.pprint(ret)
@@ -110,9 +112,7 @@ def parse_dish(dishes_lines):
 
 parsed_restaurants = parse_restaurants(rest_lines)
 
-pprint.pprint(parsed_restaurants)
-print '===========json file============'
+#pprint.pprint(parsed_restaurants)
+#print '===========json file============'
 print 'var restaurants =',
-print json.dumps(parsed_restaurants)
-
-
+print json.dumps(parsed_restaurants, indent=4)

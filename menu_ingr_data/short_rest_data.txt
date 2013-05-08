@@ -69,7 +69,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -105,7 +105,7 @@ bean
 cabbage
 ===================================
 name:
-DRAGON & PHOENIX
+dragon and phoenix
 
 
 price:
@@ -115,7 +115,7 @@ description:
 Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
 
 image:
-gragon_phoenix.jpg
+dragon_phoenix.jpg
 
 ingredients:
 chicken
@@ -124,15 +124,18 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
-
-image: mala_crispy_chicken.jpg
+price: 
+10.99
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
 Chinese green pepper, onions,mushrooms and a blend of seasonings. Hot and spicy.
+
+image: 
+mala_crispy_chicken.jpg
 
 ingredients:
 chicken
@@ -141,11 +144,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -153,7 +159,7 @@ tastes like "meat", can be made as crispy as "meat".
 It's magic vegetables with 100% soy protein and no cholesterol.
 
 ingredients:
-green pepper
+green_pepper
 tomato
 potato
 bean
@@ -232,7 +238,7 @@ lemon_grass
 galangal
 lime
 mushroom
-tomatoe
+tomato
 mussel
 clam
 
@@ -246,7 +252,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base  (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -282,7 +288,7 @@ bean
 cabbage
 ===================================
 name:
-DRAGON & PHOENIX
+dragon and phoenix
 
 
 price:
@@ -292,7 +298,7 @@ description:
 Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
 
 image:
-gragon_phoenix.jpg
+dragon_phoenix.jpg
 
 ingredients:
 chicken
@@ -301,11 +307,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -318,11 +327,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -339,9 +351,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -409,7 +425,7 @@ lemon_grass
 galangal
 lime
 mushroom
-tomatoe
+tomato
 mussel
 clam
 
@@ -423,7 +439,7 @@ price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -459,7 +475,7 @@ bean
 cabbage
 ===================================
 name:
-DRAGON & PHOENIX
+dragon and phoenix
 
 
 price:
@@ -469,7 +485,7 @@ description:
 Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
 
 image:
-gragon_phoenix.jpg
+dragon_phoenix.jpg
 
 ingredients:
 chicken
@@ -478,11 +494,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -495,11 +514,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -516,9 +538,11 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -586,7 +610,7 @@ lemon_grass
 galangal
 lime
 mushroom
-tomatoe
+tomato
 mussel
 clam
 
@@ -595,14 +619,12 @@ clam
 ===========================
 name:
 Blonde Miso Soup
-<<<<<<< HEAD
-=======
 
 price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -638,7 +660,7 @@ bean
 cabbage
 ===================================
 name:
-DRAGON & PHOENIX
+dragon and phoenix
 
 
 price:
@@ -648,7 +670,7 @@ description:
 Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
 
 image:
-gragon_phoenix.jpg
+dragon_phoenix.jpg
 
 ingredients:
 chicken
@@ -657,11 +679,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -674,11 +699,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -695,9 +723,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -765,7 +797,7 @@ lemon_grass
 galangal
 lime
 mushroom
-tomatoe
+tomato
 mussel
 clam
 
@@ -774,13 +806,12 @@ clam
 ===========================
 name:
 Blonde Miso Soup
->>>>>>> ffee432b7dd54ba043d79287dc03c2428cfc231b
 
 price:
 4.00
 
 description:
-Miso base – ‘Shiromiso’ (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
+Miso base (white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type
 Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan)
 We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom
 
@@ -816,7 +847,7 @@ bean
 cabbage
 ===================================
 name:
-DRAGON & PHOENIX
+dragon and phoenix
 
 
 price:
@@ -826,7 +857,7 @@ description:
 Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus .
 
 image:
-gragon_phoenix.jpg
+dragon_phoenix.jpg
 
 ingredients:
 chicken
@@ -835,11 +866,14 @@ broccoli
 asparagus
 
 ===================================
-name: mala crispy chicken
+name: 
+mala crispy chicken
 
-price: 10.99
+price: 
+10.99
 
-image: mala_crispy_chicken.jpg
+image: 
+mala_crispy_chicken.jpg
 
 description:
 Marinated diced chicken deep-fried until crispy sauteed with
@@ -852,11 +886,14 @@ onion
 mushroom
 
 ===================================
-name: veggie chicken with broccoli
+name: 
+veggie chicken with broccoli
 
-price: 10.29
+price: 
+10.29
 
-image:veggi_chicken.jpg
+image:
+veggi_chicken.jpg
 
 description:
 Our vegetarian meat substitution is not real meat, but it looks like "meat",
@@ -873,9 +910,13 @@ bean
 name:
 Baingan bhartha
 
-image:baingan_bhata.jpg
+image:
+baingan_bhata.jpg
 
-price: 7.00
+price: 
+7.00
+
+description:
 Eggplant baked over open flame, mashed, and then sauteed with onions, garlic,
 ginger. Served with rice. Choose your level of spicyness.
 
@@ -1075,7 +1116,7 @@ description:
 Ramen base (lots of MSG) boiled with water.
  Miso = fermented soy & barley; rounder, earthier flavor.
  Shoyu = soy sauce and sake; salty, alcoholic flavor
-Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (Chāshū), Enoki mushroom, halved crab stick (kanikama)
+Ramen noodles, halved soft boiled egg, 3 slices ea. of red & white Japanese fish cake (kamaboko), roasted corn kernels, 3 slices of roast pork belly (ChÄ�shÅ«), Enoki mushroom, halved crab stick (kanikama)
 Served in a bowl topped with leeks, roasted seaweed strips (nori), Japanese 7 spice seasoning (togaroshi) and chili oil drizzle
 
 image:
@@ -1106,7 +1147,7 @@ price:
 10.00
 
 description:
-Sautéed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
+SautÃ©ed: garlic, shallot, bok choy, halved cherry tomatoes, green beans, snow peas
 Add fried chicken julienne, blanched angel hair, chive, scallion and sauce (soy, wine, garlic, ginger)
 Plated in shallow bowl with crispy potato and scallion garnish
 
@@ -1117,7 +1158,7 @@ ingredients:
 garlic
 shallot
 bok_choy
-tomatoe
+tomato
 green_bean
 snow_pea
 chicken
@@ -1206,4 +1247,353 @@ fish_sauce
 lemon_grass
 chili
 soy
+
+########################
+name:
+Antique Restaurant
+
+logo:
+antique.jpg
+
+addr:
+5586 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3445
+
+====================================
+
+########################
+name:
+Chemmeen Restaurant
+
+logo:
+chemmeen.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Costa Macaroni
+
+logo:
+costa_macaroni.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Csons Restaurant
+
+logo:
+csons.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Elias Restaurant
+
+logo:
+elias_restaurant.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Foglia Restaurant
+
+logo:
+foglia.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Garden Breeze Restaurant
+
+logo:
+garden_breeze_restaurant.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Kimchi
+
+logo:
+kimchi.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Lemongrass Thai Cuisine
+
+logo:
+lemongrass_thai_cuisine.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Maggie's Restaurant
+
+logo:
+maggie_restaurant.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Mexican Restaurant
+
+logo:
+mexican_restaurant.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Noodle House
+
+logo:
+noodle_house.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Panda Wok
+
+logo:
+panda_wok.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Pasta Pane
+
+logo:
+pasta_pane.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Ped's
+
+logo:
+peds.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Roof Restaurant
+
+logo:
+roof.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Satava Coastal Cuisine
+
+logo:
+satava_coastal_cuisine.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Seasons Restaurant
+
+logo:
+seasons_restaurant.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Sushi Restaurant
+logo:
+sushi1.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+
+########################
+name:
+Sushi Yama
+
+logo:
+sushi_yama.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+########################
+name:
+Tete's Restaurant
+
+logo:
+tete.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
+########################
+name:
+The Jolly Chef Restaurant
+
+logo:
+the_jolly_chef_res.jpg
+
+addr:
+5534 Ginko Street,
+Cambridge, MA
+
+phone:
+545-777-3443
+
+====================================
 
