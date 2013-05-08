@@ -1,11 +1,10 @@
 function update_restaurant_info(restaurant){
   $("#rest_name").text(restaurant.name);
   $("#rest_addr").text(restaurant.addr);
-  $("#rest_phone").text("phone: "+restaurant.phone);
   $("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
   $("#rest_name").text("Restaurant: "+ restaurant.name).css("color","blue");
   $("#rest_addr").text("Address: "+restaurant.addr).css("color","blue");
-  $("#rest_phone").text("phone: "+restaurant.phone).css("color","blue");
+  $("#rest_phone").text("Phone: "+restaurant.phone).css("color","blue");
   //$("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
 }
 
@@ -28,7 +27,7 @@ function add_dish(dish_src){
   img_add.attr('src', 'menu_ingr_data/menu_picture/' + dish_src["image"]).appendTo(img_cont);
 
   var ingr_add = $('<div/>', {
-              text: 'contains: '+
+              text: 'Contains: '+
                     String(dish_src["ingredients"]).replace(
                     /_/g," ").replace(/,/g,", "),
               class: "dish_content"
