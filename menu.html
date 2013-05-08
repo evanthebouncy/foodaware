@@ -28,20 +28,16 @@
     <script type="text/x-handlebars-template" id="item-template">
       <div class="row-fluid">
         <h3 class="span6" id="DishNameLabel">{{name}}</h3>
-        <div id = "order_button" class="span2">
+        <div id = "order_button" class="span2" style="font-size:150%"> add
           <i class="icon-plus-sign" style="font-size:200%; font-align:center;"></i>
         </div>
-        <div id = "close_selection_button" class="span2">
+        <div id = "close_selection_button" class="span2" style="float:right;font-size:150%"> close
           <i class="icon-remove-sign" style="font-size:200%; font-align:center;"></i>
         </div>
       </div>
       <div class="row-fluid">
-        <div class="span2 offset6" style="font-align:center; font-weight: bold" id="add-message">
-          Add to Summary
-        </div>
-        <div class="span2" style="font-align:center; font-weight: bold">
-          Close Selection
-        </div>
+		<div style="margin:10px; font-size:16px" class="span1">Price: </div>
+		<div id="item_price_label" style="margin:10px; font-size:16px" class="span1">{{price}}</div>
       </div>
       <div class="row-fluid">
         <div class="span6">
@@ -152,12 +148,16 @@
       <div id="selected_dishes" class="well">
       </div>
 
-      <div>
-        <button id="print_summary" class="offset7 btn btn-medium btn-primary clear">
-          <i class="icon-print icon-large"></i>
+      <div class="row-fluid">
+		<div class="span3" style="font-size:16px"> Total Price: 
+		</div>
+		<div class="span1" id="total_price_label" style="font-size:16px"> 0.00
+		</div>
+		<button id="print_summary" class="offset2 btn btn-medium btn-primary clear">
+			<i class="icon-print icon-large"></i>
             Print Summary
-        </button>
-      </div>
+		</button>
+	  </div>
     </div>
     
     <div class="" id="valence-groups">

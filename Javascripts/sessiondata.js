@@ -1,27 +1,6 @@
 var RestSelect = Parse.Object.extend("RestSelect");
 var DishesSelect = Parse.Object.extend("DishesSelect");
 
-//create a rest_select object
-//bind it to a selection index
-//save to the cloud
-function create_rest_select(index, callback){
-  var user = Parse.User.current();
-  var rest_select = new RestSelect();
-  rest_select.set("user", user);
-  rest_select.set("restaurant", index);
-  rest_select.save(null,
-    {
-      success:function(rest_select){
-        //console.log("saved to cloud OMG!");
-        callback();
-      },
-      error:function(rest_select,error){
-        //console.log("failed? impossible");
-      }
-    }
-  );
-}
-
 //push a restuarant seelction for the user in the current session to the
 //Parse cloud
 //we make sure we destroy all the old pushes here as well, since only 1 of this
@@ -29,31 +8,38 @@ function create_rest_select(index, callback){
 function push_restaurant_index(index, callback){
   var rest_query = new Parse.Query(RestSelect);
   var user = Parse.User.current();
-  rest_query.equalTo("user", user);
 
   //we first try to find old ones
-  rest_query.find({
-    success: function(rest_selects){
-      console.log("size of all the old entrieS");
-      console.log(rest_selects.length);
-      //remove the old ones
-      for (var i = 0; i < rest_selects.length; i++) {
-        rest_selects[i].destroy({
-          success: function(myObject) {
-          },
-          error: function(myObject, error) {
-          }
-        })
-      }
-      //add new one
-      create_rest_select(index,callback);
+  rest_query.equalTo("user",user).first({
+    success: function(rest_select){
+      //if we can't find it we make a new one
+      var to_push = rest_select || new RestSelect({user: user})
+      to_push.set("restaurant", index);
+
+      to_push.save(null, {
+        success: function() {
+          console.log("Successfully saved!");
+          callback();
+        },
+        error: function(obj, error) {
+          console.error("Save failure: ", error);
+        }
+      });
     },
     error: function(rest_select, error){
-      //add new one
-      create_rest_select(index,callback);
+      var to_push = rest_select || new RestSelect({user: user})
+      to_push.set("restaurant", index);
+      to_push.save(null, {
+        success: function() {
+          console.log("Successfully saved!");
+          callback();
+        },
+        error: function(obj, error) {
+          console.error("Save failure: ", error);
+        }
+      });
     }
   });
-
 }
 
 //pull the restuarant selection for the current user
@@ -65,6 +51,10 @@ function pull_restaurant_index(call_back){
     success: function(rest_select){
       //console.log("found old entry for rest_query of this user");
       //console.log(rest_select);
+      if(rest_select == null)
+      {
+      call_back(-1);
+      }
       var select = rest_select.get("restaurant");
       call_back(select);
     },
@@ -73,58 +63,44 @@ function pull_restaurant_index(call_back){
   });
 }
 
-//create a dishes_select object
-//bind it to a dish selection
-//save to the cloud
-function create_dish_select(dish_list, callback){
-  var user = Parse.User.current();
-  var dish_select = new DishesSelect();
-  dish_select.set("user", user);
-  dish_select.set("dishes", dish_list);
-  dish_select.save(null,
-    {
-      success:function(dish_select){
-        //console.log("saved to cloud OMG!");
-        callback();
-      },
-      error:function(dish_select,error){
-        //console.log("failed? impossible");
-      }
-    }
-  );
-}
-
 //push a dishes seelction for the user in the current session to the
-//Parse cloud
-//we make sure we destroy all the old pushes here as well, since only 1 of this
-//information should exist at a time.
+//Parse cloud, if one already exist we update that one and push it
 function push_dish_select(a_list, callback){
   var dish_query = new Parse.Query(DishesSelect);
   var user = Parse.User.current();
-  dish_query.equalTo("user", user);
 
   //we first try to find old ones
-  dish_query.find({
-    success: function(dish_selects){
-      console.log("size of all the old entrieS");
-      console.log(dish_selects.length);
-      //remove the old ones
-      for (var i = 0; i < dish_selects.length; i++) {
-        dish_selects[i].destroy({
-          success: function(myObject) {
-          },
-          error: function(myObject, error) {
-          }
-        })
-      }
-      //add new one
-      create_dish_select(a_list,callback);
+  dish_query.equalTo("user",user).first({
+    success: function(dish_select){
+      //if we can't find it we make a new one
+      var to_push = dish_select || new DishesSelect({user: user})
+      to_push.set("dishes", a_list);
+
+      to_push.save(null, {
+        success: function() {
+          console.log("Successfully saved!");
+          callback();
+        },
+        error: function(obj, error) {
+          console.error("Save failure: ", error);
+        }
+      });
     },
     error: function(dish_select, error){
-      //add new one
-      create_dish_select(a_list,callback);
+      var to_push = dish_select || new DishesSelect({user: user})
+      to_push.set("dishes", a_list);
+      to_push.save(null, {
+        success: function() {
+          console.log("Successfully saved!");
+          callback();
+        },
+        error: function(obj, error) {
+          console.error("Save failure: ", error);
+        }
+      });
     }
   });
+
 }
 
 //pull the dishes selection for the current user
@@ -136,11 +112,39 @@ function pull_dishes_list(call_back){
     success: function(dish_select){
       //console.log("found old entry for dish_query of this user");
       //console.log(dish_select);
-      var select = dish_select.get("dishes");
-      call_back(select);
+      if(dish_select == null){
+        call_back([]);
+      }
+      else{
+        var select = dish_select.get("dishes");
+        call_back(select);
+      }
     },
     error: function(dish_select, error){
     }
   });
+}
+
+//a function that deals with multiple pulls and callback annoyance
+//qs = a list of queries, i.e. [pull_rest, pull_dish, pull_ingr]
+//render = the render page function, which takes in multiple arguments
+//one argument for each thing that it wants to pull
+function multi_pull(qs,render){
+  _multi_pull(qs, render, []);
+}
+
+function _multi_pull(qs, render, args){
+  if (qs.length == 0){
+    render(args);
+  }
+  else{
+    q_head = qs[0];
+    q_tail = qs.slice(1);
+    function cb(x){
+      new_args = args.concat([x]);
+      _multi_pull(q_tail, render, new_args);
+    }
+    q_head(cb);
+  }
 }
 

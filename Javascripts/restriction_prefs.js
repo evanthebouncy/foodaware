@@ -56,4 +56,6 @@ var setupEntrySystem = function(settings) {
                     }
         })
     }), 300);
+
+
 }
