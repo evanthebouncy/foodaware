@@ -5,9 +5,7 @@
  * Time: 3:15 PM
  * To change this template use File | Settings | File Templates.
  */
-$(document).ready(function()
-
-{
+$(document).ready(function() {
     $("#searchBtn").click(function(){
     console.log(restaurants.length);
     var ptrs = []
@@ -43,6 +41,8 @@ $(document).ready(function()
             id: ''+i,
             href: "menu.html",
             click: function () {
+
+              console.log(new_order);
               push_restaurant_index(new_order[parseInt(this.id)],
                 function() {
                   window.location ="menu.html";
@@ -83,9 +83,3 @@ function shuffle(o){
 newArray = shuffle(array)
 console.log(newArray);*/
 });
-
-
-
-
-
-

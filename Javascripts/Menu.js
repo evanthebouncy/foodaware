@@ -25,81 +25,59 @@ var restaur_index;
 //view for dishes
 var selected_dishes = [];
 
-function add_dish(dish){
-  //add to the dishes object if it's not already there
-  if ($.inArray(dish, selected_dishes) == -1){
-    selected_dishes.push(dish);
-  }
-  //get rid of these when we're doing views
-  push_dish_select(selected_dishes,render_selected);
-}
+var CartButtonView = Parse.View.extend({
+    template: Handlebars.compile($("#cart-button-template").html()),
+    tagName: "div",
+    className: "btn-group",
 
-//move this into view
-function render_selected() {
-  $("#selected_dishes").html("");
-    _.each(selected_dishes, function(dish) {
-      var selected_dish = $('<div/>', {
-        id:dish
-      });
+    events: {
+        "click .cart-remove": "removeItem"
+    },
 
-      var button_remove = $('<button/>', {
-        id: dish+"_close",
-        click: function (e) {
-          var dish_name = $(e.target).parent().attr('id');
-          remove_dish(dish_name);
-          render_selected();
-        }
-      }).appendTo(selected_dish);
+    removeItem: function() {
+        this.model.remove("cart", this.options.itemName);
+        this.model.save();
+    },
 
-      button_remove.append("<i class=\"icon-remove-sign\"></i>");
-
-      var button = $('<button/>', {
-        text: dish, //set text 1 to 10
-        id: dish+"_view",
-        click: function (e) {
-      var dish_name = $(e.target).parent().attr('id');
-      $('.thumbnail').each(function(unused,item){
-        var targetFoodName = $(this).attr("data-food-name");
-        if (targetFoodName == dish_name)
-        {
-          console.log("Found " + dish_name);
-          this.click();
-        }
-      });
-        }
-      }).appendTo(selected_dish);
-
-      console.log(button);
-      button.addClass("btn view_btn");
-      button_remove.addClass("btn close_btn");
-
-      $("#selected_dishes").append(selected_dish);
-    });
-}
-
-function remove_dish(dish){
-  var index_of = selected_dishes.indexOf(dish);
-  selected_dishes.splice(index_of,1);
-  //get rid of this when we're doing views
-  push_dish_select(selected_dishes,render_selected);
-}
-
-var itemCount = 0;
-
-var itemScore = function(item) {
-    var count = 0;
-    for (var i = 0; i < item.ingredients.length; i++) {
-        if (settings[item.ingredients[i]] == "prefer")
-            count++;
+    render: function() {
+        this.$el.html(this.template(this.options));
+        return this;
     }
+});
 
-    return count;
-}
+
+var ShoppingCartView = Parse.View.extend({
+    template: Handlebars.compile($("#cart-template").html()),
+    tagName: "div",
+
+    initialize: function() {
+        _.bindAll(this, "render");
+        this.model.bind("change:cart", this.render);
+    },
+
+    render: function() {
+        this.$el.html(this.template());
+        var self = this;
+        _.each(this.model.get("cart"), function(itemName) {
+            var buttonView = new CartButtonView({itemName: itemName,
+                                                model: self.model});
+            self.$el.find("#selected_dishes").append(buttonView.render().$el);
+        });
+
+        return this;
+    }
+});
 
 $(document).ready(function() {
-  //request restaurant_index and dishes_list from Parse Cloud
-  //once they're in, render the page
-  multi_pull([pull_restaurant_index, pull_dishes_list],menu_page_render);
+    //request restaurant_index and dishes_list from Parse Cloud
+    //once they're in, render the page
+    var user = Parse.User.current();
+    user.fetch({success: function(user_) {
+        multi_pull([pull_restaurant_index, pull_dishes_list],menu_page_render);
+        var cartView = new ShoppingCartView({model: user_});
+        $("#cart").append(cartView.render().$el);
+    }});
+
 });
 
 //when the body of this function is invoked
@@ -152,17 +130,6 @@ var menu_page_render = function (list_args) {
       selected_dishes = [];
     }
   }
-
-  render_selected();
-  $("#print_summary").click(
-    function(){
-      push_dish_select(selected_dishes,
-        function() {
-          window.location ="summary.html";
-        }
-      );
-    }
-  )
 }
 
 var setupMenu = function(settings) {
@@ -197,7 +164,7 @@ var setupMenu = function(settings) {
 
 
 var populateThumbnails = function(settings) {
-
+    var user = Parse.User.current();
     var itemTemplate = Handlebars.compile($("#item-template").html());
     selectionWindow = document.getElementById("dish_selection");
 
@@ -262,9 +229,8 @@ var populateThumbnails = function(settings) {
 
         // Global Event Listeners
         $('#order_button').click(function(event) {
-
-          add_dish($("#DishNameLabel").html());
-          $("#SelectionCount").text(itemCount + " item(s)");
+          user.addUnique("cart", $("#DishNameLabel").html());
+          user.save();
           selectionWindow.style.display = "none";
 			    selectedDiv.style.border = "1px solid #dddddd";
         });

@@ -1,7 +1,7 @@
 function update_restaurant_info(restaurant){
-  $("#rest_name").text(restaurant.name); 
-  $("#rest_addr").text(restaurant.addr); 
-  $("#rest_phone").text("phone: "+restaurant.phone); 
+  $("#rest_name").text(restaurant.name);
+  $("#rest_addr").text(restaurant.addr);
+  $("#rest_phone").text("phone: "+restaurant.phone);
   $("#rest_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
 }
 
@@ -47,7 +47,7 @@ function find_dish(rest_dish, dish_name){
 
 function callback1(dishes){
   console.log(dishes);
-  
+
   var render_page = function (rest){
 	if(rest == -1)
 	{
@@ -67,17 +67,15 @@ function callback1(dishes){
     }
 
   }
-  
+
   pull_restaurant_index(render_page)
 }
 
 $(document).ready(function(){
-  pull_dishes_list(callback1);
+  callback1(Parse.User.current().get("cart"));
 
   $("#print_btn").click(
     function(){window.print();}
   );
 
 });
-
-
