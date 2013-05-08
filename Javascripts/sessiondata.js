@@ -8,6 +8,8 @@ var DishesSelect = Parse.Object.extend("DishesSelect");
 function push_restaurant_index(index, callback){
   var rest_query = new Parse.Query(RestSelect);
   var user = Parse.User.current();
+  user.set("cart", []);
+  user.save();
 
   //we first try to find old ones
   rest_query.equalTo("user",user).first({
@@ -46,7 +48,7 @@ function push_restaurant_index(index, callback){
 function pull_restaurant_index(call_back){
   var user = Parse.User.current();
   var rest_query = new Parse.Query(RestSelect);
-  
+
   rest_query.equalTo("user", user).first({
     success: function(rest_select){
       //console.log("found old entry for rest_query of this user");
@@ -107,7 +109,7 @@ function push_dish_select(a_list, callback){
 function pull_dishes_list(call_back){
   var user = Parse.User.current();
   var dish_query = new Parse.Query(DishesSelect);
-  
+
   dish_query.equalTo("user", user).first({
     success: function(dish_select){
       //console.log("found old entry for dish_query of this user");
@@ -147,4 +149,3 @@ function _multi_pull(qs, render, args){
     q_head(cb);
   }
 }
-
