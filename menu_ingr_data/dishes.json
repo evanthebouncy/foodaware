@@ -86,7 +86,7 @@ var asian = [
             "garlic",
             "ginger",
             "rice"
-        ],
+        ]
         image: "baingan_bhata.jpg",
         price: "12.99",
         description: "Minced vegetables grilled directly over charcoal to make it nice and smoke-flavored."
@@ -96,7 +96,6 @@ var asian = [
 
 var american =  [
     { name: "Hamburger",
-      image: "hamburger.jpg",
       ingredients: [
           "bread",
           "gluten",
@@ -112,7 +111,6 @@ var american =  [
           "potato",
           "oil"
       ],
-      image: "fries.jpg",
       description: "Golden and crispy brown, with enough salt to add a tang but not so much your mouth turns into a desert.",
       price: "3.99"
     },
@@ -123,8 +121,7 @@ var american =  [
           "cheese",
           "gluten"
       ],
-      price: "4.99",
-      image: "grilledcheese.jpg",
+      price: "4.99"
       description: "Goes great with tomato soup. (Tomato soup not available.)"
     },
 
@@ -135,9 +132,8 @@ var american =  [
           "tomato",
           "vinegar",
           "kale"
-      ],
-      price: "4.99",
-      image: "kale.jpg",
+      ]
+      price: "4.99"
       description: "For when you want a salad, but don't really feel that Greek. Kale, carrots and tomatoes with a vinaigrette dressing on a bed of lettuce."
     },
 
@@ -146,12 +142,9 @@ var american =  [
           "beef",
           "beans",
           "chili powder",
-          "onion",
-          "cheese",
-          "lactose"
+          "onion"
       ],
       price: "7.99",
-      image: "chili.jpg",
       description: "Despite the name, we are only legally allowed to claim that this chili is two-alarm. Chopped onions mixed with 100% pure beef and black beans."
     }
 ];
@@ -160,17 +153,15 @@ var american =  [
 var indian  = [
     { name: "Coconut Soup",
       price: "3.49",
-      image: "coconut_soup.jpg",
       ingredients: [
           "coconut",
           "pistachio"
-      ],
+      ]
       description: "Shredded coconut topped with ground pistachio."
     },
 
     { name: "Samosas",
       price: "7.99",
-      image: "samosas.jpg",
       ingredients: [
           "bread",
           "gluten",
@@ -181,7 +172,6 @@ var indian  = [
     },
 
     { name: "Chicken Pakora",
-      image: "pakora.jpg",
       price: "5.39",
       ingredients: [
           "chicken",
@@ -189,11 +179,10 @@ var indian  = [
           "onion"
       ],
       description: "Deep-fried goodness; makes a great appetizer."
-    },
+    }
 
     { name: "Naan",
       price: "2.99",
-      image: "naan.jpg",
       ingredients: [
           "bread",
           "gluten"
@@ -201,67 +190,3 @@ var indian  = [
       description: "So delicious, there'll be naan of it left!"
     }
 ];
-
-var restaurants = [
-    {
-        "logo": "0001_kimchi.jpg",
-        "dishes": asian,
-        "name": "Kim's Home Food",
-        "phone": "482-223-4531",
-        "addr": [
-            "1432 Barley Street,",
-            "Cambridge, MA"
-        ]
-    },
-    {
-        "logo": "0003_kungpow.jpg",
-        dishes: asian,
-        "name": "Everything KungPow",
-        "phone": "545-777-3443",
-        "addr": [
-            "5534 Ginko Street,",
-            "Cambridge, MA"
-        ]
-    },
-    {
-        "logo": "cuisine_inn.jpg",
-        dishes: american,
-        "name": "Hawksworth Restaurant",
-        "phone": "482-223-9843",
-        "addr": [
-            "1432 Green Street,",
-            "Cambridge, MA"
-        ]
-    },
-    {
-        "logo": "Cafe-Expresso.jpg",
-        dishes: american,
-        "name": "Cafe Expresso",
-        "phone": "482-118-2831",
-        "addr": [
-            "823 Massachusetts Avenue",
-            "Cambridge, MA"
-        ]
-    },
-    {
-        "logo": "indian_hills.jpg",
-        "name": "Indian Hills",
-        dishes: indian,
-        "phone": "482-223-4873",
-        "addr": [
-            "144 Charles Street,",
-            "Cambridge, MA"
-        ]
-    },
-    {
-        "logo": "antique.jpg",
-        "name": "Antique Restaurant",
-        dishes: indian,
-        "phone": "545-777-3445",
-        "addr": [
-            "5586 Ginko Street,",
-            "Cambridge, MA"
-        ]
-    },
-
-]
