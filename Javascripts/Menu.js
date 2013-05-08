@@ -36,7 +36,11 @@ var CartButtonView = Parse.View.extend({
     },
 
     removeItem: function() {
-        this.model.remove("cart", this.options.itemName);
+        var cart = this.model.get("cart");
+        var index = cart.indexOf(this.options.itemName);
+        if (index > -1)
+            cart.splice(index, 1);
+        this.model.set("cart", cart);
         this.model.save();
     },
 
@@ -235,7 +239,7 @@ var populateThumbnails = function(settings) {
 
         // Global Event Listeners
         $('#order_button').click(function(event) {
-          user.addUnique("cart", $("#DishNameLabel").html());
+          user.add("cart", $("#DishNameLabel").html());
           user.save();
           selectionWindow.style.display = "none";
 			    selectedDiv.style.border = "1px solid #dddddd";

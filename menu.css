@@ -63,7 +63,7 @@
 div.picker {
     display: inline-block;
     width: 200px;
-    margin: 10px 20px;
+    margin: 6px 20px;
 }
 
 /* Bootstrap wants a 5px left margin on .btn-group+.btn-group. Why? I
@@ -130,7 +130,7 @@ have no clue. */
 
 #selected_dishes .btn-group {
     display: block;
-    margin: 10px 5px;
+    margin: 7px 5px;
 }
 
 #order_button:hover{
