@@ -28,6 +28,16 @@ div.chooser-group .picker .pseudo-checkbox {
     width: 44px;
 }
 
+div#search .picker {
+    display: inline-block;
+    width: 310px;
+    margin: 10px 20px;
+}
+
+div#search .picker .neutral {
+    width: 200px;
+}
+
 h1, h2 {
     font-family: 'Denk One', sans-serif;
 }
