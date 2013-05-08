@@ -184,8 +184,11 @@ var populateThumbnails = function(settings) {
     var itemScore = function(item) {
         var count = 0;
         for (var i = 0; i < item.ingredients.length; i++) {
-            if (settings.get(toIdentifier(item.ingredients[i])) == "prefer")
+            var valence = settings.get(toIdentifier(item.ingredients[i]));
+            if (valence == "prefer")
                 count++;
+            else if (valence == "restrict")
+                return -1;
         }
 
         return count;
@@ -194,6 +197,7 @@ var populateThumbnails = function(settings) {
     menuItems.sort(function(a, b) {
         return itemScore(b) - itemScore(a);
     });
+
 
     var filteredItems = $.grep(menuItems, function(item) {
         for (var i = 0; i < item.ingredients.length; i++) {
@@ -208,10 +212,12 @@ var populateThumbnails = function(settings) {
 
     $('.thumbnail').click(function() {
         var targetFoodName = $(this).attr("data-food-name");
+        var targetItem;
         console.log(targetFoodName);
         $(menuItems).each(function(unused, item) {
             console.log(item.name);
             if (item.name == targetFoodName) {
+                targetItem = item;
                 $(selectionWindow).html(itemTemplate(item));
 
                 item.ingredients.sort();
@@ -239,8 +245,11 @@ var populateThumbnails = function(settings) {
 
         // Global Event Listeners
         $('#order_button').click(function(event) {
-          user.add("cart", $("#DishNameLabel").html());
-          user.save();
+
+            if (itemScore(targetItem) > -1) {
+                user.add("cart", $("#DishNameLabel").html());
+                user.save();
+            }
           selectionWindow.style.display = "none";
 			    selectedDiv.style.border = "1px solid #dddddd";
         });
