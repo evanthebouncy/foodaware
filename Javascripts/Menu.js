@@ -133,12 +133,12 @@ var menu_page_render = function (list_args) {
   var query = new Parse.Query(Settings);
   query.equalTo("user", user).first({
       success: function(settings) {
-          setupMenu(settings);
+          setupMenu(settings || new Settings({user: user}));
           },
 
       error: function(settings, error) {
           console.error("Something went wrong getting user data:", error);
-          setupMenu(settings);
+          setupMenu(settings || new Settings({user: user}));
       }});
 }
 
