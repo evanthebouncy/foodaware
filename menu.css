@@ -145,3 +145,9 @@ have no clue. */
 #ingredients{
     margin-left: 10px;
 }
+
+
+ul#thumbnails.thumbnails > li {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
