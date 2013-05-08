@@ -58,7 +58,7 @@ function callback1(dishes){
       }
       if((dishes == -1 || dishes.length == 0) && rest != -1)
       {
-	  window.location = "Menu.html";
+	  window.location = "menu.html";
       }
       var restaurant = restaurants[rest];
       update_restaurant_info(restaurant);
