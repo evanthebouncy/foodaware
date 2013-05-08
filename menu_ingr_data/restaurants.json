@@ -8,7 +8,7 @@ var asian = [
             "soybean ",
             "heavy_cream"
         ],
-        "name": "Oven Roasted Butternut Squash Soup",
+        "name": "Butternut squash soup",
         "image": "0000_butternut_soup.jpeg",
         "description": "Butternut squash, curry concentrate, coconut milk Boiled with soybeans and heavy cream Plated  in shallow bowl with cream drizzle "
     },
@@ -24,7 +24,7 @@ var asian = [
             "mussel",
             "clam"
         ],
-        "name": "Seafood Tom Yum",
+        "name": "Seafood tom yum",
         "image": "0001_seafood_tom_yum.jpeg",
         "description": "Tom yum paste (contains shrimp), lemongrass, galangal, lime juice Boiled with enoki mushroom, tomatos & 2 pc. ea: shrimp, mussels, clams Plated in shallow bowl with cilantro garnish "
     },
@@ -40,7 +40,7 @@ var asian = [
             "mushroom",
             "scallion"
         ],
-        "name": "Blonde Miso Soup  ",
+        "name": "Blonde miso soup",
         "image": "0002_miso_soup.jpeg",
         "description": "Miso base(white) has lower ratio of soybeans to rice & barley, less fermentation time vs. red miso, gives it mild, sweet flavor. Ubiquitous miso soup base, most common type Base is boiled with water, kombu (kelp) and hondashi (fish stock from Japan) We reheat w/ wakame (small seaweed), scallion, diced tofu and enoki & button mushroom "
     },
@@ -62,7 +62,7 @@ var asian = [
             "broccoli",
             "asparagus"
         ],
-        "name": "dragon and phoenix",
+        "name": "Dragon and phoenix",
         "image": "dragon_phoenix.jpg",
         "description": "Combination of General Gau's chicken and hot spicy shrimp, divided broccoli, and asparagus . "
     },
@@ -158,7 +158,7 @@ var american =  [
 
 
 var indian  = [
-    { name: "Coconut Soup",
+    { name: "Coconut soup",
       price: "3.49",
       image: "coconut_soup.jpg",
       ingredients: [
@@ -180,7 +180,7 @@ var indian  = [
       description: "A baked pyramid of pure vegetarian deliciousness."
     },
 
-    { name: "Chicken Pakora",
+    { name: "Chicken pakora",
       image: "pakora.jpg",
       price: "5.39",
       ingredients: [
