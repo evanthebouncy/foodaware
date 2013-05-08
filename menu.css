@@ -9,9 +9,7 @@
 }
 #preferences_main
 {
-	//height:200px;
 	border-radius:10px;
-	//overflow:auto;
 }
 .user_preference
 {
@@ -23,8 +21,8 @@
 }
 .thumbnail
 {
-	width:150px;
-	height:150px;
+	width:200px;
+	height:200px;
 	display:inline-block;
 	border-radius:10px;
 	cursor:pointer
@@ -148,8 +146,7 @@ have no clue. */
 
 
 ul#thumbnails.thumbnails > li {
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin: 0px 10px 40px 10px;
 }
 
 body h2 {
