@@ -20,13 +20,13 @@
 
     <script id="valence-template" type="text/x-handlebars-template">
 
-        <button class="btn btn-medium clearfix prefer">
+        <button class="btn btn-large clearfix prefer">
           <i class="icon-plus-sign"></i>
         </button>
-        <button class="btn btn-medium clearfix neutral">
+        <button class="btn btn-large clearfix neutral">
                 {{this.displayName}}
         </button>
-        <button class="btn btn-medium clearfix restrict">
+        <button class="btn btn-large clearfix restrict">
           <i class="icon-minus-sign"></i>
         </button>
     </script>
@@ -84,12 +84,14 @@
 
       <div class="row">
         <!-- A list of all items, not just the 'apathetic' ones -->
-        <div class="span8" id="search">
-          <h2>Search</h2>
-        </div>
         <div class="span8">
+          <div id="search">
+          <h2>Search</h2>
+          </div>
+          <div>
           <h2>Ingredients</h2>
           <div class="food-chooser well accordion" id="chooser"></div>
+          </div>
         </div>
 
         <!-- Right bar; items we care about one way or another -->

@@ -10,8 +10,12 @@ div.chooser-group .accordion-heading {
 
 div.chooser-group .accordion-inner .picker {
     display: inline-block;
-    width: 200px;
+    width: 300px;
     margin: 10px 20px;
+}
+
+div.chooser-group .neutral {
+    width: 200px;
 }
 
 div.chooser-group .accordion-inner .picker img {

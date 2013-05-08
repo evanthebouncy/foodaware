@@ -5,7 +5,11 @@ function ucFirst(str) {
 }
 
 function toIdentifier(str) {
-    return str.replace(/ /g, "_");
+    return str.replace(/ /g, "_").toLowerCase();
+}
+
+function toDisplayName(str) {
+    return ucFirst(str.replace(/_/g, " "));
 }
 
 menuItems = null;
@@ -25,7 +29,7 @@ function add_dish(dish){
   //add to the dishes object if it's not already there
   if ($.inArray(dish, selected_dishes) == -1){
     selected_dishes.push(dish);
-  } 
+  }
   //get rid of these when we're doing views
   push_dish_select(selected_dishes,render_selected);
 }
@@ -37,7 +41,7 @@ function render_selected() {
       var selected_dish = $('<div/>', {
         id:dish
       });
-    
+
       var button_remove = $('<button/>', {
         id: dish+"_close",
         click: function (e) {
@@ -68,7 +72,7 @@ function render_selected() {
       console.log(button);
       button.addClass("btn view_btn");
       button_remove.addClass("btn close_btn");
-    
+
       $("#selected_dishes").append(selected_dish);
     });
 }
@@ -119,7 +123,7 @@ var menu_page_render = function (list_args) {
   var restaurant = restaurants[restaur_index];
   $("#restaurant_logo").attr("src", "menu_ingr_data/rest_picture/"+restaurant.logo);
   menuItems = restaurant["dishes"];
-  
+
   var user = Parse.User.current();
   var query = new Parse.Query(Settings);
   query.equalTo("user", user).first({
@@ -235,7 +239,7 @@ var populateThumbnails = function(settings) {
 
                 item.ingredients.sort();
                 var ingredientButtons = _.map(item.ingredients, function(ingredient) {
-                    button = new ValenceButton({displayName: ingredient,
+                    button = new ValenceButton({displayName: toDisplayName(ingredient),
                                                 model: settings});
                     return button.render().$el;
                 });
@@ -258,7 +262,7 @@ var populateThumbnails = function(settings) {
 
         // Global Event Listeners
         $('#order_button').click(function(event) {
-            
+
           add_dish($("#DishNameLabel").html());
           $("#SelectionCount").text(itemCount + " item(s)");
           selectionWindow.style.display = "none";
