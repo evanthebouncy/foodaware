@@ -130,7 +130,7 @@ have no clue. */
 
 #selected_dishes .btn-group {
     display: block;
-    margin: 10px 5xopx
+    margin: 10px 5px;
 }
 
 #order_button:hover{
