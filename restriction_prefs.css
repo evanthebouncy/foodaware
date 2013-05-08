@@ -27,3 +27,11 @@ div.chooser-group .picker .pseudo-checkbox {
 h1, h2 {
     font-family: 'Denk One', sans-serif;
 }
+
+#save_msg{
+    margin-left: 100px;
+    margin-top: 10px;
+    color:green;
+    font-size:17pt;
+
+}
