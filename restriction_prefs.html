@@ -52,15 +52,18 @@
     </script>
 
     <script id="valence-group-template" type="text/x-handlebars-template">
-      <h2>Selected {{typeNoun}}
-      {{#if hasClear}}
-        <button class="btn btn-medium btn-danger clear">
-          <i class="icon-trash icon-large"></i> Clear all
-        </button>
-        {{/if}}
-      </h2>
-
-      <div id="{{type}}-list" class="well food-list">
+      <div class="cont">
+          <h2>Selected {{typeNoun}}
+          </h2>
+        <div id="{{type}}-list" class="well food-list">
+        </div>
+        <div>
+          {{#if hasClear}}
+            <button class="btn btn-medium btn-danger pull-right clear">
+              <i class="icon-trash icon-large"></i> Clear all
+            </button>
+            {{/if}}
+        </div>
       </div>
     </script>
 
@@ -77,7 +80,14 @@
   <body>
     <div class="container" id="container">
       <div class="row">
-        <h1>Restrictions and Preferences</h1>
+        <div class="span6">
+          <h1>Restrictions and Preferences</h1>
+        </div>
+        <div class="span6">
+          <a href="filter.html" class="btn pull-right btn-large btn-primary">
+            Save &amp; Proceed
+          </a>
+        </div>
       </div>
 
       <hr>
@@ -97,9 +107,6 @@
         <!-- Right bar; items we care about one way or another -->
         <div class="span4" id="valence-groups">
         </div>
-        <a href="filter.html" class="btn pull-right btn-large btn-primary">
-          Save &amp; Proceed
-          </a>
       </div>
 
       <div class="row">

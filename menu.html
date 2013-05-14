@@ -127,10 +127,6 @@
 	</div>
 	<div class="span1" id="total_price_label" style="font-size:16px">
 	</div>
-	<a href="summary.html" id="print_summary" class="offset2 btn btn-medium btn-primary clear">
-	  <i class="icon-print icon-large"></i>
-          Print Summary
-	</a>
       </div>
     </script>
 
@@ -149,19 +145,23 @@
   <body>
     <div class="container" id="container">
       <div class="row-fluid">
-	<div class="span8">
-	  <div class="row-fluid">
-	    <img class="span2" id="restaurant_logo" alt="Image not available"  width="42" height="42">
-	    <h1 class="span1" style="font-family: 'Denk One', sans-serif;">Menu</h1>
-	  </div>
-	  <div id="menu_display" class="well">
-            <div id="dish_selection" class="span12"></div>
-	    <ul id="thumbnails" class="thumbnails"></ul>
-	  </div>
-	</div>
+        <h1 class="span2" style="font-family: 'Denk One', sans-serif;">Menu</h1>
+        <div class="span10">
+          <a href="summary.html" id="print_summary" class="offset2 btn btn-large pull-right btn-primary clear">
+                  View Summary
+          </a>
+        </div>
+      </div>
 
+      <div class="row-fluid" style="padding-top: 20px">
+        <div class="span8">
+          <div id="menu_display" class="well">
+                  <div id="dish_selection" class="span12"></div>
+            <ul id="thumbnails" class="thumbnails"></ul>
+          </div>
+        </div>
 
-	<div class="span4">
+        <div class="span4">
           <div id="cart">
           </div>
 
@@ -172,7 +172,6 @@
       </div>
 
       <div class="row-fluid">
-	<div class="offset5 span2"><a href = "summary.html"> <button id="summary_button" class="btn btn-large btn-primary">View Summary</button></a></div>
       </div>
     </div>
   </body>

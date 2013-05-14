@@ -65,11 +65,20 @@ ul#awareful {
 <body>
 
 <div class="container" id="container">
-    <!-- Header -->
-    <div class="header">
-        <h1>Your Selection Summary</h1>
+    <div class="row">
+      <!-- Header -->
+      <div class="span6">
+          <h1>Your Selection Summary</h1>
+      </div>
+      <div class="span6">
+        <div id="print">
+          <div id="print_btn" class="btn pull-right btn-large btn-primary">
+            <i class="icon-print icon-large"></i>
+            Print Summary
+          </div>
+        </div>
+      </div>
     </div>
-    <hr>
 
     <!-- Restaurant Info -->
     <div class="rest_info">
@@ -90,14 +99,6 @@ ul#awareful {
         </ul>
     </div>
     <hr>
-
-    <!-- print -->
-    <div id="print">
-      <button id="print_btn" class="btn btn-large btn-primary">Print</button>
-    </div>
-
-</div>
-</div>
 
 </body>
 </html>
